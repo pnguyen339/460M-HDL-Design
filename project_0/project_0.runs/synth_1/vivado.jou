@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Feb  1 04:52:06 2018
+# Process ID: 27856
+# Current directory: /home/dratini/vivado/460M-HDL-Design/project_0/project_0.runs/synth_1
+# Command line: vivado -log Adder4.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Adder4.tcl
+# Log file: /home/dratini/vivado/460M-HDL-Design/project_0/project_0.runs/synth_1/Adder4.vds
+# Journal file: /home/dratini/vivado/460M-HDL-Design/project_0/project_0.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source Adder4.tcl -notrace
