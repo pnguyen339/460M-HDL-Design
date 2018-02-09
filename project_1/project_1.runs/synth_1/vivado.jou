@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Feb  9 15:50:29 2018
+# Process ID: 14725
+# Current directory: /home/dratini/Documents/GitHub/460M-HDL-Design/project_1/project_1.runs/synth_1
+# Command line: vivado -log Sub4.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Sub4.tcl
+# Log file: /home/dratini/Documents/GitHub/460M-HDL-Design/project_1/project_1.runs/synth_1/Sub4.vds
+# Journal file: /home/dratini/Documents/GitHub/460M-HDL-Design/project_1/project_1.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source Sub4.tcl -notrace
