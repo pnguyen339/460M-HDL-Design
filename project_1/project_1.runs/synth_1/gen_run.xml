@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1518213027">
-  <File Type="VDS-TIMING-PB" Name="Sub4_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Sub4_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="Sub4.dcp"/>
-  <File Type="REPORTS-TCL" Name="Sub4_reports.tcl"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1518216056">
   <File Type="PA-TCL" Name="Sub4.tcl"/>
-  <File Type="RDS-RDS" Name="Sub4.vds"/>
   <File Type="RDS-PROPCONSTRS" Name="Sub4_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="Sub4_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Sub4.vds"/>
   <File Type="RDS-UTIL" Name="Sub4_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Sub4_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Sub4.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Sub4_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Sub4_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/FullSubtractor.v">
@@ -44,9 +44,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
