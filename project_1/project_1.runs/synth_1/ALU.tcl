@@ -27,10 +27,7 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo d:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_1/project_1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib {
-  D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_1/project_1.srcs/sources_1/new/FullSubtractor.v
-  D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_1/project_1.srcs/sources_1/new/Subtractor4.v
-}
+read_verilog -library xil_defaultlib D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_1/project_1.srcs/sources_1/new/ALU.v
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -43,10 +40,10 @@ read_xdc D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_1/Basys3_Master
 set_property used_in_implementation false [get_files D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_1/Basys3_Master.xdc]
 
 
-synth_design -top Sub4 -part xc7a35tcpg236-1
+synth_design -top ALU -part xc7a35tcpg236-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef Sub4.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file Sub4_utilization_synth.rpt -pb Sub4_utilization_synth.pb"
+write_checkpoint -force -noxdef ALU.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file ALU_utilization_synth.rpt -pb ALU_utilization_synth.pb"
