@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Thu Mar  1 20:35:20 2018
+| Date         : Fri Mar  2 16:16:53 2018
 | Host         : DESKTOP-D62POV0 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file LightController_control_sets_placed.rpt
 | Design       : LightController
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     9 |
-| Unused register locations in slices containing registers |    60 |
+| Number of unique control sets                            |    10 |
+| Unused register locations in slices containing registers |    59 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,11 +33,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               2 |            2 |
-| No           | No                    | Yes                    |               3 |            3 |
-| No           | Yes                   | No                     |              30 |           10 |
+| No           | No                    | No                     |               4 |            4 |
+| No           | No                    | Yes                    |               7 |            5 |
+| No           | Yes                   | No                     |              56 |           16 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |               1 |            1 |
+| Yes          | No                    | Yes                    |               2 |            2 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -45,27 +45,29 @@ Table of Contents
 3. Detailed Control Set Information
 -----------------------------------
 
-+---------------------------------+------------------------+--------------------------------+------------------+----------------+
-|           Clock Signal          |      Enable Signal     |        Set/Reset Signal        | Slice Load Count | Bel Load Count |
-+---------------------------------+------------------------+--------------------------------+------------------+----------------+
-|  LightSignal_reg[2]_LDC_i_1_n_0 |                        | LightSignal_reg[2]_LDC_i_2_n_0 |                1 |              1 |
-|  divider2/slowClk2              |                        | LightSignal_reg[2]_LDC_i_2_n_0 |                1 |              1 |
-|  divider2/slowClk2              |                        | LightSignal_reg[8]_LDC_i_1_n_0 |                1 |              1 |
-|  divider2/slowClk2              |                        | LightSignal_reg[5]_LDC_i_2_n_0 |                1 |              1 |
-|  divider2/slowClk2              | LightSignal[7]_i_1_n_0 | rst_IBUF                       |                1 |              1 |
-|  LightSignal_reg[5]_LDC_i_1_n_0 |                        | LightSignal_reg[5]_LDC_i_2_n_0 |                1 |              1 |
-|  LightSignal_reg[8]_LDC_i_1_n_0 |                        | LightSignal_reg[8]_LDC_i_2_n_0 |                1 |              1 |
-|  clk_IBUF_BUFG                  |                        |                                |                2 |              2 |
-|  clk_IBUF_BUFG                  |                        | divider2/slowClk2_0            |                7 |             27 |
-+---------------------------------+------------------------+--------------------------------+------------------+----------------+
++----------------------------------------+---------------------------------+---------------------------------------+------------------+----------------+
+|              Clock Signal              |          Enable Signal          |            Set/Reset Signal           | Slice Load Count | Bel Load Count |
++----------------------------------------+---------------------------------+---------------------------------------+------------------+----------------+
+|  aStoplight/counter_reg[1]_LDC_i_1_n_0 |                                 | aStoplight/counter_reg[1]_LDC_i_2_n_0 |                1 |              1 |
+|  aStoplight/counter_reg[2]_LDC_i_1_n_0 |                                 | aStoplight/counter_reg[2]_LDC_i_2_n_0 |                1 |              1 |
+|  divider2/slow_clk2                    |                                 | aStoplight/counter_reg[2]_LDC_i_2_n_0 |                1 |              1 |
+|  divider2/slow_clk2                    |                                 | aStoplight/counter_reg[1]_LDC_i_2_n_0 |                1 |              1 |
+|  divider2/slow_clk2                    | aStoplight/counter[2]_P_i_1_n_0 | aStoplight/counter_reg[1]_LDC_i_1_n_0 |                1 |              1 |
+|  divider2/slow_clk2                    | aStoplight/counter[2]_P_i_1_n_0 | aStoplight/counter_reg[2]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                         |                                 |                                       |                4 |              4 |
+|  divider2/slow_clk2                    |                                 | rst_IBUF                              |                3 |              5 |
+|  clk_IBUF_BUFG                         |                                 | divider1/slowClk1                     |                7 |             27 |
+|  clk_IBUF_BUFG                         |                                 | divider2/slowClk2                     |                7 |             27 |
++----------------------------------------+---------------------------------+---------------------------------------+------------------+----------------+
 
 
 +--------+-----------------------+
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
-| 1      |                     7 |
-| 2      |                     1 |
-| 16+    |                     1 |
+| 1      |                     6 |
+| 4      |                     1 |
+| 5      |                     1 |
+| 16+    |                     2 |
 +--------+-----------------------+
 
 

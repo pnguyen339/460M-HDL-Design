@@ -1,41 +1,41 @@
 
-module StopLight(rst, Ra, Ya, Ga, 
-                        Rb,Yb,Gb,
-                        Rw,Yw,Gw, clk);
-    output reg Ra, Ya, Ga, Rb,Yb,Gb, Rw,Yw,Gw = 0;
-    input wire rst, clk = 0;
-    reg [2:0] state, next_state = 3'b0;
-    reg [3:0] counter= 4'b0000;
-    reg [3:0] next_counter= 4'b0000;
+module StopLight(rst, Ra, Ya, Ga, Rb, Yb, Gb, Rw, Gw, fast_clk, slow_clk);
+    
+    output Ra, Ya, Ga, Rb, Yb, Gb, Rw, Gw;
+    input rst,slow_clk, fast_clk;
+    reg Ra, Ya, Ga, Rb, Yb, Gb, Rw, Gw;
+    reg flag;
+    reg [2:0] state, next_state;
+    reg [3:0] counter;
+    reg [3:0] next_counter;
     
     initial
     begin
-        state = 3'b0;
-        next_counter= 4'b0000;
+        counter = 4'b0011;
+        state = 3'b000;
+	flag = 0;
+        Rw = 1;
     end
     
-    always @(posedge clk, posedge rst)
+    always @(posedge fast_clk, posedge rst)
     begin
         if(rst == 1)
         begin
-            counter = 4'b0000;
-            state = 3'b0;
+            counter <= next_counter;
+            state <= 3'b111;
         end
         else if(counter == 4'b0000)
         begin
-            counter = next_counter;
-            state = next_state;
+            counter <= next_counter;
+            state <= next_state;
         end
         else
             counter = counter - 1;
     end
     
-    always@(counter)
-    begin           
-        if(counter == 0)
-        begin
-            if(state == 3'b0)
-            begin
+    always@(state)
+    begin         
+            if(state == 3'b000) begin
                 Ra <= 0;
                 Ya <= 0;
                 Ga <= 1;
@@ -43,10 +43,10 @@ module StopLight(rst, Ra, Ya, Ga,
                 Yb <= 0;
                 Gb <= 0;
                 Rw <= 1;
-                Yw <= 0;
                 Gw <= 0;
-                next_counter <= 3;
+                next_counter <= 6;
                 next_state <= 3'b001;
+                flag <= 0;
             end
             else if(state == 3'b001)
             begin
@@ -57,10 +57,10 @@ module StopLight(rst, Ra, Ya, Ga,
                 Yb <= 0;
                 Gb <= 0;
                 Rw <= 1;
-                Yw <= 0;
                 Gw <= 0;
-                next_counter <= 2;
+                next_counter <= 4;
                 next_state <= 3'b010;
+                flag <= 0;
             end
             else if(state == 3'b010)
             begin
@@ -71,10 +71,10 @@ module StopLight(rst, Ra, Ya, Ga,
                 Yb <= 0;
                 Gb <= 1;
                 Rw <= 1;
-                Yw <= 0;
                 Gw <= 0;
-                next_counter <= 3;
-                next_state <= 3'b011;       
+                next_counter <= 6;
+                next_state <= 3'b011; 
+                flag <= 0;      
             end
             else if(state == 3'b011)
             begin
@@ -85,10 +85,10 @@ module StopLight(rst, Ra, Ya, Ga,
                 Yb <= 1;
                 Gb <= 0;
                 Rw <= 1;
-                Yw <= 0;
                 Gw <= 0;
-                next_counter <= 1;
+                next_counter <= 2;
                 next_state <= 3'b100;
+                flag <= 0;
             end
             else if(state == 3'b100)
             begin
@@ -99,61 +99,67 @@ module StopLight(rst, Ra, Ya, Ga,
                 Yb <= 0;
                 Gb <= 0;
                 Rw <= 0;
-                Yw <= 0;
                 Gw <= 1;
-                next_counter <= 2;
+                next_counter <= 4;
                 next_state <= 3'b101;
+                flag <= 0;
             end
             else if(state == 3'b101)
             begin
-                Ra <= 0;
+                Ra <= 1;
                 Ya <= 0;
-                Ga <= 1;
+                Ga <= 0;
                 Rb <= 1;
                 Yb <= 0;
                 Gb <= 0;
-                Rw <= 0;
-                Yw <= 1;
+	            Rw <= fast_clk;
                 Gw <= 0;
-                next_counter <= 2;
+                next_counter <= 4;
                 next_state <= 3'b000;
+                flag <= 1;
             end
-        end       
-    end     
+            else if(state == 3'b111)
+            begin
+                Ra <= slow_clk;
+                Ya <= 0;
+                Ga <= 0;
+                Rb <= slow_clk;
+                Yb <= 0;
+                Gb <= 0;
+                Rw <= slow_clk;
+                Gw <= 0;
+                next_counter <= 0;
+                next_state <= 3'b000;
+                flag <= 1;
+            end
+            else begin
+                  flag <= 0;
+                  Ra <= 0;
+                  Ya <= 0;
+                  Ga <= 0;
+                  Rb <= 0;
+                  Yb <= 0;
+                  Gb <= 0;
+                  Rw <= 0;
+                  Gw <= 0;
+                  next_counter <= 0;
+                  next_state <= 3'b000;
+                    
+	        end       
+    end 
 endmodule
 
 
 
 module LightController(clk,rst, LightSignal);
-    output reg [8:0] LightSignal;
+    output wire [7:0] LightSignal;
     input clk,rst;
     wire slow_clk1, slow_clk2;
     wire [8:0] Signal;
-    simpleDivider(clk100Mhz, slowClk1);
-    //clockDivider_1Hz divider1(clk, slow_clk1);
+    
     clockDivider_2Hz divider2(clk, slow_clk2);
-    StopLight aStoplight(rst, Signal[8], Signal[7], Signal[6],Signal[5],Signal[4],Signal[3], Signal[2],Signal[1],Signal[0], slow_clk1);
-    always @(posedge slow_clk2, posedge rst)
-    begin
-        if(rst == 1'b1)
-        begin
-            //LightSignal = LightSignal & 9'b100100100;
-            LightSignal[8] <= ~LightSignal[8];
-            LightSignal[5] <= ~LightSignal[5];
-            LightSignal[2] <= ~LightSignal[2];
-        end
-        else
-        begin
-            LightSignal[8] <= Signal[8];
-            LightSignal[7] <= Signal[7];         
-            LightSignal[6] <= Signal[6];         
-            LightSignal[5] <= Signal[5];         
-            LightSignal[4] <= Signal[4];         
-            LightSignal[3] <= Signal[3];         
-            LightSignal[2] <= Signal[2];         
-            LightSignal[1] <= Signal[1];
-            LightSignal[0] <= Signal[0];                 
-                               
-        end
-    end
+    clockDivider_1Hz divider1(clk, slow_clk1);
+    
+    StopLight aStoplight(rst, LightSignal[0], LightSignal[1],LightSignal[2],LightSignal[5],LightSignal[6], LightSignal[7],LightSignal[4],LightSignal[3], slow_clk2, slow_clk1);
+    
 endmodule

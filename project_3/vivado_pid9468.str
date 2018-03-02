@@ -1,0 +1,2330 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 9468
+License: Customer
+
+Current time: 	Fri Mar 02 10:16:56 CST 2018
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 279 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	pnguy
+User home directory: C:/Users/pnguy
+User working directory: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.4
+RDI_DATADIR: C:/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/pnguy/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/pnguy/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/pnguy/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/vivado.log
+Vivado journal file location: 	D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/vivado.jou
+Engine tmp dir: 	D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/.Xil/Vivado-9468-DESKTOP-D62POV0
+
+GUI allocated memory:	181 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 515 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 55 MB (+55631kb) [00:00:13]
+// [Engine Memory]: 502 MB (+375159kb) [00:00:13]
+// Opening Vivado Project: D:\Users\pnguy\Documents\GitHub\460M-HDL-Design\project_3\project_3.xpr. Version: Vivado v2017.4 
+// bs (cj):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 79 MB (+21312kb) [00:00:18]
+// [Engine Memory]: 531 MB (+3759kb) [00:00:18]
+// [Engine Memory]: 580 MB (+23405kb) [00:00:22]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 580 MB. GUI used memory: 43 MB. Current time: 3/2/18 10:17:05 AM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 764.184 ; gain = 58.445 
+// Project name: project_3; location: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (EE 460M_Lab2_Starter_File.v) elapsed time: 0.2s
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clockDivider_1Hz (EE 460M_Lab2_Starter_File.v)]", 2, false); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LightController (StopLight.v)]", 1); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LightController (StopLight.v)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LightController (StopLight.v)]", 1, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LightController (StopLight.v)]", 1, true); // B (D, cj) - Node
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cj): Add Sources: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 616 MB. GUI used memory: 46 MB. Current time: 3/2/18 10:17:38 AM CST
+// [Engine Memory]: 616 MB (+7178kb) [00:00:58]
+selectButton("NEXT", "Next >"); // JButton (h, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// Elapsed time: 10 seconds
+String[] filenames31467 = {"D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/LightController.v", "D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/Sorter.v", "D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/StopLight.v", "D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/TestBench.v"};
+setFileChooser(filenames31467);
+selectButton("FINISH", "Finish"); // JButton (h, c)
+// 'h' command handler elapsed time: 16 seconds
+dismissDialog("Add Sources"); // c (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -norecurse {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/StopLight.v D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/TestBench.v D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/LightController.v D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/Sorter.v} 
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking too long to process. Increasing delay to 3000 ms.
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 83 MB (+146kb) [00:01:22]
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Elapsed time: 36 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LightController (StopLight.v)]", 1); // B (D, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, complexDivider (EE 460M_Lab2_Starter_File.v)]", 7, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LightController (StopLight.v), aStoplight : StopLight (StopLight.v)]", 4, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LightController (StopLight.v), aStoplight : StopLight (StopLight.v)]", 4, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cj)
+closeMainWindow("project_3 - [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.xpr] - Vivado 2017.4"); // cj
+// x (cj): Exit Vivado: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (x)
+// [GUI Memory]: 92 MB (+5005kb) [00:02:16]
+dismissDialog("Exit Vivado"); // x (cj)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cj): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (h, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// Elapsed time: 14 seconds
+setFileChooser("D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/LightController.v");
+selectButton("FINISH", "Finish"); // JButton (h, c)
+// 'h' command handler elapsed time: 19 seconds
+dismissDialog("Add Sources"); // c (cj)
+// c (cj): Add Sources: addNotify
+// bH (c): Import Source Conflicts: addNotify
+selectButton(PAResourceQtoS.SrcConflictDialog_VIEW_CONFLICTS, "View Conflicts..."); // a (C, bH)
+// bJ (bH): Import Conflicts: addNotify
+dismissDialog("Import Conflicts"); // bJ (bH)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (bH)
+dismissDialog("Import Source Conflicts"); // bH (c)
+// [GUI Memory]: 99 MB (+2489kb) [00:02:53]
+// Elapsed time: 44 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TestBench (TestBench.v)]", 6, true); // B (D, cj) - Node
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cj): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (h, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// [GUI Memory]: 104 MB (+180kb) [00:03:41]
+setFileChooser("D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/StopLight.v");
+selectButton("FINISH", "Finish"); // JButton (h, c)
+// 'h' command handler elapsed time: 8 seconds
+dismissDialog("Add Sources"); // c (cj)
+// c (cj): Add Sources: addNotify
+// bH (c): Import Source Conflicts: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 643 MB. GUI used memory: 51 MB. Current time: 3/2/18 10:20:28 AM CST
+selectRadioButton(PAResourceQtoS.SrcConflictDialog_DONT_OVERWRITE_EXISTING_FILES, "Don't overwrite existing files"); // a (N, bH)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (bH)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Import Source Conflicts"); // bH (c)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -norecurse D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/StopLight.v 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LightController (StopLight.v)]", 1, true); // B (D, cj) - Node
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LightController (StopLight.v)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LightController (StopLight.v)]", 1, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TestBench (TestBench.v)]", 2); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TestBench (TestBench.v)]", 2); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TestBench (TestBench.v)]", 2); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TestBench (TestBench.v)]", 2); // B (D, cj)
+// Elapsed time: 10 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z (cj)
+selectMenuItem(PAResourceCommand.PACommandNames_NEW_PROJECT, "New Project..."); // ac (cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// [Engine Memory]: 647 MB (+747kb) [00:04:22]
+// g (cj): New Project: addNotify
+selectButton("NEXT", "Next >"); // JButton (h, g)
+selectButton("NEXT", "Next >"); // JButton (h, g)
+selectButton("NEXT", "Next >"); // JButton (h, g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, g)
+String[] filenames16706 = {"D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/EE 460M_Lab2_Starter_File.v", "D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/LightController.v", "D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/Sorter.v", "D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/StopLight.v", "D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/TestBench.v"};
+setFileChooser(filenames16706);
+selectButton("NEXT", "Next >"); // JButton (h, g)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a (C, g)
+setFileChooser("D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/Basys3_Master.xdc");
+selectButton("NEXT", "Next >"); // JButton (h, g)
+selectButton("NEXT", "Next >"); // JButton (h, g)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 651 MB. GUI used memory: 49 MB. Current time: 3/2/18 10:21:30 AM CST
+// bs (g):  Create Project : addNotify
+selectButton("PAResourceItoN.NewProjectWizard_WOULD_YOU_LIKE_TO_CLOSE_CURRENTLY_Yes", "Yes"); // JButton (A, H)
+// Tcl Message: close_project 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: create_project project_4 D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4 -part xc7k70tfbv676-1 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 808.559 ; gain = 10.270 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/StopLight.v D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/TestBench.v D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/LightController.v {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/EE 460M_Lab2_Starter_File.v} D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/Sorter.v} 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -force -norecurse 
+// Tcl Message: INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1' 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -fileset constrs_1 -force -norecurse D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/Basys3_Master.xdc 
+selectButton("FINISH", "Finish"); // JButton (h, g)
+// 'g' command handler elapsed time: 33 seconds
+dismissDialog("Create Project"); // bs (g)
+dismissDialog("New Project"); // g (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 18 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LightController (LightController.v)]", 1); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LightController (LightController.v), aStoplight : StopLight (StopLight.v)]", 4, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LightController (LightController.v), aStoplight : StopLight (StopLight.v)]", 4, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LightController (LightController.v), aStoplight : StopLight (StopLight.v)]", 4, false); // B (D, cj)
+selectCodeEditor("StopLight.v", 151, 434); // cd (w, cj)
+selectCodeEditor("StopLight.v", 148, 434); // cd (w, cj)
+typeControlKey(null, null, 'z');
+selectCodeEditor("StopLight.v", 6, 34); // cd (w, cj)
+selectCodeEditor("StopLight.v", 175, 130); // cd (w, cj)
+selectCodeEditor("StopLight.v", 185, 88); // cd (w, cj)
+selectCodeEditor("StopLight.v", 35, 60); // cd (w, cj)
+selectCodeEditor("StopLight.v", 4, 27); // cd (w, cj)
+selectCodeEditor("StopLight.v", 3, 28, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_PROJECT, "Open Project..."); // ac (cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+setFileChooser("D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.xpr");
+// Opening Vivado Project: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.xpr. Version: Vivado v2017.4 
+// bs (cj):  Open Project : addNotify
+selectButton("PAResourceOtoP.PABaseTab_WOULD_YOU_LIKE_TO_CLOSE_CURRENTLY_No", "No"); // JButton (A, G)
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// Tcl Message: open_project D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.xpr 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'. 
+// Project name: project_3; location: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3; part: xc7a35tcpg236-1
+// 'i' command handler elapsed time: 9 seconds
+// Tcl Message: open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 820.168 ; gain = 11.609 
+dismissDialog("Open Project"); // bs (cj)
+// [Engine Memory]: 680 MB (+188kb) [00:06:18]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 114 MB (+5720kb) [00:06:19]
+// [GUI Memory]: 125 MB (+5280kb) [00:06:19]
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 143 MB (+12265kb) [00:06:20]
+// [Engine Memory]: 726 MB (+12861kb) [00:06:21]
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 726 MB. GUI used memory: 68 MB. Current time: 3/2/18 10:23:04 AM CST
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LightController (StopLight.v)]", 1); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LightController (StopLight.v), aStoplight : StopLight (StopLight.v)]", 4, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LightController (StopLight.v), aStoplight : StopLight (StopLight.v)]", 4, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LightController (StopLight.v), aStoplight : StopLight (StopLight.v)]", 4, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LightController (StopLight.v), aStoplight : StopLight (StopLight.v)]", 4, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LightController (StopLight.v), aStoplight : StopLight (StopLight.v)]", 4, false); // B (D, cj)
+selectCodeEditor("StopLight.v", 1, 29); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'v'); // cd (w, cj)
+// Elapsed time: 83 seconds
+selectCodeEditor("StopLight.v", 135, 335); // cd (w, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LightController (LightController.v)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LightController (LightController.v)]", 1, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+// Tcl Message: current_project project_4 
+// Elapsed time: 278 seconds
+selectCodeEditor("LightController.v", 175, 438); // cd (w, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TestBench (TestBench.v)]", 2); // B (D, cj)
+// Elapsed time: 62 seconds
+selectCodeEditor("StopLight.v", 222, 383); // cd (w, cj)
+selectCodeEditor("StopLight.v", 222, 383, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 227, 383); // cd (w, cj)
+selectCodeEditor("StopLight.v", 227, 383, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 266, 381); // cd (w, cj)
+// Elapsed time: 152 seconds
+selectCodeEditor("StopLight.v", 230, 465); // cd (w, cj)
+// Elapsed time: 12 seconds
+selectCodeEditor("StopLight.v", 233, 201); // cd (w, cj)
+selectCodeEditor("StopLight.v", 231, 336); // cd (w, cj)
+selectCodeEditor("StopLight.v", 230, 414); // cd (w, cj)
+// Elapsed time: 13 seconds
+closeMainWindow("project_4 - [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.xpr] - Vivado 2017.4"); // cj
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// x (cj): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (x)
+// bs (cj):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+dismissDialog("Close Project"); // x (cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 733 MB. GUI used memory: 66 MB. Current time: 3/2/18 10:33:37 AM CST
+// Tcl Message: close_project 
+dismissDialog("Add Sources"); // c (cj)
+dismissDialog("Add Sources"); // c (cj)
+dismissDialog("Close Project"); // bs (cj)
+// Elapsed time: 36 seconds
+selectCodeEditor("StopLight.v", 150, 431); // cd (w, cj)
+selectCodeEditor("StopLight.v", 148, 364); // cd (w, cj)
+// Elapsed time: 20 seconds
+selectCodeEditor("StopLight.v", 151, 303); // cd (w, cj)
+selectCodeEditor("StopLight.v", 110, 216); // cd (w, cj)
+selectCodeEditor("StopLight.v", 110, 216, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 110, 216); // cd (w, cj)
+selectCodeEditor("StopLight.v", 105, 238); // cd (w, cj)
+selectCodeEditor("StopLight.v", 105, 239, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 105, 239); // cd (w, cj)
+selectCodeEditor("StopLight.v", 108, 234); // cd (w, cj)
+selectCodeEditor("StopLight.v", 108, 234); // cd (w, cj)
+selectCodeEditor("StopLight.v", 108, 234); // cd (w, cj)
+selectCodeEditor("StopLight.v", 114, 229); // cd (w, cj)
+selectCodeEditor("StopLight.v", 114, 229, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 114, 229); // cd (w, cj)
+selectCodeEditor("StopLight.v", 121, 221); // cd (w, cj)
+selectCodeEditor("StopLight.v", 121, 221, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 121, 221); // cd (w, cj)
+selectCodeEditor("StopLight.v", 129, 211); // cd (w, cj)
+selectCodeEditor("StopLight.v", 129, 211, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 129, 211); // cd (w, cj)
+selectCodeEditor("StopLight.v", 97, 194); // cd (w, cj)
+selectCodeEditor("StopLight.v", 97, 194, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 97, 194); // cd (w, cj)
+selectCodeEditor("StopLight.v", 111, 219); // cd (w, cj)
+selectCodeEditor("StopLight.v", 111, 219, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 111, 219); // cd (w, cj)
+selectCodeEditor("StopLight.v", 90, 381); // cd (w, cj)
+selectCodeEditor("StopLight.v", 90, 381, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 90, 381); // cd (w, cj)
+selectCodeEditor("StopLight.v", 98, 359); // cd (w, cj)
+selectCodeEditor("StopLight.v", 98, 359, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 98, 359); // cd (w, cj)
+selectCodeEditor("StopLight.v", 110, 340); // cd (w, cj)
+selectCodeEditor("StopLight.v", 110, 340, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 110, 340); // cd (w, cj)
+selectCodeEditor("StopLight.v", 120, 337); // cd (w, cj)
+selectCodeEditor("StopLight.v", 120, 337, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 120, 337); // cd (w, cj)
+selectCodeEditor("StopLight.v", 34, 356); // cd (w, cj)
+selectCodeEditor("StopLight.v", 34, 356, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 270, 379); // cd (w, cj)
+selectCodeEditor("StopLight.v", 270, 379, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 296, 425); // cd (w, cj)
+selectCodeEditor("StopLight.v", 300, 417); // cd (w, cj)
+selectCodeEditor("StopLight.v", 299, 416); // cd (w, cj)
+selectCodeEditor("StopLight.v", 63, 166); // cd (w, cj)
+selectCodeEditor("StopLight.v", 63, 166, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 150, 231); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("StopLight.v", 308, 127); // cd (w, cj)
+selectCodeEditor("StopLight.v", 349, 142); // cd (w, cj)
+selectCodeEditor("StopLight.v", 933, 183); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 2); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// x (cj): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (x)
+// am (cj): Save Project: addNotify
+dismissDialog("Run Synthesis"); // x (cj)
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Mar  2 10:35:41 2018] Launched synth_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bs (cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LightController (StopLight.v), clockDivider_1Hz (EE 460M_Lab2_Starter_File.v)]", 4, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LightController (StopLight.v), clockDivider_1Hz (EE 460M_Lab2_Starter_File.v)]", 4, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LightController (StopLight.v), clockDivider_1Hz (EE 460M_Lab2_Starter_File.v)]", 4, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LightController (StopLight.v), clockDivider_1Hz (EE 460M_Lab2_Starter_File.v)]", 4, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LightController (StopLight.v), clockDivider_1Hz (EE 460M_Lab2_Starter_File.v)]", 4, false); // B (D, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "StopLight.v", 1); // k (j, cj)
+// TclEventType: RUN_COMPLETED
+// ah (cj): Synthesis Completed: addNotify
+// Elapsed time: 121 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// Tcl Message: [Fri Mar  2 10:37:54 2018] Launched impl_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs (cj)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aF (Q, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-687] Illegal redeclaration of module <StopLight>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:2]. ]", 10, true); // ah (O, cj) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\Users\pnguy\Documents\GitHub\460M-HDL-Design\project_3\project_3.srcs\sources_1\new\StopLight.v;-;;-;16;-;line;-;2;-;;-;16;-;"); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-687] Illegal redeclaration of module <StopLight>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:2]. ]", 10, true); // ah (O, cj) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\Users\pnguy\Documents\GitHub\460M-HDL-Design\project_3\project_3.srcs\sources_1\new\StopLight.v;-;;-;16;-;line;-;2;-;;-;16;-;"); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-687] Illegal redeclaration of module <StopLight>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:2]. ]", 10, true, false, false, false, false, true); // ah (O, cj) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-687] Illegal redeclaration of module <StopLight>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:2]. ]", 10, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-687] Illegal redeclaration of module <StopLight>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:2]. ]", 10, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-687] Illegal redeclaration of module <StopLight>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:2]. ]", 10, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-687] Illegal redeclaration of module <StopLight>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:2]. ]", 10, true); // ah (O, cj) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\Users\pnguy\Documents\GitHub\460M-HDL-Design\project_3\project_3.srcs\sources_1\new\StopLight.v;-;;-;16;-;line;-;2;-;;-;16;-;"); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-687] Illegal redeclaration of module <StopLight>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:2]. ]", 10, true, false, false, false, false, true); // ah (O, cj) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-687] Illegal redeclaration of module <StopLight>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:2]. ]", 10, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-687] Illegal redeclaration of module <StopLight>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:2]. ]", 10, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-687] Illegal redeclaration of module <StopLight>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:2]. ]", 10, true); // ah (O, cj) - Node
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-687] Illegal redeclaration of module <StopLight>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:2]. ]", 10); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-687] Illegal redeclaration of module <StopLight>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:2]. , [HDL 9-687] Illegal redeclaration of module <LightController>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:138]. ]", 11, false); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-687] Illegal redeclaration of module <StopLight>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:2]. , [HDL 9-687] Illegal redeclaration of module <LightController>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:138]. ]", 11, false); // ah (O, cj)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\Users\pnguy\Documents\GitHub\460M-HDL-Design\project_3\project_3.srcs\sources_1\new\StopLight.v;-;;-;16;-;line;-;138;-;;-;16;-;"); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-687] Illegal redeclaration of module <StopLight>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:2]. , [HDL 9-687] Illegal redeclaration of module <LightController>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:138]. ]", 11, false, false, false, false, false, true); // ah (O, cj) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-687] Illegal redeclaration of module <StopLight>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:2]. , [HDL 9-687] Illegal redeclaration of module <LightController>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:138]. ]", 11, false); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-687] Illegal redeclaration of module <StopLight>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:2]. , [HDL 9-687] Illegal redeclaration of module <LightController>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:138]. ]", 11, false); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-687] Illegal redeclaration of module <StopLight>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:2]. , [HDL 9-687] Illegal redeclaration of module <LightController>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:138]. ]", 11, false); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-687] Illegal redeclaration of module <StopLight>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:2]. , [HDL 9-687] Illegal redeclaration of module <LightController>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:138]. ]", 11, false); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-687] Illegal redeclaration of module <StopLight>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:2]. , [HDL 9-687] Illegal redeclaration of module <LightController>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:138]. ]", 11, false); // ah (O, cj)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cj): Implementation Failed: addNotify
+// Elapsed time: 12 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net aStoplight/Rw_reg__0/Q has multiple drivers: aStoplight/Rw_reg__0/L7/Q, and aStoplight/Rw_reg/Q.. ]", 7, false); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net aStoplight/Rw_reg__0/Q has multiple drivers: aStoplight/Rw_reg__0/L7/Q, and aStoplight/Rw_reg/Q.. ]", 7, false, false, false, false, false, true); // ah (O, cj) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net aStoplight/Rw_reg__0/Q has multiple drivers: aStoplight/Rw_reg__0/L7/Q, and aStoplight/Rw_reg/Q.. ]", 7, false); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net aStoplight/Rw_reg__0/Q has multiple drivers: aStoplight/Rw_reg__0/L7/Q, and aStoplight/Rw_reg/Q.. ]", 7, false); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net aStoplight/Rw_reg__0/Q has multiple drivers: aStoplight/Rw_reg__0/L7/Q, and aStoplight/Rw_reg/Q.. ]", 7, false); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net aStoplight/Rw_reg__0/Q has multiple drivers: aStoplight/Rw_reg__0/L7/Q, and aStoplight/Rw_reg/Q.. ]", 7, false); // ah (O, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TestBench (TestBench.v)]", 5); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TestBench (TestBench.v)]", 5); // B (D, cj)
+// Elapsed time: 51 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net aStoplight/Rw_reg__0/Q has multiple drivers: aStoplight/Rw_reg__0/L7/Q, and aStoplight/Rw_reg/Q.. ]", 7, false); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net aStoplight/Rw_reg__0/Q has multiple drivers: aStoplight/Rw_reg__0/L7/Q, and aStoplight/Rw_reg/Q.. ]", 7, false, false, false, false, false, true); // ah (O, cj) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net aStoplight/Rw_reg__0/Q has multiple drivers: aStoplight/Rw_reg__0/L7/Q, and aStoplight/Rw_reg/Q.. ]", 7, false); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net aStoplight/Rw_reg__0/Q has multiple drivers: aStoplight/Rw_reg__0/L7/Q, and aStoplight/Rw_reg/Q.. ]", 7, false); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net aStoplight/Rw_reg__0/Q has multiple drivers: aStoplight/Rw_reg__0/L7/Q, and aStoplight/Rw_reg/Q.. ]", 7, false); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net aStoplight/Rw_reg__0/Q has multiple drivers: aStoplight/Rw_reg__0/L7/Q, and aStoplight/Rw_reg/Q.. ]", 7, false); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net aStoplight/Rw_reg__0/Q has multiple drivers: aStoplight/Rw_reg__0/L7/Q, and aStoplight/Rw_reg/Q.. ]", 7, false); // ah (O, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "EE 460M_Lab2_Starter_File.v", 2); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "StopLight.v", 1); // k (j, cj)
+selectCodeEditor("StopLight.v", 83, 169); // cd (w, cj)
+// Elapsed time: 32 seconds
+selectCodeEditor("StopLight.v", 36, 451); // cd (w, cj)
+selectCodeEditor("StopLight.v", 25, 346); // cd (w, cj)
+// Elapsed time: 36 seconds
+selectCodeEditor("StopLight.v", 82, 184); // cd (w, cj)
+selectCodeEditor("StopLight.v", 280, 341); // cd (w, cj)
+selectCodeEditor("StopLight.v", 211, 319); // cd (w, cj)
+selectCodeEditor("StopLight.v", 211, 319, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 46 seconds
+selectCodeEditor("StopLight.v", 280, 470); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u (O, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// x (cj): No Implementation Results Available: addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // x (cj)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Fri Mar  2 10:41:59 2018] Launched synth_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log [Fri Mar  2 10:41:59 2018] Launched impl_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 154 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (N, ah)
+// Elapsed time: 11 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bs (cj):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bs (cj)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cZ, cj)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bs (cj):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2017.4   **** Build date : Dec 15 2017-21:08:27     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183636006A 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 67 MB. Current time: 3/2/18 10:44:59 AM CST
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 1,293 MB (+556628kb) [00:28:19]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0). 
+dismissDialog("Auto Connect"); // bs (cj)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cZ, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bA (cj)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs (cj)
+// Elapsed time: 46 seconds
+selectCodeEditor("StopLight.v", 167, 323); // cd (w, cj)
+selectCodeEditor("StopLight.v", 167, 323, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 167, 323); // cd (w, cj)
+selectCodeEditor("StopLight.v", 175, 342); // cd (w, cj)
+selectCodeEditor("StopLight.v", 175, 342, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 175, 342); // cd (w, cj)
+selectCodeEditor("StopLight.v", 175, 342); // cd (w, cj)
+selectCodeEditor("StopLight.v", 184, 371); // cd (w, cj)
+selectCodeEditor("StopLight.v", 184, 371, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 184, 371); // cd (w, cj)
+selectCodeEditor("StopLight.v", 200, 343); // cd (w, cj)
+selectCodeEditor("StopLight.v", 200, 343, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 200, 343); // cd (w, cj)
+selectCodeEditor("StopLight.v", 204, 334); // cd (w, cj)
+selectCodeEditor("StopLight.v", 204, 334, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 204, 334); // cd (w, cj)
+selectCodeEditor("StopLight.v", 199, 355); // cd (w, cj)
+selectCodeEditor("StopLight.v", 199, 355, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 199, 355); // cd (w, cj)
+selectCodeEditor("StopLight.v", 197, 370); // cd (w, cj)
+selectCodeEditor("StopLight.v", 197, 370, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 197, 370); // cd (w, cj)
+selectCodeEditor("StopLight.v", 202, 351); // cd (w, cj)
+selectCodeEditor("StopLight.v", 202, 351, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 202, 351); // cd (w, cj)
+selectCodeEditor("StopLight.v", 204, 338); // cd (w, cj)
+selectCodeEditor("StopLight.v", 204, 338, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 204, 338); // cd (w, cj)
+selectCodeEditor("StopLight.v", 201, 354); // cd (w, cj)
+selectCodeEditor("StopLight.v", 201, 354, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 201, 354); // cd (w, cj)
+selectCodeEditor("StopLight.v", 193, 378); // cd (w, cj)
+selectCodeEditor("StopLight.v", 193, 378, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 291, 423); // cd (w, cj)
+selectCodeEditor("StopLight.v", 143, 419); // cd (w, cj)
+selectCodeEditor("StopLight.v", 143, 419, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 143, 419); // cd (w, cj)
+selectCodeEditor("StopLight.v", 151, 406); // cd (w, cj)
+selectCodeEditor("StopLight.v", 151, 406, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 151, 406); // cd (w, cj)
+selectCodeEditor("StopLight.v", 157, 384); // cd (w, cj)
+selectCodeEditor("StopLight.v", 157, 384, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 157, 384); // cd (w, cj)
+selectCodeEditor("StopLight.v", 60, 437); // cd (w, cj)
+selectCodeEditor("StopLight.v", 70, 119); // cd (w, cj)
+selectCodeEditor("StopLight.v", 70, 119, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 70, 119); // cd (w, cj)
+selectCodeEditor("StopLight.v", 73, 167); // cd (w, cj)
+selectCodeEditor("StopLight.v", 73, 167, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 73, 167); // cd (w, cj)
+selectCodeEditor("StopLight.v", 92, 183); // cd (w, cj)
+selectCodeEditor("StopLight.v", 92, 183, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 92, 183); // cd (w, cj)
+// Elapsed time: 327 seconds
+selectCodeEditor("StopLight.v", 117, 165); // cd (w, cj)
+selectCodeEditor("StopLight.v", 117, 165, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 117, 165); // cd (w, cj)
+selectCodeEditor("StopLight.v", 115, 176); // cd (w, cj)
+selectCodeEditor("StopLight.v", 115, 176, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 115, 176); // cd (w, cj)
+selectCodeEditor("StopLight.v", 111, 204); // cd (w, cj)
+selectCodeEditor("StopLight.v", 111, 204, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 111, 204); // cd (w, cj)
+selectCodeEditor("StopLight.v", 125, 237); // cd (w, cj)
+selectCodeEditor("StopLight.v", 125, 238, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 125, 238); // cd (w, cj)
+selectCodeEditor("StopLight.v", 129, 229); // cd (w, cj)
+selectCodeEditor("StopLight.v", 129, 229, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 64 seconds
+selectCodeEditor("StopLight.v", 208, 302); // cd (w, cj)
+selectCodeEditor("StopLight.v", 208, 302, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 208, 302); // cd (w, cj)
+selectCodeEditor("StopLight.v", 240, 286); // cd (w, cj)
+selectCodeEditor("StopLight.v", 240, 286, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 240, 286); // cd (w, cj)
+selectCodeEditor("StopLight.v", 225, 306); // cd (w, cj)
+selectCodeEditor("StopLight.v", 225, 306, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 225, 306); // cd (w, cj)
+selectCodeEditor("StopLight.v", 211, 286); // cd (w, cj)
+// Elapsed time: 28 seconds
+selectCodeEditor("StopLight.v", 96, 456); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 4); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: FILE_SET_CHANGE
+// 'cv' command handler elapsed time: 8 seconds
+selectButton("PAResourceQtoS.RunBitgen_BITSTREAM_GENERATION_HAS_ALREADY_COMPLETED_Cancel", "Cancel"); // JButton (A, G)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cZ, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bA (cj)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bs (cj):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Fri Mar  2 10:53:49 2018] Launched synth_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log [Fri Mar  2 10:53:49 2018] Launched impl_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cj)
+// TclEventType: RUN_FAILED
+// ah (cj): Synthesis Failed: addNotify
+// Elapsed time: 83 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cj)
+// Elapsed time: 16 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-685] variable 'LightSignal' should not be used in output port connection [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:137]. ]", 1, false); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-685] variable 'LightSignal' should not be used in output port connection [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:137]. ]", 1, false); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-685] variable 'LightSignal' should not be used in output port connection [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:137]. ]", 1, false, false, false, false, false, true); // ah (O, cj) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-685] variable 'LightSignal' should not be used in output port connection [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:137]. ]", 1, false); // ah (O, cj)
+selectCodeEditor("StopLight.v", 97, 290); // cd (w, cj)
+selectCodeEditor("StopLight.v", 105, 280); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 2); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// x (cj): No Implementation Results Available: addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // x (cj)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 3 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Fri Mar  2 10:55:47 2018] Launched synth_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log [Fri Mar  2 10:55:47 2018] Launched impl_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log 
+// TclEventType: RUN_FAILED
+// ah (cj): Synthesis Failed: addNotify
+// Elapsed time: 148 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2576] procedural assignment to a non-register LightSignal is not permitted [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:143]. ]", 1, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2576] procedural assignment to a non-register LightSignal is not permitted [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:143]. ]", 1, true, false, false, false, false, true); // ah (O, cj) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2576] procedural assignment to a non-register LightSignal is not permitted [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:143]. ]", 1, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2576] procedural assignment to a non-register LightSignal is not permitted [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:143]. ]", 1, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2576] procedural assignment to a non-register LightSignal is not permitted [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:143]. ]", 1, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2576] procedural assignment to a non-register LightSignal is not permitted [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:143]. ]", 1, true); // ah (O, cj) - Node
+selectCodeEditor("StopLight.v", 224, 413); // cd (w, cj)
+selectCodeEditor("StopLight.v", 78, 286); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// x (cj): No Implementation Results Available: addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// TclEventType: DG_GRAPH_GENERATED
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // x (cj)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 4 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Fri Mar  2 10:58:33 2018] Launched synth_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log [Fri Mar  2 10:58:33 2018] Launched impl_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log 
+// Elapsed time: 16 seconds
+selectCodeEditor("StopLight.v", 156, 27); // cd (w, cj)
+// TclEventType: RUN_FAILED
+// ah (cj): Synthesis Failed: addNotify
+dismissDialog("Synthesis Failed"); // ah (cj)
+selectCodeEditor("StopLight.v", 379, 134); // cd (w, cj)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, (String) null); // l (aP, cj)
+selectCodeEditor("StopLight.v", 401, 31); // cd (w, cj)
+selectCodeEditor("StopLight.v", 405, 28, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 414, 31); // cd (w, cj)
+selectCodeEditor("StopLight.v", 145, 333); // cd (w, cj)
+selectCodeEditor("StopLight.v", 135, 82); // cd (w, cj)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk"); // l (aP, cj)
+selectCodeEditor("StopLight.v", 366, 324); // cd (w, cj)
+selectCodeEditor("StopLight.v", 349, 394); // cd (w, cj)
+selectCodeEditor("StopLight.v", 351, 394, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 351, 394); // cd (w, cj)
+selectCodeEditor("StopLight.v", 369, 383); // cd (w, cj)
+selectCodeEditor("StopLight.v", 27, 286); // cd (w, cj)
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// x (cj): No Implementation Results Available: addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // x (cj)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 3 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Fri Mar  2 11:00:03 2018] Launched synth_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log [Fri Mar  2 11:00:03 2018] Launched impl_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log 
+// TclEventType: RUN_FAILED
+// ah (cj): Synthesis Failed: addNotify
+// Elapsed time: 49 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cj)
+// Elapsed time: 19 seconds
+selectCodeEditor("StopLight.v", 128, 29); // cd (w, cj)
+selectCodeEditor("StopLight.v", 154, 28); // cd (w, cj)
+selectCodeEditor("StopLight.v", 185, 25); // cd (w, cj)
+selectCodeEditor("StopLight.v", 217, 25); // cd (w, cj)
+selectCodeEditor("StopLight.v", 243, 24); // cd (w, cj)
+selectCodeEditor("StopLight.v", 267, 22); // cd (w, cj)
+selectCodeEditor("StopLight.v", 295, 26); // cd (w, cj)
+selectCodeEditor("StopLight.v", 325, 24); // cd (w, cj)
+selectCodeEditor("StopLight.v", 354, 28); // cd (w, cj)
+selectCodeEditor("StopLight.v", 383, 24); // cd (w, cj)
+selectCodeEditor("StopLight.v", 964, 422); // cd (w, cj)
+selectCodeEditor("StopLight.v", 963, 422, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 1017, 413); // cd (w, cj)
+selectCodeEditor("StopLight.v", 73, 297); // cd (w, cj)
+selectCodeEditor("StopLight.v", 251, 417); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 14 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aB, cj)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// x (cj): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (x)
+// TclEventType: HW_OBJECT_DELETE
+dismissDialog("Confirm Close"); // x (cj)
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: close_hw 
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// bs (cj):  CLose Hardware Manager : addNotify
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+dismissDialog("CLose Hardware Manager"); // bs (cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 8); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 10, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 10, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 10, false); // B (D, cj)
+selectCodeEditor("Basys3_Master.xdc", 34, 166); // cd (w, cj)
+// Elapsed time: 42 seconds
+selectCodeEditor("Basys3_Master.xdc", 375, 130); // cd (w, cj)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "StopLight.v", 1); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "StopLight.v", 1); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "EE 460M_Lab2_Starter_File.v", 2); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "StopLight.v", 1); // k (j, cj)
+selectCodeEditor("StopLight.v", 253, 450); // cd (w, cj)
+// Elapsed time: 14 seconds
+selectCodeEditor("StopLight.v", 361, 452); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// TclEventType: FILE_SET_CHANGE
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: FILE_SET_CHANGE
+// x (cj): No Implementation Results Available: addNotify
+dismissDialog("Save Project"); // am (cj)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // x (cj)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 6 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_MODIFY
+// bs (cj):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Fri Mar  2 11:03:49 2018] Launched synth_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log [Fri Mar  2 11:03:49 2018] Launched impl_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cj)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 149 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (N, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bs (cj):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bs (cj)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cZ, cj)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bs (cj):  Auto Connect : addNotify
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2017.4   **** Build date : Dec 15 2017-21:08:27     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183636006A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bs (cj)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cZ, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bA (cj)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs (cj)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183636006A 
+// n (cj): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// TclEventType: HW_SERVER_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,296 MB. GUI used memory: 67 MB. Current time: 3/2/18 12:50:15 PM CST
+// Elapsed time: 6227 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cj)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Elapsed time: 132 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton("PAResourceQtoS.RunBitgen_BITSTREAM_GENERATION_HAS_ALREADY_COMPLETED_Cancel", "Cancel"); // JButton (A, G)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cZ, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bA (cj)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0_1] 0] 
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bs (cj)
+// Elapsed time: 33 seconds
+selectCodeEditor("StopLight.v", 165, 225, false, false, false, true, false); // cd (w, cj) - Popup Trigger
+selectCodeEditor("StopLight.v", 165, 225, false, false, false, true, false); // cd (w, cj) - Popup Trigger
+selectCodeEditor("StopLight.v", 165, 225, false, false, false, true, false); // cd (w, cj) - Popup Trigger
+selectCodeEditor("StopLight.v", 215, 227); // cd (w, cj)
+selectCodeEditor("StopLight.v", 120, 232); // cd (w, cj)
+selectCodeEditor("StopLight.v", 215, 238); // cd (w, cj)
+selectCodeEditor("StopLight.v", 216, 266); // cd (w, cj)
+selectCodeEditor("StopLight.v", 216, 266); // cd (w, cj)
+// Elapsed time: 33 seconds
+selectCodeEditor("StopLight.v", 192, 166, false, false, false, true, false); // cd (w, cj) - Popup Trigger
+// Elapsed time: 32 seconds
+selectCodeEditor("StopLight.v", 332, 66); // cd (w, cj)
+selectCodeEditor("StopLight.v", 232, 431); // cd (w, cj)
+selectCodeEditor("StopLight.v", 232, 412); // cd (w, cj)
+// Elapsed time: 30 seconds
+selectCodeEditor("StopLight.v", 174, 115); // cd (w, cj)
+selectCodeEditor("StopLight.v", 174, 115, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 174, 115); // cd (w, cj)
+selectCodeEditor("StopLight.v", 114, 281); // cd (w, cj)
+selectCodeEditor("StopLight.v", 118, 259); // cd (w, cj)
+selectCodeEditor("StopLight.v", 118, 259, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 122, 248); // cd (w, cj)
+selectCodeEditor("StopLight.v", 122, 248, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 122, 248); // cd (w, cj)
+selectCodeEditor("StopLight.v", 91, 238); // cd (w, cj)
+selectCodeEditor("StopLight.v", 91, 238, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 70, 235); // cd (w, cj)
+selectCodeEditor("StopLight.v", 70, 235, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 72, 217); // cd (w, cj)
+selectCodeEditor("StopLight.v", 73, 217, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 113, 194); // cd (w, cj)
+selectCodeEditor("StopLight.v", 113, 194, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 113, 194); // cd (w, cj)
+selectCodeEditor("StopLight.v", 131, 184); // cd (w, cj)
+selectCodeEditor("StopLight.v", 131, 184, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 135 seconds
+selectCodeEditor("StopLight.v", 294, 321); // cd (w, cj)
+selectCodeEditor("StopLight.v", 294, 321, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 294, 321); // cd (w, cj)
+selectCodeEditor("StopLight.v", 223, 290); // cd (w, cj)
+selectCodeEditor("StopLight.v", 223, 290, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 205, 324); // cd (w, cj)
+selectCodeEditor("StopLight.v", 241, 98); // cd (w, cj)
+selectCodeEditor("StopLight.v", 241, 98, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 186, 307); // cd (w, cj)
+selectCodeEditor("StopLight.v", 187, 301); // cd (w, cj)
+selectCodeEditor("StopLight.v", 180, 316); // cd (w, cj)
+selectCodeEditor("StopLight.v", 136, 355); // cd (w, cj)
+selectCodeEditor("StopLight.v", 136, 355, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 149, 353); // cd (w, cj)
+selectCodeEditor("StopLight.v", 146, 323); // cd (w, cj)
+selectCodeEditor("StopLight.v", 149, 319, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 88 seconds
+selectCodeEditor("StopLight.v", 130, 319); // cd (w, cj)
+// Elapsed time: 12 seconds
+selectCodeEditor("StopLight.v", 135, 232, false, false, false, true, false); // cd (w, cj) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ac (ai, Popup.HeavyWeightWindow)
+selectCodeEditor("StopLight.v", 132, 319); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'v'); // cd (w, cj)
+selectCodeEditor("StopLight.v", 216, 383); // cd (w, cj)
+selectCodeEditor("StopLight.v", 309, 298); // cd (w, cj)
+selectCodeEditor("StopLight.v", 128, 300); // cd (w, cj)
+selectCodeEditor("StopLight.v", 230, 297); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+selectCodeEditor("StopLight.v", 163, 250); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'v'); // cd (w, cj)
+selectCodeEditor("StopLight.v", 174, 195); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'v'); // cd (w, cj)
+selectCodeEditor("StopLight.v", 227, 329); // cd (w, cj)
+selectCodeEditor("StopLight.v", 242, 57); // cd (w, cj)
+selectCodeEditor("StopLight.v", 334, 54, false, false, true, false, false); // cd (w, cj) - Alt Key
+selectCodeEditor("StopLight.v", 189, 314); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: FILE_SET_CHANGE
+// f (cj): Launch Runs: addNotify
+selectButton("PAResourceQtoS.RunBitgen_BITSTREAM_GENERATION_HAS_ALREADY_COMPLETED_OK", "OK"); // JButton (A, G)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: DG_GRAPH_GENERATED
+// 'cv' command handler elapsed time: 8 seconds
+// TclEventType: RUN_MODIFY
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// bs (cj):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Fri Mar  2 13:00:40 2018] Launched impl_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cj)
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 125 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cZ, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bA (cj)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bs (cj)
+// Elapsed time: 54 seconds
+selectCodeEditor("StopLight.v", 210, 347); // cd (w, cj)
+selectCodeEditor("StopLight.v", 164, 351); // cd (w, cj)
+selectCodeEditor("StopLight.v", 164, 351, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 46 seconds
+selectCodeEditor("StopLight.v", 222, 105); // cd (w, cj)
+selectCodeEditor("StopLight.v", 223, 110); // cd (w, cj)
+selectCodeEditor("StopLight.v", 25, 266); // cd (w, cj)
+selectCodeEditor("StopLight.v", 123, 212); // cd (w, cj)
+selectCodeEditor("StopLight.v", 123, 212, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 123, 212); // cd (w, cj)
+selectCodeEditor("StopLight.v", 125, 291); // cd (w, cj)
+selectCodeEditor("StopLight.v", 126, 294, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 126, 295); // cd (w, cj)
+selectCodeEditor("StopLight.v", 148, 261); // cd (w, cj)
+selectCodeEditor("StopLight.v", 148, 261, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 148, 261); // cd (w, cj)
+// Elapsed time: 96 seconds
+selectCodeEditor("StopLight.v", 87, 113); // cd (w, cj)
+// Elapsed time: 15 seconds
+selectCodeEditor("StopLight.v", 204, 223); // cd (w, cj)
+selectCodeEditor("StopLight.v", 204, 223, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 186, 279); // cd (w, cj)
+selectCodeEditor("StopLight.v", 186, 279, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 195, 238); // cd (w, cj)
+selectCodeEditor("StopLight.v", 195, 238, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 201, 227); // cd (w, cj)
+selectCodeEditor("StopLight.v", 201, 227, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 265, 254); // cd (w, cj)
+// Elapsed time: 12 seconds
+selectCodeEditor("StopLight.v", 163, 188); // cd (w, cj)
+selectCodeEditor("StopLight.v", 163, 188, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 169, 182); // cd (w, cj)
+selectCodeEditor("StopLight.v", 169, 182, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 30 seconds
+selectCodeEditor("StopLight.v", 163, 302); // cd (w, cj)
+selectCodeEditor("StopLight.v", 238, 277); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// x (cj): Synthesis is Out-of-date: addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 6 seconds
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// bs (cj):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Fri Mar  2 13:07:37 2018] Launched synth_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log [Fri Mar  2 13:07:37 2018] Launched impl_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cj)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 98 seconds
+selectCodeEditor("StopLight.v", 705, 363); // cd (w, cj)
+selectCodeEditor("StopLight.v", 222, 346); // cd (w, cj)
+selectCodeEditor("StopLight.v", 238, 308); // cd (w, cj)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aF (Q, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]. , [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183636006A. ]", 2, false); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]. , [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183636006A. ]", 2, false, false, false, false, false, true); // ah (O, cj) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]. , [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183636006A. ]", 2, false); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]. , [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183636006A. ]", 2, false); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]. , [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183636006A. ]", 2, false); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]. , [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183636006A. ]", 2, false); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]. ]", 1, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]. ]", 1, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]. ]", 1, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]. ]", 1, true, false, false, false, true, false); // ah (O, cj) - Popup Trigger - Node
+// Elapsed time: 33 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_Master.xdc", 2); // k (j, cj)
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cZ, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bA (cj)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bs (cj)
+// Elapsed time: 30 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "StopLight.v", 0); // k (j, cj)
+// Elapsed time: 41 seconds
+selectCodeEditor("StopLight.v", 182, 332); // cd (w, cj)
+selectCodeEditor("StopLight.v", 182, 332, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 182, 332); // cd (w, cj)
+selectCodeEditor("StopLight.v", 182, 263); // cd (w, cj)
+selectCodeEditor("StopLight.v", 182, 263, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 182, 263); // cd (w, cj)
+selectCodeEditor("StopLight.v", 194, 226); // cd (w, cj)
+selectCodeEditor("StopLight.v", 194, 226, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 194, 226); // cd (w, cj)
+selectCodeEditor("StopLight.v", 176, 195); // cd (w, cj)
+selectCodeEditor("StopLight.v", 176, 195, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 176, 195); // cd (w, cj)
+selectCodeEditor("StopLight.v", 187, 168); // cd (w, cj)
+selectCodeEditor("StopLight.v", 187, 168, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 187, 168); // cd (w, cj)
+// Elapsed time: 198 seconds
+selectCodeEditor("StopLight.v", 264, 301); // cd (w, cj)
+selectCodeEditor("StopLight.v", 177, 185); // cd (w, cj)
+selectCodeEditor("StopLight.v", 177, 185, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 157, 147); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+selectCodeEditor("StopLight.v", 152, 283); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'v'); // cd (w, cj)
+selectCodeEditor("StopLight.v", 157, 331); // cd (w, cj)
+selectCodeEditor("StopLight.v", 173, 333); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'v'); // cd (w, cj)
+selectCodeEditor("StopLight.v", 156, 384); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'v'); // cd (w, cj)
+selectCodeEditor("StopLight.v", 308, 414); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 2); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 3 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Fri Mar  2 13:15:28 2018] Launched synth_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log [Fri Mar  2 13:15:28 2018] Launched impl_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 68 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]. , [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183636006A. ]", 2, false); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]. , [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183636006A. ]", 2, false); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]. , [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183636006A. ]", 2, false, false, false, false, false, true); // ah (O, cj) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]. , [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183636006A. ]", 2, false); // ah (O, cj)
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 142 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cZ, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bA (cj)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs (cj)
+// Elapsed time: 40 seconds
+selectCodeEditor("StopLight.v", 231, 415); // cd (w, cj)
+// Elapsed time: 25 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aB, cj)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// x (cj): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (x)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,296 MB. GUI used memory: 130 MB. Current time: 3/2/18 1:20:11 PM CST
+// TclEventType: HW_OBJECT_DELETE
+dismissDialog("Confirm Close"); // x (cj)
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: close_hw 
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// bs (cj):  CLose Hardware Manager : addNotify
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1523.930 ; gain = 0.000 
+dismissDialog("CLose Hardware Manager"); // bs (cj)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: FILE_SET_CHANGE
+// 'cv' command handler elapsed time: 5 seconds
+selectButton("PAResourceQtoS.RunBitgen_BITSTREAM_GENERATION_HAS_ALREADY_COMPLETED_Cancel", "Cancel"); // JButton (A, G)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("StopLight.v", 247, 315); // cd (w, cj)
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_Master.xdc", 3); // k (j, cj)
+selectCodeEditor("Basys3_Master.xdc", 397, 383); // cd (w, cj)
+selectCodeEditor("Basys3_Master.xdc", 397, 383, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("Basys3_Master.xdc", 397, 383); // cd (w, cj)
+selectCodeEditor("Basys3_Master.xdc", 364, 383); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "StopLight.v", 1); // k (j, cj)
+// Elapsed time: 12 seconds
+selectCodeEditor("StopLight.v", 625, 455); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_Master.xdc", 3); // k (j, cj)
+selectCodeEditor("Basys3_Master.xdc", 464, 279); // cd (w, cj)
+selectCodeEditor("Basys3_Master.xdc", 522, 206); // cd (w, cj)
+selectCodeEditor("Basys3_Master.xdc", 22, 216); // cd (w, cj)
+selectCodeEditor("Basys3_Master.xdc", 86, 207); // cd (w, cj)
+selectCodeEditor("Basys3_Master.xdc", 0, 203); // cd (w, cj)
+selectCodeEditor("Basys3_Master.xdc", 75, 231); // cd (w, cj)
+selectCodeEditor("Basys3_Master.xdc", 4, 233); // cd (w, cj)
+selectCodeEditor("Basys3_Master.xdc", 16, 236); // cd (w, cj)
+selectCodeEditor("Basys3_Master.xdc", 2, 232); // cd (w, cj)
+selectCodeEditor("Basys3_Master.xdc", 460, 283); // cd (w, cj)
+selectCodeEditor("Basys3_Master.xdc", 462, 283, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "EE 460M_Lab2_Starter_File.v", 2); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "StopLight.v", 1); // k (j, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // u (O, cj)
+// TclEventType: DG_GRAPH_GENERATED
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+// Elapsed time: 18 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 19 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cj)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Mar  2 13:22:26 2018] Launched synth_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log [Fri Mar  2 13:22:26 2018] Launched impl_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// [GUI Memory]: 152 MB (+2093kb) [03:09:58]
+// Elapsed time: 259 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (N, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bs (cj):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bs (cj)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cZ, cj)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bs (cj):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2017.4   **** Build date : Dec 15 2017-21:08:27     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A3859AA 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bs (cj)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cZ, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bA (cj)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs (cj)
+// Elapsed time: 292 seconds
+selectCodeEditor("StopLight.v", 839, 455); // cd (w, cj)
+selectCodeEditor("StopLight.v", 838, 460); // cd (w, cj)
+selectCodeEditor("StopLight.v", 842, 450); // cd (w, cj)
+// [GUI Memory]: 161 MB (+800kb) [03:16:24]
+// Elapsed time: 69 seconds
+selectCodeEditor("StopLight.v", 232, 366); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 1); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+// Elapsed time: 49 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 50 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Fri Mar  2 13:34:09 2018] Launched synth_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log [Fri Mar  2 13:34:09 2018] Launched impl_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log 
+// [GUI Memory]: 170 MB (+1060kb) [03:17:39]
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 156 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cZ, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bA (cj)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bs (cj)
+// Elapsed time: 40 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cZ, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bA (cj)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bs (cj)
+// Elapsed time: 97 seconds
+selectCodeEditor("StopLight.v", 102, 125); // cd (w, cj)
+selectCodeEditor("StopLight.v", 182, 123); // cd (w, cj)
+// Elapsed time: 164 seconds
+selectCodeEditor("StopLight.v", 100, 125); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("StopLight.v", 298, 195); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 4); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Fri Mar  2 13:42:16 2018] Launched synth_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log [Fri Mar  2 13:42:16 2018] Launched impl_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 219 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cZ, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+dismissDialog("Program Device"); // bA (cj)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bs (cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,296 MB. GUI used memory: 75 MB. Current time: 3/2/18 1:50:11 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,296 MB. GUI used memory: 68 MB. Current time: 3/2/18 2:20:11 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,296 MB. GUI used memory: 68 MB. Current time: 3/2/18 2:50:12 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,296 MB. GUI used memory: 68 MB. Current time: 3/2/18 3:20:12 PM CST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A3859AA 
+// n (cj): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Elapsed time: 7196 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cj)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cZ, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit"); // ag (af, bA)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bA (cj)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bs (cj)
+// Elapsed time: 49 seconds
+selectCodeEditor("StopLight.v", 77, 79); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "EE 460M_Lab2_Starter_File.v", 1); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "StopLight.v", 0); // k (j, cj)
+// Elapsed time: 57 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "EE 460M_Lab2_Starter_File.v", 1); // k (j, cj)
+// Elapsed time: 13 seconds
+selectCodeEditor("EE 460M_Lab2_Starter_File.v", 161, 328); // cd (w, cj)
+selectCodeEditor("EE 460M_Lab2_Starter_File.v", 161, 328, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("EE 460M_Lab2_Starter_File.v", 187, 332); // cd (w, cj)
+// Elapsed time: 40 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "StopLight.v", 0); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "EE 460M_Lab2_Starter_File.v", 1); // k (j, cj)
+selectCodeEditor("EE 460M_Lab2_Starter_File.v", 140, 337); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 1); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Mar  2 15:49:07 2018] Launched synth_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log [Fri Mar  2 15:49:07 2018] Launched impl_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,296 MB. GUI used memory: 70 MB. Current time: 3/2/18 3:50:16 PM CST
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 140 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cZ, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit"); // ag (af, bA)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bA (cj)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bs (cj)
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "StopLight.v", 0); // k (j, cj)
+// Elapsed time: 17 seconds
+selectCodeEditor("StopLight.v", 162, 128); // cd (w, cj)
+// Elapsed time: 292 seconds
+selectCodeEditor("StopLight.v", 524, 445); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "EE 460M_Lab2_Starter_File.v", 1); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "StopLight.v", 0); // k (j, cj)
+// Elapsed time: 51 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "EE 460M_Lab2_Starter_File.v", 1); // k (j, cj)
+selectCodeEditor("EE 460M_Lab2_Starter_File.v", 138, 318); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "StopLight.v", 0); // k (j, cj)
+selectCodeEditor("StopLight.v", 349, 420); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+selectCodeEditor("StopLight.v", 362, 420); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'v'); // cd (w, cj)
+selectCodeEditor("StopLight.v", 128, 434); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 22 seconds
+selectCodeEditor("StopLight.v", 422, 27); // cd (w, cj)
+// Elapsed time: 17 seconds
+selectCodeEditor("StopLight.v", 509, 249); // cd (w, cj)
+selectCodeEditor("StopLight.v", 84, 84); // cd (w, cj)
+selectCodeEditor("StopLight.v", 335, 240); // cd (w, cj)
+selectCodeEditor("StopLight.v", 165, 175); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 2); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// x (cj): Synthesis is Out-of-date: addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 9 seconds
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Fri Mar  2 16:00:04 2018] Launched synth_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log [Fri Mar  2 16:00:04 2018] Launched impl_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log 
+// bs (cj):  Generate Bitstream : addNotify
+dismissDialog("Generate Bitstream"); // bs (cj)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 130 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cZ, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit"); // ag (af, bA)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bA (cj)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bs (cj)
+// Elapsed time: 192 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aF (Q, cj)
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g (aQ, cj): FALSE
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g (aQ, cj): TRUE
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g (aQ, cj): FALSE
+// Elapsed time: 38 seconds
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aF (Q, cj)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aF (Q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // U (q, cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U (q, cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U (q, cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U (q, cj)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // U (q, cj)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // U (q, cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // U (q, cj)
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton("PAResourceQtoS.RunRun_TASK_HAS_ALREADY_COMPLETED_AND_UP_TO_DATE_Cancel", "Cancel"); // JButton (A, G)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 13, true); // u (O, cj) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 13, true); // u (O, cj) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15, true); // u (O, cj) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// bs (cj):  Open Synthesized Design : addNotify
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a35tcpg236-1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,386 MB. GUI used memory: 71 MB. Current time: 3/2/18 4:07:16 PM CST
+// [Engine Memory]: 1,386 MB (+29511kb) [05:50:38]
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,507 MB. GUI used memory: 69 MB. Current time: 3/2/18 4:07:25 PM CST
+// [Engine Memory]: 1,525 MB (+72681kb) [05:50:44]
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: C:/Xilinx/Vivado/2017.4/data/parts/xilinx/artix7/devint/artix7/xc7a35t/xc7a35t.xgd; ZipEntry: xc7a35t_detail.xgd elapsed time: 0.7s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1s
+// [Engine Memory]: 1,606 MB (+5164kb) [05:50:46]
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2017.4 INFO: [Device 21-403] Loading part xc7a35tcpg236-1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/constrs_1/imports/460M-HDL-Design/Basys3_Master.xdc] Finished Parsing XDC File [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/constrs_1/imports/460M-HDL-Design/Basys3_Master.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary:   A total of 3 instances were transformed.   LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 3 instances  
+// Device view-level: 0.0
+// Tcl Message: open_run: Time (s): cpu = 00:00:25 ; elapsed = 00:00:16 . Memory (MB): peak = 1938.137 ; gain = 403.809 
+// 'dO' command handler elapsed time: 18 seconds
+// Elapsed time: 18 seconds
+dismissDialog("Open Synthesized Design"); // bs (cj)
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aF (Q, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 99 MB. Current time: 3/2/18 4:07:41 PM CST
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Synthesis ;  ;  ;  ; ", 0, "Synthesis", 0, true); // M (O, cj) - Node
+// RouteApi::initDelayMediator elapsed time: 14.5s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+collapseTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "synth_1 ;  ;  ;  ; ", 1); // M (O, cj)
+// [Engine Memory]: 2,056 MB (+387349kb) [05:51:02]
+expandTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "synth_1 ;  ;  ;  ; ", 1); // M (O, cj)
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "synth_1_synth_synthesis_report_0 ; Vivado Synthesis Report ;  ; Fri Mar 02 16:00:49 CST 2018 ; 24563", 3, "synth_1_synth_synthesis_report_0", 0, false); // M (O, cj)
+expandTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "synth_1_synth_synthesis_report_0 ; Vivado Synthesis Report ;  ; Fri Mar 02 16:00:49 CST 2018 ; 24563", 3); // M (O, cj)
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "synth_1_synth_synthesis_report_0 ; Vivado Synthesis Report ;  ; Fri Mar 02 16:00:49 CST 2018 ; 24563", 3, "synth_1_synth_synthesis_report_0", 0, false, false, false, false, false, true); // M (O, cj) - Double Click
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "synth_1_synth_synthesis_report_0 ; Vivado Synthesis Report ;  ; Fri Mar 02 16:00:49 CST 2018 ; 24563", 3, "synth_1_synth_synthesis_report_0", 0, false); // M (O, cj)
+// Elapsed time: 21 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aB, cj)
+closeTask("Synthesis", "Synthesized Design", "DesignTask.NETLIST_PLANNING");
+// x (cj): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (x)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,056 MB. GUI used memory: 92 MB. Current time: 3/2/18 4:08:17 PM CST
+// Engine heap size: 2,056 MB. GUI used memory: 93 MB. Current time: 3/2/18 4:08:17 PM CST
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// Tcl Message: close_design 
+dismissDialog("Confirm Close"); // x (cj)
+// Elapsed time: 33 seconds
+selectCodeEditor("StopLight.v", 273, 95); // cd (w, cj)
+selectCodeEditor("StopLight.v", 57, 94); // cd (w, cj)
+selectCodeEditor("StopLight.v", 46, 94); // cd (w, cj)
+selectCodeEditor("StopLight.v", 95, 94); // cd (w, cj)
+selectCodeEditor("StopLight.v", 95, 94, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StopLight.v", 95, 94); // cd (w, cj)
+// Elapsed time: 14 seconds
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g (aQ, cj): TRUE
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g (aQ, cj): FALSE
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g (aQ, cj): TRUE
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a35t_0_1] 0]. ]", 1); // ah (O, cj)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]. ]", 2); // ah (O, cj)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]. ]", 3); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands]", 0, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a35t_0_1] 0]. ]", 1, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]. ]", 2, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]. ]", 3, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results]", 4, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1]", 5, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [HDL 9-687] Illegal redeclaration of module <StopLight>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:2]. ]", 6, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [filemgmt 20-1318] Duplicate Design Unit 'LightController()' found in library 'xil_defaultlib'. Duplicate found at line 1 of file D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/imports/project_3/LightController.v. 	(Active) Duplicate found at line 143 of file D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v. ]", 7, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1]", 8, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-687] Illegal redeclaration of module <StopLight>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:2]. ]", 9, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [filemgmt 20-1318] Duplicate Design Unit 'LightController()' found in library 'xil_defaultlib'. Duplicate found at line 1 of file D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/imports/project_3/LightController.v. 	(Active) Duplicate found at line 143 of file D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v. ]", 10, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis]", 11, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-567] referenced signal 'fast_clk' should be on the sensitivity list [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:36]. ]", 12, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-5788] Register counter_reg in module StopLight is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:24]. ]", 13, false); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'Ra_reg' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:39]. ]", 14, true); // ah (O, cj) - Node
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'Ra_reg' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:39]. ]", 14); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'Ra_reg' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:39]. , [Synth 8-327] inferring latch for variable 'Ya_reg' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:40]. ]", 15, false); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'Ra_reg' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:39]. , [Synth 8-327] inferring latch for variable 'Ya_reg' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:40]. ]", 15, false); // ah (O, cj)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\Users\pnguy\Documents\GitHub\460M-HDL-Design\project_3\project_3.srcs\sources_1\new\StopLight.v;-;;-;16;-;line;-;40;-;;-;16;-;"); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-5788] Register counter_reg in module StopLight is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:24]. ]", 13, false); // ah (O, cj)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\Users\pnguy\Documents\GitHub\460M-HDL-Design\project_3\project_3.srcs\sources_1\new\StopLight.v;-;;-;16;-;line;-;40;-;;-;16;-;"); // ah (O, cj)
+selectCodeEditor("StopLight.v", 264, 366); // cd (w, cj)
+selectCodeEditor("StopLight.v", 104, 134); // cd (w, cj)
+selectCodeEditor("StopLight.v", 112, 146); // cd (w, cj)
+// Elapsed time: 15 seconds
+selectCodeEditor("StopLight.v", 197, 326); // cd (w, cj)
+selectCodeEditor("StopLight.v", 199, 321); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'c'); // cd (w, cj)
+selectCodeEditor("StopLight.v", 142, 370); // cd (w, cj)
+typeControlKey((HResource) null, "StopLight.v", 'v'); // cd (w, cj)
+selectCodeEditor("StopLight.v", 260, 486); // cd (w, cj)
+selectCodeEditor("StopLight.v", 234, 330); // cd (w, cj)
+// Elapsed time: 25 seconds
+selectCodeEditor("StopLight.v", 340, 437); // cd (w, cj)
+selectCodeEditor("StopLight.v", 181, 274); // cd (w, cj)
+selectCodeEditor("StopLight.v", 229, 281); // cd (w, cj)
+selectCodeEditor("StopLight.v", 49, 462); // cd (w, cj)
+selectCodeEditor("StopLight.v", 345, 397); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 2); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: FILE_SET_CHANGE
+// f (cj): Launch Runs: addNotify
+selectButton("PAResourceQtoS.RunBitgen_BITSTREAM_GENERATION_HAS_ALREADY_COMPLETED_OK", "OK"); // JButton (A, G)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 6 seconds
+// TclEventType: RUN_MODIFY
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 -prev_step  
+// bs (cj):  Generate Bitstream : addNotify
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Mar  2 16:11:22 2018] Launched impl_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 63 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cZ, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bA (cj)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bs (cj)
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g (aQ, cj): FALSE
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g (aQ, cj): TRUE
+// Elapsed time: 10 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'Ra_reg' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:39]. ]", 19); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'Ra_reg' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:39]. , [Synth 8-327] inferring latch for variable 'Yb_reg' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:43]. ]", 23, false); // ah (O, cj)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\Users\pnguy\Documents\GitHub\460M-HDL-Design\project_3\project_3.srcs\sources_1\new\StopLight.v;-;;-;16;-;line;-;43;-;;-;16;-;"); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'Ra_reg' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:39]. , [Synth 8-327] inferring latch for variable 'Yb_reg' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:43]. ]", 23, false); // ah (O, cj)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\Users\pnguy\Documents\GitHub\460M-HDL-Design\project_3\project_3.srcs\sources_1\new\StopLight.v;-;;-;16;-;line;-;43;-;;-;16;-;"); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'Ra_reg' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:39]. , [Synth 8-327] inferring latch for variable 'Yb_reg' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:43]. ]", 23, false, false, false, false, false, true); // ah (O, cj) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'Ra_reg' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:39]. , [Synth 8-327] inferring latch for variable 'Yb_reg' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:43]. ]", 23, false); // ah (O, cj)
+// Elapsed time: 105 seconds
+selectCodeEditor("StopLight.v", 170, 148); // cd (w, cj)
+selectCodeEditor("StopLight.v", 184, 148); // cd (w, cj)
+selectCodeEditor("StopLight.v", 168, 148); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u (O, cj)
+// bi (cj): Synthesis is Out-of-date: addNotify
+selectButton(PAResourceQtoS.StaleRunDialog_RUN_SYNTHESIS, "Run Synthesis"); // a (bi)
+// bi (cj): Synthesis is Out-of-date: addNotify
+// x (bi): Reset Run: addNotify
+dismissDialog("Synthesis is Out-of-date"); // bi (cj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (x)
+// bs (bi):  Starting Design Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Reset Run"); // x (bi)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// Tcl Message: [Fri Mar  2 16:15:19 2018] Launched synth_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs (bi)
+// TclEventType: RUN_COMPLETED
+// ah (cj): Synthesis Completed: addNotify
+// Elapsed time: 50 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// Tcl Message: [Fri Mar  2 16:16:11 2018] Launched impl_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs (cj)
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "synth_1_synth_synthesis_report_0 ; Vivado Synthesis Report ;  ; Fri Mar 02 16:16:04 CST 2018 ; 22932", 3, "synth_1_synth_synthesis_report_0", 0, false); // M (O, cj)
+expandTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "synth_1_synth_synthesis_report_0 ; Vivado Synthesis Report ;  ; Fri Mar 02 16:16:04 CST 2018 ; 22932", 3); // M (O, cj)
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "synth_1_synth_synthesis_report_0 ; Vivado Synthesis Report ;  ; Fri Mar 02 16:16:04 CST 2018 ; 22932", 3, "synth_1_synth_synthesis_report_0", 0, false, false, false, false, false, true); // M (O, cj) - Double Click
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "synth_1_synth_synthesis_report_0 ; Vivado Synthesis Report ;  ; Fri Mar 02 16:16:04 CST 2018 ; 22932", 3, "synth_1_synth_synthesis_report_0", 0, false); // M (O, cj)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "EE 460M_Lab2_Starter_File.v", 1); // k (j, cj)
+selectCodeEditor("EE 460M_Lab2_Starter_File.v", 189, 169); // cd (w, cj)
+// TclEventType: RUN_STEP_COMPLETED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "StopLight.v", 0); // k (j, cj)
+// [GUI Memory]: 179 MB (+482kb) [05:59:59]
+// Elapsed time: 22 seconds
+selectCodeEditor("StopLight.v", 158, 331); // cd (w, cj)
+selectCodeEditor("StopLight.v", 158, 331, false, false, false, false, true); // cd (w, cj) - Double Click
+// TclEventType: RUN_COMPLETED
+// ah (cj): Implementation Completed: addNotify
+// Elapsed time: 28 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (N, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cj)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_MODIFY
+// bs (cj):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Mar  2 16:17:32 2018] Launched impl_1... Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cj)
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "synth_1_synth_synthesis_report_0 ; Vivado Synthesis Report ;  ; Fri Mar 02 16:16:04 CST 2018 ; 22932", 3, "synth_1_synth_synthesis_report_0", 0, false); // M (O, cj)
+expandTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "synth_1_synth_synthesis_report_0 ; Vivado Synthesis Report ;  ; Fri Mar 02 16:16:04 CST 2018 ; 22932", 3); // M (O, cj)
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "synth_1_synth_synthesis_report_0 ; Vivado Synthesis Report ;  ; Fri Mar 02 16:16:04 CST 2018 ; 22932", 3, "synth_1_synth_synthesis_report_0", 0, false, false, false, false, false, true); // M (O, cj) - Double Click
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "synth_1_synth_synthesis_report_0 ; Vivado Synthesis Report ;  ; Fri Mar 02 16:16:04 CST 2018 ; 22932", 3, "synth_1_synth_synthesis_report_0", 0, false); // M (O, cj)
+// Elapsed time: 10 seconds
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h (cZ, cj)
+selectCodeEditor("synth_1_synth_synthesis_report_0 - synth_1", 499, 388); // D (w, cj)
+selectCodeEditor("synth_1_synth_synthesis_report_0 - synth_1", 499, 388, false, false, false, true, false); // D (w, cj) - Popup Trigger
+selectCodeEditor("synth_1_synth_synthesis_report_0 - synth_1", 365, 395); // D (w, cj)
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 27 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cZ, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit"); // ag (af, bA)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bA (cj)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 7 seconds
+dismissDialog("Program Device"); // bs (cj)
+// [GUI Memory]: 188 MB (+65kb) [06:02:02]

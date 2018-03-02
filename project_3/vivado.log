@@ -1,0 +1,464 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Mar  2 10:16:21 2018
+# Process ID: 9468
+# Current directory: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27040 D:\Users\pnguy\Documents\GitHub\460M-HDL-Design\project_3\project_3.xpr
+# Log file: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/vivado.log
+# Journal file: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 764.184 ; gain = 58.445
+update_compile_order -fileset sources_1
+import_files -norecurse {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/StopLight.v D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/TestBench.v D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/LightController.v D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/Sorter.v}
+update_compile_order -fileset sources_1
+import_files -norecurse D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/StopLight.v
+WARNING: [filemgmt 20-354] The following file(s) were not imported. Local copy of file(s) already exists:
+D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/StopLight.v
+Hint: use the '-force' option to overwrite the local copies.
+update_compile_order -fileset sources_1
+close_project
+create_project project_4 D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4 -part xc7k70tfbv676-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 808.559 ; gain = 10.270
+add_files -norecurse {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/StopLight.v D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/TestBench.v D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/LightController.v {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/EE 460M_Lab2_Starter_File.v} D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/Sorter.v}
+import_files -force -norecurse
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+import_files -fileset constrs_1 -force -norecurse D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/Basys3_Master.xdc
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+open_project D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 820.168 ; gain = 11.609
+update_compile_order -fileset sources_1
+current_project project_4
+close_project
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+WARNING: [HDL 9-687] Illegal redeclaration of module <StopLight>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:2]
+WARNING: [HDL 9-687] Illegal redeclaration of module <LightController>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:138]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'LightController()' found in library 'xil_defaultlib'
+Duplicate found at line 1 of file D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/imports/project_3/LightController.v
+	(Active) Duplicate found at line 138 of file D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'StopLight()' found in library 'xil_defaultlib'
+Duplicate found at line 2 of file D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/StopLight.v
+Duplicate found at line 2 of file D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/imports/project_3/StopLight.v
+	(Active) Duplicate found at line 2 of file D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v
+[Fri Mar  2 10:35:41 2018] Launched synth_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri Mar  2 10:37:54 2018] Launched impl_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Mar  2 10:41:59 2018] Launched synth_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log
+[Fri Mar  2 10:41:59 2018] Launched impl_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183636006A
+set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Mar  2 10:53:49 2018] Launched synth_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log
+[Fri Mar  2 10:53:49 2018] Launched impl_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Mar  2 10:55:47 2018] Launched synth_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log
+[Fri Mar  2 10:55:47 2018] Launched impl_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Mar  2 10:58:33 2018] Launched synth_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log
+[Fri Mar  2 10:58:33 2018] Launched impl_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Mar  2 11:00:03 2018] Launched synth_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log
+[Fri Mar  2 11:00:03 2018] Launched impl_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Mar  2 11:03:49 2018] Launched synth_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log
+[Fri Mar  2 11:03:49 2018] Launched impl_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183636006A
+set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183636006A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A3859AA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0_1]
+set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0_1]
+program_hw_devices [get_hw_devices xc7a35t_0_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0_1] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Mar  2 13:00:40 2018] Launched impl_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0_1]
+set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0_1]
+program_hw_devices [get_hw_devices xc7a35t_0_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0_1] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Mar  2 13:07:37 2018] Launched synth_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log
+[Fri Mar  2 13:07:37 2018] Launched impl_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0_1]
+set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0_1]
+program_hw_devices [get_hw_devices xc7a35t_0_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0_1] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Mar  2 13:15:28 2018] Launched synth_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log
+[Fri Mar  2 13:15:28 2018] Launched impl_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0_1]
+set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0_1]
+program_hw_devices [get_hw_devices xc7a35t_0_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0_1] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+close_hw: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1523.930 ; gain = 0.000
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Mar  2 13:22:26 2018] Launched synth_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log
+[Fri Mar  2 13:22:26 2018] Launched impl_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A3859AA
+set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Mar  2 13:34:09 2018] Launched synth_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log
+[Fri Mar  2 13:34:09 2018] Launched impl_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Mar  2 13:42:16 2018] Launched synth_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log
+[Fri Mar  2 13:42:16 2018] Launched impl_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A3859AA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A3859AA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Mar  2 15:49:07 2018] Launched synth_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log
+[Fri Mar  2 15:49:07 2018] Launched impl_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Mar  2 16:00:04 2018] Launched synth_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log
+[Fri Mar  2 16:00:04 2018] Launched impl_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/constrs_1/imports/460M-HDL-Design/Basys3_Master.xdc]
+Finished Parsing XDC File [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/constrs_1/imports/460M-HDL-Design/Basys3_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 3 instances
+
+open_run: Time (s): cpu = 00:00:25 ; elapsed = 00:00:16 . Memory (MB): peak = 1938.137 ; gain = 403.809
+close_design
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Mar  2 16:11:22 2018] Launched impl_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+WARNING: [HDL 9-687] Illegal redeclaration of module <StopLight>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:2]
+WARNING: [HDL 9-687] Illegal redeclaration of module <LightController>. [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v:154]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'LightController()' found in library 'xil_defaultlib'
+Duplicate found at line 1 of file D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/imports/project_3/LightController.v
+	(Active) Duplicate found at line 154 of file D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'StopLight()' found in library 'xil_defaultlib'
+Duplicate found at line 2 of file D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/StopLight.v
+Duplicate found at line 2 of file D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/imports/project_3/StopLight.v
+	(Active) Duplicate found at line 2 of file D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/new/StopLight.v
+[Fri Mar  2 16:15:19 2018] Launched synth_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri Mar  2 16:16:11 2018] Launched impl_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Mar  2 16:17:32 2018] Launched impl_1...
+Run output will be captured here: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_3/project_3.runs/impl_1/LightController.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
