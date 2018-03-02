@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Fri Mar  2 16:16:53 2018
+| Date         : Fri Mar  2 16:24:21 2018
 | Host         : DESKTOP-D62POV0 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file LightController_control_sets_placed.rpt
 | Design       : LightController
@@ -48,16 +48,16 @@ Table of Contents
 +----------------------------------------+---------------------------------+---------------------------------------+------------------+----------------+
 |              Clock Signal              |          Enable Signal          |            Set/Reset Signal           | Slice Load Count | Bel Load Count |
 +----------------------------------------+---------------------------------+---------------------------------------+------------------+----------------+
-|  aStoplight/counter_reg[1]_LDC_i_1_n_0 |                                 | aStoplight/counter_reg[1]_LDC_i_2_n_0 |                1 |              1 |
-|  aStoplight/counter_reg[2]_LDC_i_1_n_0 |                                 | aStoplight/counter_reg[2]_LDC_i_2_n_0 |                1 |              1 |
 |  divider2/slow_clk2                    |                                 | aStoplight/counter_reg[2]_LDC_i_2_n_0 |                1 |              1 |
 |  divider2/slow_clk2                    |                                 | aStoplight/counter_reg[1]_LDC_i_2_n_0 |                1 |              1 |
-|  divider2/slow_clk2                    | aStoplight/counter[2]_P_i_1_n_0 | aStoplight/counter_reg[1]_LDC_i_1_n_0 |                1 |              1 |
 |  divider2/slow_clk2                    | aStoplight/counter[2]_P_i_1_n_0 | aStoplight/counter_reg[2]_LDC_i_1_n_0 |                1 |              1 |
+|  divider2/slow_clk2                    | aStoplight/counter[2]_P_i_1_n_0 | aStoplight/counter_reg[1]_LDC_i_1_n_0 |                1 |              1 |
+|  aStoplight/counter_reg[2]_LDC_i_1_n_0 |                                 | aStoplight/counter_reg[2]_LDC_i_2_n_0 |                1 |              1 |
+|  aStoplight/counter_reg[1]_LDC_i_1_n_0 |                                 | aStoplight/counter_reg[1]_LDC_i_2_n_0 |                1 |              1 |
 |  clk_IBUF_BUFG                         |                                 |                                       |                4 |              4 |
 |  divider2/slow_clk2                    |                                 | rst_IBUF                              |                3 |              5 |
-|  clk_IBUF_BUFG                         |                                 | divider1/slowClk1                     |                7 |             27 |
 |  clk_IBUF_BUFG                         |                                 | divider2/slowClk2                     |                7 |             27 |
+|  clk_IBUF_BUFG                         |                                 | divider1/slowClk1                     |                7 |             27 |
 +----------------------------------------+---------------------------------+---------------------------------------+------------------+----------------+
 
 

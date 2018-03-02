@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1520028918">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1520029374">
   <File Type="PA-TCL" Name="LightController.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="LightController_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="LightController_reports.tcl"/>

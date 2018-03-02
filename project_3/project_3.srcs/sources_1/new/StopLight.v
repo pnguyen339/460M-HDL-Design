@@ -128,7 +128,7 @@ module StopLight(rst, Ra, Ya, Ga, Rb, Yb, Gb, Rw, Gw, fast_clk, slow_clk);
                 Gb <= 0;
                 Rw <= slow_clk;
                 Gw <= 0;
-                next_counter <= 0;
+                next_counter <= 1;
                 next_state <= 3'b000;
                 flag <= 1;
             end
@@ -142,7 +142,7 @@ module StopLight(rst, Ra, Ya, Ga, Rb, Yb, Gb, Rw, Gw, fast_clk, slow_clk);
                   Gb <= 0;
                   Rw <= 0;
                   Gw <= 0;
-                  next_counter <= 0;
+                  next_counter <= 1;
                   next_state <= 3'b000;
                     
 	        end       
