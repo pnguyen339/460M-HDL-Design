@@ -19,7 +19,7 @@ SinglePulse(Bleft, clock_2ms, Bleft_d);
 SinglePulse(Bright, clock_2ms, Bright_d);
 
 // controller for the count, use debounced signals
-ParkingMeter(Bup_d, Bdown_d, Bleft_d, Bright_d, slow_clock, fast_clock, count);
+ParkingMeter(Bup, Bdown, Bleft, Bright, slow_clock, fast_clock, count);
 
 
 
