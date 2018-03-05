@@ -1,6 +1,6 @@
 module SwitchDriver(Bup, Bdown, Bleft, Bright, clk);
 
-input Bup, Bdown, Bleft, Bright;
+input Bup, Bdown, Bleft, Bright, clk;
 //output Sout;
 reg slow_clock, fast_clock;
 reg [13:0] count;

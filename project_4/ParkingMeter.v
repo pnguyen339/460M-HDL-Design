@@ -1,7 +1,9 @@
 module ParkingMeter(Bup, Bdown, Bleft, Bright, clk, fast_clk, count);
 
-input Bup, Bdown, Bleft, Bright, clk;
+input Bup, Bdown, Bleft, Bright, clk, fast_clk;
 output [13:0] count;
+
+reg [13:0] count;
 
 initial begin
     count <= 0;
