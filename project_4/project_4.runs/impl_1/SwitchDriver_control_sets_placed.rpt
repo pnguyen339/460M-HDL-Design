@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Tue Mar  6 04:32:33 2018
+| Date         : Tue Mar  6 11:47:46 2018
 | Host         : DESKTOP-D62POV0 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file SwitchDriver_control_sets_placed.rpt
 | Design       : SwitchDriver
@@ -36,7 +36,7 @@ Table of Contents
 | No           | No                    | No                     |              10 |           10 |
 | No           | No                    | Yes                    |               4 |            4 |
 | No           | Yes                   | No                     |              99 |           30 |
-| Yes          | No                    | No                     |               7 |            3 |
+| Yes          | No                    | No                     |               7 |            5 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -45,25 +45,25 @@ Table of Contents
 3. Detailed Control Set Information
 -----------------------------------
 
-+----------------------------+----------------------------+---------------------------+------------------+----------------+
-|        Clock Signal        |        Enable Signal       |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
-+----------------------------+----------------------------+---------------------------+------------------+----------------+
-|  dis/an_reg[0]_LDC_i_1_n_0 |                            | dis/an_reg[0]_LDC_i_2_n_0 |                1 |              1 |
-|  dis/an_reg[2]_LDC_i_1_n_0 |                            | dis/an_reg[2]_LDC_i_2_n_0 |                1 |              1 |
-|  dis/an_reg[1]_LDC_i_1_n_0 |                            | dis/an_reg[1]_LDC_i_2_n_0 |                1 |              1 |
-|  dis/an_reg[3]_LDC_i_1_n_0 |                            | dis/an_reg[3]_LDC_i_2_n_0 |                1 |              1 |
-|  div4/clock_16ms           |                            | dis/an_reg[3]_LDC_i_2_n_0 |                1 |              1 |
-|  div4/clock_16ms           |                            | dis/an_reg[2]_LDC_i_2_n_0 |                1 |              1 |
-|  div4/clock_16ms           |                            | dis/an_reg[1]_LDC_i_2_n_0 |                1 |              1 |
-|  div4/clock_16ms           |                            | dis/an_reg[0]_LDC_i_2_n_0 |                1 |              1 |
-|  div4/clock_16ms           |                            |                           |                4 |              4 |
-|  clk_IBUF_BUFG             |                            |                           |                6 |              6 |
-|  div4/clock_16ms           | dis/segment_dis[6]_i_1_n_0 |                           |                3 |              7 |
-|  div/clock1hz              |                            | a/count[13]_i_1_n_0       |                5 |             14 |
-|  clk_IBUF_BUFG             |                            | div4/slowClk3             |                7 |             27 |
-|  clk_IBUF_BUFG             |                            | div/slowClk1              |                7 |             27 |
-|  clk_IBUF_BUFG             |                            | div2/slowClk2             |                7 |             27 |
-+----------------------------+----------------------------+---------------------------+------------------+----------------+
++------------------+----------------------------+---------------------+------------------+----------------+
+|   Clock Signal   |        Enable Signal       |   Set/Reset Signal  | Slice Load Count | Bel Load Count |
++------------------+----------------------------+---------------------+------------------+----------------+
+|  a/an[2]         |                            | a/an_reg[2]_C       |                1 |              1 |
+|  a/an[0]         |                            | a/an_reg[0]_C       |                1 |              1 |
+|  a/an[1]         |                            | a/an_reg[1]_C       |                1 |              1 |
+|  a/an[3]         |                            | a/an_reg[3]_C       |                1 |              1 |
+|  div4/clock_16ms |                            | a/an_reg[1]_C       |                1 |              1 |
+|  div4/clock_16ms |                            | a/an_reg[2]_C       |                1 |              1 |
+|  div4/clock_16ms |                            | a/an_reg[0]_C       |                1 |              1 |
+|  div4/clock_16ms |                            | a/an_reg[3]_C       |                1 |              1 |
+|  div4/clock_16ms |                            |                     |                4 |              4 |
+|  clk_IBUF_BUFG   |                            |                     |                6 |              6 |
+|  div4/clock_16ms | dis/segment_dis[6]_i_1_n_0 |                     |                5 |              7 |
+|  div/clock1hz    |                            | a/count[13]_i_1_n_0 |                5 |             14 |
+|  clk_IBUF_BUFG   |                            | div4/slowClk3       |                7 |             27 |
+|  clk_IBUF_BUFG   |                            | div/slowClk1        |                7 |             27 |
+|  clk_IBUF_BUFG   |                            | div2/slowClk2       |                7 |             27 |
++------------------+----------------------------+---------------------+------------------+----------------+
 
 
 +--------+-----------------------+

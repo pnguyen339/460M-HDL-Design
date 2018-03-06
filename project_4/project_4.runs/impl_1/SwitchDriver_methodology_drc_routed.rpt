@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Tue Mar  6 04:32:58 2018
+| Date         : Tue Mar  6 11:48:12 2018
 | Host         : DESKTOP-D62POV0 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file SwitchDriver_methodology_drc_routed.rpt -pb SwitchDriver_methodology_drc_routed.pb -rpx SwitchDriver_methodology_drc_routed.rpx
 | Design       : SwitchDriver
@@ -23,14 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 34
-+-----------+----------+-------------------------------+------------+
-| Rule      | Severity | Description                   | Violations |
-+-----------+----------+-------------------------------+------------+
-| TIMING-17 | Warning  | Non-clocked sequential cell   | 29         |
-| TIMING-18 | Warning  | Missing input or output delay | 1          |
-| TIMING-20 | Warning  | Non-clocked latch             | 4          |
-+-----------+----------+-------------------------------+------------+
+             Violations found: 33
++-----------+----------+-----------------------------+------------+
+| Rule      | Severity | Description                 | Violations |
++-----------+----------+-----------------------------+------------+
+| TIMING-17 | Warning  | Non-clocked sequential cell | 29         |
+| TIMING-20 | Warning  | Non-clocked latch           | 4          |
++-----------+----------+-----------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
@@ -177,11 +176,6 @@ Related violations: <none>
 TIMING-17#29 Warning
 Non-clocked sequential cell  
 The clock pin dis/segment_dis_reg[6]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-18#1 Warning
-Missing input or output delay  
-An output delay is missing on led relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-20#1 Warning

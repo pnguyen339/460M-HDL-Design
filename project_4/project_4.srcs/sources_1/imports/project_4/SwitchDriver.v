@@ -1,7 +1,7 @@
-module SwitchDriver(Bup, Bdown, Bleft, Bright, clk, led, seg, an);
+module SwitchDriver(Bup, Bdown, Bleft, Bright, clk, seg, an);
 
 input Bup, Bdown, Bleft, Bright, clk;
-output led;
+//output led;
 output wire [6:0] seg;
 output wire [3:0] an;
 //output Sout;
@@ -28,7 +28,7 @@ SinglePulse but4(Bright, clock_2ms, Bright_d);
 
 // controller for the count, use debounced signals
 ParkingMeter a(Bup_d, Bdown_d, Bleft_d, Bright_d, clock1hz, count);
-FlashingLight l(count, clock2hz, clock1hz, led);
+//FlashingLight l(count, clock2hz, clock1hz, led);
 NumberDisplay dis(count, seg, an, clock_16ms,clock2hz, clock1hz);
 
 endmodule

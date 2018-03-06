@@ -71,7 +71,7 @@ module FlashingLight(count, clock2hz, clock1hz, led);
         light <= clock2hz;
     else if(count > 200)
         light <= 1;
-    else if(count < 200)
+    else if(count <= 200)
         light <= clock1hz;
     else
         light <= clock2hz;
@@ -107,7 +107,7 @@ module NumberDisplay(count,segment_dis, an, clk, clock2hz, clock1hz);
             light <= clock2hz;
         else if(count > 200)
             light <= clk;
-        else if(count < 200)
+        else if(count <= 200)
             light <= clock1hz;
         else
             light <= clock2hz;
