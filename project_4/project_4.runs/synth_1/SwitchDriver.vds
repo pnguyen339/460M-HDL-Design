@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Mon Mar  5 21:02:05 2018
-# Process ID: 17624
+# Start of session at: Tue Mar  6 04:31:09 2018
+# Process ID: 10128
 # Current directory: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.runs/synth_1
 # Command line: vivado.exe -log SwitchDriver.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SwitchDriver.tcl
 # Log file: D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.runs/synth_1/SwitchDriver.vds
@@ -15,22 +15,435 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 15524 
-WARNING: [Synth 8-1935] empty port in module declaration [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/460M-HDL-Design/SwitchDriver.v:1]
+INFO: Helper process launched with PID 7420 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 356.945 ; gain = 112.910
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 346.164 ; gain = 102.031
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'SwitchDriver' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/460M-HDL-Design/SwitchDriver.v:1]
+INFO: [Synth 8-638] synthesizing module 'SwitchDriver' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_4/SwitchDriver.v:1]
 INFO: [Synth 8-638] synthesizing module 'clockDivider_1Hz' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_2/EE 460M_Lab2_Starter_File.v:52]
 INFO: [Synth 8-256] done synthesizing module 'clockDivider_1Hz' (1#1) [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_2/EE 460M_Lab2_Starter_File.v:52]
-ERROR: [Synth 8-685] variable 'slow_clock' should not be used in output port connection [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/460M-HDL-Design/SwitchDriver.v:9]
-ERROR: [Synth 8-285] failed synthesizing module 'SwitchDriver' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/460M-HDL-Design/SwitchDriver.v:1]
+INFO: [Synth 8-638] synthesizing module 'clockDivider_2Hz' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_2/EE 460M_Lab2_Starter_File.v:76]
+INFO: [Synth 8-256] done synthesizing module 'clockDivider_2Hz' (2#1) [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_2/EE 460M_Lab2_Starter_File.v:76]
+INFO: [Synth 8-638] synthesizing module 'clockDivider_2ms' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_2/EE 460M_Lab2_Starter_File.v:100]
+INFO: [Synth 8-256] done synthesizing module 'clockDivider_2ms' (3#1) [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_2/EE 460M_Lab2_Starter_File.v:100]
+INFO: [Synth 8-638] synthesizing module 'clockDivider_16ms' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_2/EE 460M_Lab2_Starter_File.v:124]
+INFO: [Synth 8-256] done synthesizing module 'clockDivider_16ms' (4#1) [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_2/EE 460M_Lab2_Starter_File.v:124]
+INFO: [Synth 8-638] synthesizing module 'SinglePulse' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_4/SinglePulse.v:1]
+INFO: [Synth 8-638] synthesizing module 'DFF_S' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_4/FlipFlop.v:1]
+INFO: [Synth 8-256] done synthesizing module 'DFF_S' (5#1) [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_4/FlipFlop.v:1]
+INFO: [Synth 8-256] done synthesizing module 'SinglePulse' (6#1) [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_4/SinglePulse.v:1]
+INFO: [Synth 8-638] synthesizing module 'ParkingMeter' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/460M-HDL-Design/ParkingMeter.v:1]
+WARNING: [Synth 8-6014] Unused sequential element additional_count_reg was removed.  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/460M-HDL-Design/ParkingMeter.v:16]
+INFO: [Synth 8-256] done synthesizing module 'ParkingMeter' (7#1) [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/460M-HDL-Design/ParkingMeter.v:1]
+INFO: [Synth 8-638] synthesizing module 'FlashingLight' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/460M-HDL-Design/ParkingMeter.v:64]
+WARNING: [Synth 8-567] referenced signal 'clock2hz' should be on the sensitivity list [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/460M-HDL-Design/ParkingMeter.v:69]
+WARNING: [Synth 8-567] referenced signal 'clock1hz' should be on the sensitivity list [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/460M-HDL-Design/ParkingMeter.v:69]
+INFO: [Synth 8-256] done synthesizing module 'FlashingLight' (8#1) [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/460M-HDL-Design/ParkingMeter.v:64]
+INFO: [Synth 8-638] synthesizing module 'NumberDisplay' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/460M-HDL-Design/ParkingMeter.v:83]
+WARNING: [Synth 8-567] referenced signal 'clock2hz' should be on the sensitivity list [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/460M-HDL-Design/ParkingMeter.v:105]
+WARNING: [Synth 8-567] referenced signal 'clk' should be on the sensitivity list [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/460M-HDL-Design/ParkingMeter.v:105]
+WARNING: [Synth 8-567] referenced signal 'clock1hz' should be on the sensitivity list [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/460M-HDL-Design/ParkingMeter.v:105]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/460M-HDL-Design/ParkingMeter.v:123]
+WARNING: [Synth 8-567] referenced signal 'st' should be on the sensitivity list [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/460M-HDL-Design/ParkingMeter.v:138]
+WARNING: [Synth 8-567] referenced signal 'nd' should be on the sensitivity list [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/460M-HDL-Design/ParkingMeter.v:138]
+WARNING: [Synth 8-567] referenced signal 'rd' should be on the sensitivity list [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/460M-HDL-Design/ParkingMeter.v:138]
+WARNING: [Synth 8-567] referenced signal 'th' should be on the sensitivity list [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/460M-HDL-Design/ParkingMeter.v:138]
+WARNING: [Synth 8-5788] Register an_reg in module NumberDisplay is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/460M-HDL-Design/ParkingMeter.v:133]
+INFO: [Synth 8-256] done synthesizing module 'NumberDisplay' (9#1) [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/460M-HDL-Design/ParkingMeter.v:83]
+INFO: [Synth 8-256] done synthesizing module 'SwitchDriver' (10#1) [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_4/SwitchDriver.v:1]
+WARNING: [Synth 8-3331] design ParkingMeter has unconnected port Bup
+WARNING: [Synth 8-3331] design ParkingMeter has unconnected port Bdown
+WARNING: [Synth 8-3331] design ParkingMeter has unconnected port Bleft
+WARNING: [Synth 8-3331] design ParkingMeter has unconnected port Bright
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 387.695 ; gain = 143.660
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 398.727 ; gain = 154.594
 ---------------------------------------------------------------------------------
-RTL Elaboration failed
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 398.727 ; gain = 154.594
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/constrs_1/imports/460M-HDL-Design/Basys3_Master.xdc]
+Finished Parsing XDC File [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/constrs_1/imports/460M-HDL-Design/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/constrs_1/imports/460M-HDL-Design/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SwitchDriver_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/SwitchDriver_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 731.531 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 731.531 ; gain = 487.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 731.531 ; gain = 487.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 731.531 ; gain = 487.398
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "slowClk1" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "slowClk2" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "slowClk3" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "slowClk3" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "segment_dis" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 731.531 ; gain = 487.398
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     28 Bit       Adders := 4     
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 4     
+	               14 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 28    
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 4     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 10    
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clockDivider_1Hz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     28 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clockDivider_2Hz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     28 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clockDivider_2ms 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     28 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clockDivider_16ms 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     28 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module DFF_S 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module ParkingMeter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+Module FlashingLight 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module NumberDisplay 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element but1/A/QN_reg was removed.  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_4/FlipFlop.v:17]
+WARNING: [Synth 8-6014] Unused sequential element but1/B/QN_reg was removed.  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_4/FlipFlop.v:17]
+WARNING: [Synth 8-6014] Unused sequential element but1/C/Q_reg was removed.  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_4/FlipFlop.v:16]
+WARNING: [Synth 8-6014] Unused sequential element but2/A/QN_reg was removed.  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_4/FlipFlop.v:17]
+WARNING: [Synth 8-6014] Unused sequential element but2/B/QN_reg was removed.  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_4/FlipFlop.v:17]
+WARNING: [Synth 8-6014] Unused sequential element but2/C/Q_reg was removed.  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_4/FlipFlop.v:16]
+WARNING: [Synth 8-6014] Unused sequential element but3/A/QN_reg was removed.  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_4/FlipFlop.v:17]
+WARNING: [Synth 8-6014] Unused sequential element but3/B/QN_reg was removed.  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_4/FlipFlop.v:17]
+WARNING: [Synth 8-6014] Unused sequential element but3/C/Q_reg was removed.  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_4/FlipFlop.v:16]
+WARNING: [Synth 8-6014] Unused sequential element but4/A/QN_reg was removed.  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_4/FlipFlop.v:17]
+WARNING: [Synth 8-6014] Unused sequential element but4/B/QN_reg was removed.  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_4/FlipFlop.v:17]
+WARNING: [Synth 8-6014] Unused sequential element but4/C/Q_reg was removed.  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_4/FlipFlop.v:16]
+INFO: [Synth 8-5545] ROM "div/slowClk1" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "div2/slowClk2" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "div3/slowClk3" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "div4/slowClk3" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+WARNING: [Synth 8-3332] Sequential element (div3/counter_reg[27]) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (div3/counter_reg[26]) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (div3/counter_reg[25]) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (div3/counter_reg[24]) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (div3/counter_reg[23]) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (div3/counter_reg[22]) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (div3/counter_reg[21]) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (div3/counter_reg[20]) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (div3/counter_reg[19]) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (div3/counter_reg[18]) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (div3/counter_reg[17]) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (div3/counter_reg[16]) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (div3/counter_reg[15]) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (div3/counter_reg[14]) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (div3/counter_reg[13]) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (div3/counter_reg[12]) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (div3/counter_reg[11]) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (div3/counter_reg[10]) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (div3/counter_reg[9]) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (div3/counter_reg[8]) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (div3/counter_reg[7]) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (div3/counter_reg[6]) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (div3/counter_reg[5]) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (div3/counter_reg[4]) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (div3/counter_reg[3]) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (div3/counter_reg[2]) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (div3/counter_reg[1]) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (div3/counter_reg[0]) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (div3/slowClk3_reg) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (but1/A/Q_reg) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (but1/B/Q_reg) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (but1/C/QN_reg) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (but2/A/Q_reg) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (but2/B/Q_reg) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (but2/C/QN_reg) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (but3/A/Q_reg) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (but3/B/Q_reg) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (but3/C/QN_reg) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (but4/A/Q_reg) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (but4/B/Q_reg) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (but4/C/QN_reg) is unused and will be removed from module SwitchDriver.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dis/an_reg[0]_P )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dis/an_reg[1]_P )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dis/an_reg[2]_P )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dis/an_reg[3]_P )
+WARNING: [Synth 8-3332] Sequential element (dis/an_reg[3]_P) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (dis/an_reg[2]_P) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (dis/an_reg[1]_P) is unused and will be removed from module SwitchDriver.
+WARNING: [Synth 8-3332] Sequential element (dis/an_reg[0]_P) is unused and will be removed from module SwitchDriver.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 731.531 ; gain = 487.398
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 746.766 ; gain = 502.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 768.109 ; gain = 523.977
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 784.016 ; gain = 539.883
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 784.016 ; gain = 539.883
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 784.016 ; gain = 539.883
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 784.016 ; gain = 539.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 784.016 ; gain = 539.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 784.016 ; gain = 539.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 784.016 ; gain = 539.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    45|
+|3     |LUT1   |    23|
+|4     |LUT2   |    62|
+|5     |LUT3   |    37|
+|6     |LUT4   |    50|
+|7     |LUT5   |    37|
+|8     |LUT6   |    82|
+|9     |FDCE   |     4|
+|10    |FDRE   |   112|
+|11    |LDC    |     4|
+|12    |IBUF   |     1|
+|13    |OBUF   |    12|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+------------------+------+
+|      |Instance |Module            |Cells |
++------+---------+------------------+------+
+|1     |top      |                  |   470|
+|2     |  a      |ParkingMeter      |   198|
+|3     |  dis    |NumberDisplay     |   120|
+|4     |  div    |clockDivider_1Hz  |    46|
+|5     |  div2   |clockDivider_2Hz  |    46|
+|6     |  div4   |clockDivider_16ms |    46|
++------+---------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 784.016 ; gain = 539.883
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 57 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 784.016 ; gain = 207.078
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 784.016 ; gain = 539.883
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 50 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  LDC => LDCE: 4 instances
+
 INFO: [Common 17-83] Releasing license: Synthesis
-5 Infos, 1 Warnings, 0 Critical Warnings and 3 Errors encountered.
-synth_design failed
-ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
-INFO: [Common 17-206] Exiting Vivado at Mon Mar  5 21:02:32 2018...
+46 Infos, 72 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 784.016 ; gain = 552.832
+INFO: [Common 17-1381] The checkpoint 'D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.runs/synth_1/SwitchDriver.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file SwitchDriver_utilization_synth.rpt -pb SwitchDriver_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 784.016 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Mar  6 04:31:55 2018...

@@ -96,3 +96,51 @@ module clockDivider_2Hz(clk100Mhz, slowClk2);
   end
 
 endmodule
+
+module clockDivider_2ms(clk100Mhz, slowClk3);
+  input clk100Mhz; //fast clock
+  output reg slowClk3; //slow clock
+
+  reg[27:0] counter;
+
+  initial begin
+    counter = 0;
+    slowClk3 = 0;
+  end
+
+  always @ (posedge clk100Mhz)
+  begin
+    if(counter == 100000) begin
+      counter <= 1;
+      slowClk3 <= ~slowClk3;
+    end
+    else begin
+      counter <= counter + 1;
+    end
+  end
+
+endmodule
+
+module clockDivider_16ms(clk100Mhz, slowClk3);
+  input clk100Mhz; //fast clock
+  output reg slowClk3; //slow clock
+
+  reg[27:0] counter;
+
+  initial begin
+    counter = 0;
+    slowClk3 = 0;
+  end
+
+  always @ (posedge clk100Mhz)
+  begin
+    if(counter == 200000) begin
+      counter <= 1;
+      slowClk3 <= ~slowClk3;
+    end
+    else begin
+      counter <= counter + 1;
+    end
+  end
+
+endmodule

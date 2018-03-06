@@ -16,6 +16,8 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -29,8 +31,10 @@ set_property ip_output_repo d:/Users/pnguy/Documents/GitHub/460M-HDL-Design/proj
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
   {D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_2/EE 460M_Lab2_Starter_File.v}
+  D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_4/FlipFlop.v
   D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/460M-HDL-Design/ParkingMeter.v
-  D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/460M-HDL-Design/SwitchDriver.v
+  D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_4/SinglePulse.v
+  D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_4/project_4.srcs/sources_1/imports/project_4/SwitchDriver.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

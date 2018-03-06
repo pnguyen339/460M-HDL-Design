@@ -1,9 +1,9 @@
-module SwitchDriver(Bup, Bdown, Bleft, Bright, clk, );
+module SwitchDriver(Bup, Bdown, Bleft, Bright, clk);
 
 input Bup, Bdown, Bleft, Bright, clk;
 //output Sout;
-reg slow_clock, fast_clock;
-reg [13:0] count;
+wire slow_clock, fast_clock;
+wire [13:0] count;
 
 // get the slow clock
 clockDivider_1Hz div(clk, slow_clock);
