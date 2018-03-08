@@ -48,6 +48,29 @@ module complexDivider(clk100Mhz, slowClk);
 
 endmodule
 
+module clockDivider_Half_Hz(clk100Mhz, slowClk0);
+  input clk100Mhz; //fast clock
+  output reg slowClk0; //slow clock
+
+  reg[27:0] counter;
+
+  initial begin
+    counter = 0;
+    slowClk0 = 0;
+  end
+
+  always @ (posedge clk100Mhz)
+  begin
+    if(counter == 100000000) begin
+      counter <= 1;
+      slowClk0 <= ~slowClk0;
+    end
+    else begin
+      counter <= counter + 1;
+    end
+  end
+
+endmodule
 
 module clockDivider_1Hz(clk100Mhz, slowClk1);
   input clk100Mhz; //fast clock

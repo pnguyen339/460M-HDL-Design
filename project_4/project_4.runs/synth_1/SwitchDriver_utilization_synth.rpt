@@ -1,8 +1,8 @@
-Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Tue Mar  6 11:47:05 2018
-| Host         : DESKTOP-D62POV0 running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Wed Mar 07 20:33:00 2018
+| Host         : DESKTOP-7N7RCM0 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file SwitchDriver_utilization_synth.rpt -pb SwitchDriver_utilization_synth.pb
 | Design       : SwitchDriver
 | Device       : 7a35tcpg236-1
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  232 |     0 |     20800 |  1.12 |
-|   LUT as Logic          |  232 |     0 |     20800 |  1.12 |
+| Slice LUTs*             |  557 |     0 |     20800 |  2.68 |
+|   LUT as Logic          |  557 |     0 |     20800 |  2.68 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
-| Slice Registers         |  120 |     0 |     41600 |  0.29 |
-|   Register as Flip Flop |  116 |     0 |     41600 |  0.28 |
+| Slice Registers         |  180 |     0 |     41600 |  0.43 |
+|   Register as Flip Flop |  176 |     0 |     41600 |  0.42 |
 |   Register as Latch     |    4 |     0 |     41600 | <0.01 |
 | F7 Muxes                |    0 |     0 |     16300 |  0.00 |
 | F8 Muxes                |    0 |     0 |      8150 |  0.00 |
@@ -57,7 +57,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 8     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 112   |          Yes |       Reset |            - |
+| 172   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   12 |     0 |       106 | 11.32 |
+| Bonded IOB                  |   18 |     0 |       106 | 16.98 |
 | Bonded IPADs                |    0 |     0 |        10 |  0.00 |
 | Bonded OPADs                |    0 |     0 |         4 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         5 |  0.00 |
@@ -149,18 +149,18 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  112 |        Flop & Latch |
-| LUT6     |   93 |                 LUT |
-| LUT4     |   51 |                 LUT |
-| LUT2     |   51 |                 LUT |
-| CARRY4   |   45 |          CarryLogic |
-| LUT5     |   37 |                 LUT |
-| LUT3     |   32 |                 LUT |
-| LUT1     |   23 |                 LUT |
+| LUT1     |  254 |                 LUT |
+| FDRE     |  172 |        Flop & Latch |
+| LUT6     |  133 |                 LUT |
+| CARRY4   |   87 |          CarryLogic |
+| LUT2     |   80 |                 LUT |
+| LUT4     |   62 |                 LUT |
+| LUT5     |   54 |                 LUT |
+| LUT3     |   46 |                 LUT |
 | OBUF     |   11 |                  IO |
+| IBUF     |    7 |                  IO |
 | LDCE     |    4 |        Flop & Latch |
 | FDCE     |    4 |        Flop & Latch |
-| IBUF     |    1 |                  IO |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 

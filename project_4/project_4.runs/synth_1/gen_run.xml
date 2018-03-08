@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1520358372">
-  <File Type="PA-TCL" Name="SwitchDriver.tcl"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1520476341">
   <File Type="RDS-PROPCONSTRS" Name="SwitchDriver_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="SwitchDriver_reports.tcl"/>
+  <File Type="PA-TCL" Name="SwitchDriver.tcl"/>
   <File Type="RDS-RDS" Name="SwitchDriver.vds"/>
   <File Type="RDS-UTIL" Name="SwitchDriver_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="SwitchDriver_utilization_synth.pb"/>
@@ -11,19 +10,19 @@
   <File Type="VDS-TIMING-PB" Name="SwitchDriver_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/imports/project_2/EE 460M_Lab2_Starter_File.v">
+    <File Path="$PSRCDIR/sources_1/imports/project_4/FlipFlop.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../project_3/project_3.srcs/sources_1/imports/project_2/EE 460M_Lab2_Starter_File.v"/>
-        <Attr Name="ImportTime" Val="1520027996"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Documents/GitHub/460M-HDL-Design/project_4/FlipFlop.v"/>
+        <Attr Name="ImportTime" Val="1520305327"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/project_4/FlipFlop.v">
+    <File Path="$PSRCDIR/sources_1/imports/project_2/EE 460M_Lab2_Starter_File.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/FlipFlop.v"/>
-        <Attr Name="ImportTime" Val="1520305327"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Documents/GitHub/460M-HDL-Design/project_3/project_3.srcs/sources_1/imports/project_2/EE 460M_Lab2_Starter_File.v"/>
+        <Attr Name="ImportTime" Val="1520027996"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -31,7 +30,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/460M-HDL-Design/ParkingMeter.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../ParkingMeter.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Documents/GitHub/460M-HDL-Design/ParkingMeter.v"/>
         <Attr Name="ImportTime" Val="1520255460"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -40,7 +39,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/project_4/SinglePulse.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/SinglePulse.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Documents/GitHub/460M-HDL-Design/project_4/SinglePulse.v"/>
         <Attr Name="ImportTime" Val="1520305327"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -49,7 +48,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/project_4/SwitchDriver.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/SwitchDriver.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Documents/GitHub/460M-HDL-Design/project_4/SwitchDriver.v"/>
         <Attr Name="ImportTime" Val="1520305327"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -66,7 +65,7 @@
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/imports/460M-HDL-Design/Basys3_Master.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Basys3_Master.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Documents/GitHub/460M-HDL-Design/Basys3_Master.xdc"/>
         <Attr Name="ImportTime" Val="1519413399"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -77,7 +76,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

@@ -1,61 +1,106 @@
-module ParkingMeter(Bup, Bdown, Bleft, Bright, clk, count);
+module ParkingMeter(Bup, Bdown, Bleft, Bright, clk, count, sw0, sw1);
 
-input Bup, Bdown, Bleft, Bright, clk;
+input Bup, Bdown, Bleft, Bright, clk, sw0, sw1;
 output [13:0] count;
 
 reg [13:0] count;
+reg flag, ld_flag;
+integer clk_count;
 reg [13:0] additional_count;
 
 initial begin
-    count <= 250;
+    count <= 0;
     additional_count <= 0;
-end
-
-always @(posedge clk)
-begin
-    if(additional_count > 0)begin
-        count <= count + additional_count;
-        additional_count <= 0;
-    end
-    
-    if(clk == 1) begin
-        if(count == 0) begin 
-            count <= 0; 
-        end
-	    else begin 
-	       count <= count - 1;
-	    end
-    end
-    // for no latches
-    else begin 
-        count <= 0;
-    end
+    clk_count <= 0;
+    ld_flag <= 0;
+    flag <= 0;
 end
 
 // always block to control count value
-always @(posedge Bup, posedge Bdown, posedge Bleft, posedge Bright) begin
+always @(posedge clk) begin
     // add 50, up to 9999
     if(Bup == 1) begin 
-        if(count + 6'b110010 < 14'b10011100010000) begin additional_count <= additional_count + 6'b110010; end
-        else begin additional_count <= 14'b10011100001111; end
+        flag <= 1; // data ready for count
+        if(count + 6'b110010 < 14'b10011100010000) begin 
+            additional_count <= additional_count + 6'b110010; 
+        end
+        else begin 
+            additional_count <= 14'b10011100001111 - count - 1; 
+        end
     end
     // add 150
     else if(Bleft == 1) begin
-	if(count + 8'b10010110 < 14'b10011100010000) begin additional_count <= additional_count + 8'b10010110; end
-        else begin additional_count <= 14'b10011100001111; end
+        flag <= 1;
+	    if(count + 8'b10010110 < 14'b10011100010000) begin 
+	        additional_count <= additional_count + 8'b10010110; 
+	    end
+        else begin 
+            additional_count <= 14'b10011100001111 - count - 1; 
+        end
     end
     // add 200
     else if(Bright == 1) begin
-	if(count + 8'b11001000 < 14'b10011100010000) begin additional_count <= additional_count + 8'b11001000; end
-	else begin additional_count <= 14'b10011100001111; end
+	    flag <= 1;
+	    if(count + 8'b11001000 < 14'b10011100010000) begin 
+	        additional_count <= additional_count + 8'b11001000; 
+	    end
+	    else begin 
+	        additional_count <= 14'b10011100001111 - count - 1; 
+	    end
     end
     // add 500
     else if(Bdown == 1) begin
-        if(additional_count + 9'b111110100 < 14'b10011100010000) begin additional_count <= additional_count + 9'b111110100; end
-	else begin additional_count <= 14'b10011100001111; end
+        flag <= 1;
+        if(additional_count + 9'b111110100 < 14'b10011100010000) begin 
+            additional_count <= additional_count + 9'b111110100; 
+        end
+	    else begin 
+	        additional_count <= 14'b10011100001111 - count - 1; 
+	    end
     end
+    else begin
+        ld_flag <= 0;
+        additional_count <= 0;
+    end
+    
+    if(flag == 1 && ld_flag == 0) begin
+        ld_flag = 1;
+        flag <= 0;
+        if(count + additional_count < 14'b10011100010000) begin
+            count <= count + additional_count;
+        end
+        else begin
+            count <= 14'b10011100001111;
+        end
+    end
+    //else begin
+       // flag <= 0;
+       // ld_flag <= 0;
+       // count <= count + 0;
+    //end
     // decrement, but not below 0
     
+    clk_count <= clk_count + 1;
+    if(clk_count == 100000000) begin
+        clk_count <= 0;
+        if(count == 0) begin
+            count <= 0;
+        end
+        else begin
+            count <= count - 1;
+        end
+    end
+    
+    // Switches to reset value
+    if(sw0 == 1) begin
+        count = 10;
+    end
+    else if(sw1 == 1) begin
+        count = 205;
+    end
+    //else begin
+      //  count <= count + 0;
+    //end
     
 end
 endmodule
@@ -80,12 +125,16 @@ module FlashingLight(count, clock2hz, clock1hz, led);
  assign led = light;
 endmodule
 
-module NumberDisplay(count,segment_dis, an, clk, clock2hz, clock1hz);
+module NumberDisplay(count,segment_dis, an, clk, clock1hz, clock_half, sw0, sw1);
     input wire [13:0] count;
-    input clk,clock2hz, clock1hz;
+    input clk, clock1hz, clock_half, sw0, sw1;
     output reg [6:0] segment_dis;
     output reg [3:0] an;
     
+    wire clock1hz_n, clock_half_n;
+    assign clock1hz_n = ~clock1hz;
+    assign clock_half_n = ~clock_half;
+     
     reg light;
     reg [3:0] ans, state;
     reg [6:0] first,second,third, fourth;
@@ -104,13 +153,15 @@ module NumberDisplay(count,segment_dis, an, clk, clock2hz, clock1hz);
     
     always @(count) begin
         if(count == 0)
-            light <= clock2hz;
+            light <= clock1hz_n;
+        else if(sw0 == 1 || sw1 == 1)
+            light <= clk;
         else if(count > 200)
             light <= clk;
         else if(count <= 200)
-            light <= clock1hz;
+            light <= clock_half_n;
         else
-            light <= clock2hz;
+            light <= clock1hz_n;
     end
     
     always @(posedge clk) begin
