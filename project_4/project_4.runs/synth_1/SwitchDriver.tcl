@@ -10,24 +10,24 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/Erick/Desktop/project_4/project_4.cache/wt [current_project]
-set_property parent.project_path C:/Users/Erick/Desktop/project_4/project_4.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/erick/Desktop/project_4/project_4.cache/wt [current_project]
+set_property parent.project_path C:/Users/erick/Desktop/project_4/project_4.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/Erick/Desktop/project_4/project_4.cache/ip [current_project]
+set_property ip_output_repo c:/Users/erick/Desktop/project_4/project_4.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  C:/Users/Erick/Desktop/project_4/project_4.srcs/sources_1/imports/project_4/FlipFlop.v
-  {C:/Users/Erick/Desktop/project_4/project_4.srcs/sources_1/imports/project_2/EE 460M_Lab2_Starter_File.v}
-  C:/Users/Erick/Desktop/project_4/project_4.srcs/sources_1/imports/460M-HDL-Design/ParkingMeter.v
-  C:/Users/Erick/Desktop/project_4/project_4.srcs/sources_1/imports/project_4/SinglePulse.v
-  C:/Users/Erick/Desktop/project_4/project_4.srcs/sources_1/imports/project_4/SwitchDriver.v
+  C:/Users/erick/Desktop/project_4/project_4.srcs/sources_1/imports/project_4/FlipFlop.v
+  {C:/Users/erick/Desktop/project_4/project_4.srcs/sources_1/imports/project_2/EE 460M_Lab2_Starter_File.v}
+  C:/Users/erick/Desktop/project_4/project_4.srcs/sources_1/imports/460M-HDL-Design/ParkingMeter.v
+  C:/Users/erick/Desktop/project_4/project_4.srcs/sources_1/imports/project_4/SinglePulse.v
+  C:/Users/erick/Desktop/project_4/project_4.srcs/sources_1/imports/project_4/SwitchDriver.v
 }
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Erick/Desktop/project_4/project_4.srcs/constrs_1/imports/460M-HDL-Design/Basys3_Master.xdc
-set_property used_in_implementation false [get_files C:/Users/Erick/Desktop/project_4/project_4.srcs/constrs_1/imports/460M-HDL-Design/Basys3_Master.xdc]
+read_xdc C:/Users/erick/Desktop/project_4/project_4.srcs/constrs_1/imports/460M-HDL-Design/Basys3_Master.xdc
+set_property used_in_implementation false [get_files C:/Users/erick/Desktop/project_4/project_4.srcs/constrs_1/imports/460M-HDL-Design/Basys3_Master.xdc]
 
 
 synth_design -top SwitchDriver -part xc7a35tcpg236-1

@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date             : Wed Mar 07 20:33:53 2018
-| Host             : DESKTOP-7N7RCM0 running 64-bit major release  (build 9200)
+| Date             : Fri Mar 09 16:11:18 2018
+| Host             : Ericks-Laptop running 64-bit major release  (build 9200)
 | Command          : report_power -file SwitchDriver_power_routed.rpt -pb SwitchDriver_power_summary_routed.pb -rpx SwitchDriver_power_routed.rpx
 | Design           : SwitchDriver
 | Device           : xc7a35tcpg236-1
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.080 |
-| Dynamic (W)              | 0.008 |
+| Total On-Chip Power (W)  | 0.079 |
+| Dynamic (W)              | 0.007 |
 | Device Static (W)        | 0.072 |
 | Effective TJA (C/W)      | 5.0   |
 | Max Ambient (C)          | 84.6  |
@@ -50,15 +50,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |     0.002 |      739 |       --- |             --- |
-|   LUT as Logic |     0.002 |      371 |     20800 |            1.78 |
+| Slice Logic    |     0.002 |      772 |       --- |             --- |
+|   LUT as Logic |     0.001 |      405 |     20800 |            1.95 |
 |   CARRY4       |    <0.001 |       87 |      8150 |            1.07 |
-|   Register     |    <0.001 |      180 |     41600 |            0.43 |
+|   Register     |    <0.001 |      182 |     41600 |            0.44 |
 |   Others       |     0.000 |       35 |       --- |             --- |
-| Signals        |     0.002 |      633 |       --- |             --- |
+| Signals        |     0.001 |      663 |       --- |             --- |
 | I/O            |     0.003 |       18 |       106 |           16.98 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.080 |          |           |                 |
+| Total          |     0.079 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -68,7 +68,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.015 |       0.005 |      0.010 |
+| Vccint    |       1.000 |     0.014 |       0.004 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -134,31 +134,31 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+------------------+-----------+
-| Name             | Power (W) |
-+------------------+-----------+
-| SwitchDriver     |     0.008 |
-|   a              |     0.002 |
-|   but1           |    <0.001 |
-|     A            |     0.000 |
-|     B            |    <0.001 |
-|     C            |     0.000 |
-|   but2           |     0.000 |
-|     A            |     0.000 |
-|     B            |     0.000 |
-|     C            |     0.000 |
-|   but3           |    <0.001 |
-|     A            |     0.000 |
-|     B            |    <0.001 |
-|     C            |     0.000 |
-|   but4           |     0.000 |
-|     A            |     0.000 |
-|     B            |     0.000 |
-|     C            |     0.000 |
-|   dis            |    <0.001 |
-|   div            |    <0.001 |
-|   div4           |    <0.001 |
-|   nolabel_line17 |    <0.001 |
-+------------------+-----------+
++--------------+-----------+
+| Name         | Power (W) |
++--------------+-----------+
+| SwitchDriver |     0.007 |
+|   a          |     0.002 |
+|   but1       |     0.000 |
+|     A        |     0.000 |
+|     B        |     0.000 |
+|     C        |     0.000 |
+|   but2       |     0.000 |
+|     A        |     0.000 |
+|     B        |     0.000 |
+|     C        |     0.000 |
+|   but3       |     0.000 |
+|     A        |     0.000 |
+|     B        |     0.000 |
+|     C        |     0.000 |
+|   but4       |     0.000 |
+|     A        |     0.000 |
+|     B        |     0.000 |
+|     C        |     0.000 |
+|   dis        |    <0.001 |
+|   div        |    <0.001 |
+|   div3       |    <0.001 |
+|   div4       |    <0.001 |
++--------------+-----------+
 
 

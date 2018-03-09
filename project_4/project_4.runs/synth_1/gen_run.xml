@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1520476341">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1520633383">
   <File Type="RDS-PROPCONSTRS" Name="SwitchDriver_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="SwitchDriver.tcl"/>
   <File Type="RDS-RDS" Name="SwitchDriver.vds"/>
@@ -76,9 +76,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

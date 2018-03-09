@@ -1,12 +1,17 @@
-module ParkingMeter(Bup, Bdown, Bleft, Bright, clk, count, sw0, sw1);
+module ParkingMeter(Bup, Bdown, Bleft, Bright, clk, count, sw0, sw1, clock_half);
 
-input Bup, Bdown, Bleft, Bright, clk, sw0, sw1;
+input Bup, Bdown, Bleft, Bright, clk, sw0, sw1, clock_half;
 output [13:0] count;
 
 reg [13:0] count;
-reg flag, ld_flag;
+reg flag, ld_flag, sw1_flag, sw0_flag;
 integer clk_count;
 reg [13:0] additional_count;
+wire clock_half_n;
+wire EvenOdd;
+
+assign EvenOdd = count % 2;
+assign clock_half_n = ~clock_half;
 
 initial begin
     count <= 0;
@@ -14,6 +19,8 @@ initial begin
     clk_count <= 0;
     ld_flag <= 0;
     flag <= 0;
+    sw1_flag <= 0;
+    sw0_flag <= 0;
 end
 
 // always block to control count value
@@ -68,6 +75,9 @@ always @(posedge clk) begin
         flag <= 0;
         if(count + additional_count < 14'b10011100010000) begin
             count <= count + additional_count;
+            if(EvenOdd == 1 && clock_half_n == 1) begin
+                count <= count - 1;
+            end
         end
         else begin
             count <= 14'b10011100001111;
@@ -83,20 +93,47 @@ always @(posedge clk) begin
     clk_count <= clk_count + 1;
     if(clk_count == 100000000) begin
         clk_count <= 0;
-        if(count == 0) begin
-            count <= 0;
+        if(sw1 == 0 && sw1_flag == 1) begin // neg switch edge
+            sw1_flag <= 0;
+            if(clock_half_n == 0) begin
+                count = 205;
+            end
+            else begin
+                count = 204;
+            end
+        end
+        else if(sw0 == 0 && sw0_flag == 1) begin
+            sw0_flag <= 0;
+            if(clock_half_n == 1)begin
+                count = 10;
+            end
+            else begin
+                count = 9;
+            end
         end
         else begin
-            count <= count - 1;
+            if(count == 0) begin
+                count <= 0;
+            end
+            else begin
+                count <= count - 1;
+                if(EvenOdd == 1 && clock_half_n == 1) begin
+                    count <= count - 1;
+                end
+            end
         end
     end
     
     // Switches to reset value
     if(sw0 == 1) begin
         count = 10;
+        sw0_flag <= 1;
+        sw1_flag <= 0;
     end
     else if(sw1 == 1) begin
         count = 205;
+        sw0_flag <= 0;
+        sw1_flag <= 1;
     end
     //else begin
       //  count <= count + 0;
@@ -139,6 +176,8 @@ module NumberDisplay(count,segment_dis, an, clk, clock1hz, clock_half, sw0, sw1)
     reg [3:0] ans, state;
     reg [6:0] first,second,third, fourth;
     reg [3:0] st,nd,rd,th;
+
+    
     initial begin
         first <= 0;
         second <= 0;

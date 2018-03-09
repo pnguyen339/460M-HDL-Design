@@ -2,11 +2,11 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Wed Mar 07 20:32:22 2018
-# Process ID: 10072
-# Current directory: C:/Users/Erick/Desktop/project_4/project_4.runs/synth_1
+# Start of session at: Fri Mar 09 16:09:44 2018
+# Process ID: 13240
+# Current directory: C:/Users/erick/Desktop/project_4/project_4.runs/synth_1
 # Command line: vivado.exe -log SwitchDriver.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SwitchDriver.tcl
-# Log file: C:/Users/Erick/Desktop/project_4/project_4.runs/synth_1/SwitchDriver.vds
-# Journal file: C:/Users/Erick/Desktop/project_4/project_4.runs/synth_1\vivado.jou
+# Log file: C:/Users/erick/Desktop/project_4/project_4.runs/synth_1/SwitchDriver.vds
+# Journal file: C:/Users/erick/Desktop/project_4/project_4.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source SwitchDriver.tcl -notrace

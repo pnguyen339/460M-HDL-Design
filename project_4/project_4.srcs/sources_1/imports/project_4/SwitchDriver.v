@@ -14,7 +14,7 @@ wire [13:0] count;
 clockDivider_1Hz div(clk, clock1hz);
 clockDivider_2Hz div2(clk, clock2hz);
 // get 2 ms clock for debouncing
-clockDivider_Half_Hz(clk, clock_half);
+clockDivider_Half_Hz div3(clk, clock_half);
 clockDivider_16ms div4(clk, clock_16ms);
 //flashing light
 
@@ -27,7 +27,7 @@ SinglePulse but3(Bleft, clock_16ms, Bleft_d);
 SinglePulse but4(Bright, clock_16ms, Bright_d);
 
 // controller for the count, use debounced signals
-ParkingMeter a(Bup_d, Bdown_d, Bleft_d, Bright_d, clk, count, sw0, sw1);
+ParkingMeter a(Bup_d, Bdown_d, Bleft_d, Bright_d, clk, count, sw0, sw1, clock_half);
 //FlashingLight l(count, clock2hz, clock1hz, led);
 NumberDisplay dis(count, seg, an, clock_16ms,clock1hz, clock_half, sw0, sw1);
 

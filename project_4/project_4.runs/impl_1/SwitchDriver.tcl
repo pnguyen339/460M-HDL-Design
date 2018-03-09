@@ -52,12 +52,12 @@ set rc [catch {
   set_param xicom.use_bs_reader 1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/Erick/Desktop/project_4/project_4.cache/wt [current_project]
-  set_property parent.project_path C:/Users/Erick/Desktop/project_4/project_4.xpr [current_project]
-  set_property ip_output_repo C:/Users/Erick/Desktop/project_4/project_4.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/erick/Desktop/project_4/project_4.cache/wt [current_project]
+  set_property parent.project_path C:/Users/erick/Desktop/project_4/project_4.xpr [current_project]
+  set_property ip_output_repo C:/Users/erick/Desktop/project_4/project_4.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/Erick/Desktop/project_4/project_4.runs/synth_1/SwitchDriver.dcp
-  read_xdc C:/Users/Erick/Desktop/project_4/project_4.srcs/constrs_1/imports/460M-HDL-Design/Basys3_Master.xdc
+  add_files -quiet C:/Users/erick/Desktop/project_4/project_4.runs/synth_1/SwitchDriver.dcp
+  read_xdc C:/Users/erick/Desktop/project_4/project_4.srcs/constrs_1/imports/460M-HDL-Design/Basys3_Master.xdc
   link_design -top SwitchDriver -part xc7a35tcpg236-1
   write_hwdef -file SwitchDriver.hwdef
   close_msg_db -file init_design.pb
