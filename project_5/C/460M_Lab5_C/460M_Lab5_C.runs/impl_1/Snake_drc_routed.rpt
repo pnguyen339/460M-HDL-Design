@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Mon Apr 02 23:58:31 2018
-| Host         : DESKTOP-7N7RCM0 running 64-bit major release  (build 9200)
+| Date         : Tue Apr 03 13:21:34 2018
+| Host         : Ericks-Laptop running 64-bit major release  (build 9200)
 | Command      : report_drc -file Snake_drc_routed.rpt -pb Snake_drc_routed.pb -rpx Snake_drc_routed.rpx
 | Design       : Snake
 | Device       : xc7a35tcpg236-1

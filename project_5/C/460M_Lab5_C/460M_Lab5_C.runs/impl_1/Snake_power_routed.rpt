@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date             : Mon Apr 02 23:58:32 2018
-| Host             : DESKTOP-7N7RCM0 running 64-bit major release  (build 9200)
+| Date             : Tue Apr 03 13:21:35 2018
+| Host             : Ericks-Laptop running 64-bit major release  (build 9200)
 | Command          : report_power -file Snake_power_routed.rpt -pb Snake_power_summary_routed.pb -rpx Snake_power_routed.rpx
 | Design           : Snake
 | Device           : xc7a35tcpg236-1
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.076 |
-| Dynamic (W)              | 0.005 |
+| Total On-Chip Power (W)  | 0.078 |
+| Dynamic (W)              | 0.006 |
 | Device Static (W)        | 0.072 |
 | Effective TJA (C/W)      | 5.0   |
 | Max Ambient (C)          | 84.6  |
@@ -50,16 +50,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      510 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      249 |     20800 |            1.20 |
-|   CARRY4       |    <0.001 |       52 |      8150 |            0.64 |
-|   Register     |    <0.001 |      115 |     41600 |            0.28 |
+| Slice Logic    |    <0.001 |      505 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      262 |     20800 |            1.26 |
+|   CARRY4       |    <0.001 |       46 |      8150 |            0.56 |
+|   Register     |    <0.001 |      118 |     41600 |            0.28 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
 |   Others       |     0.000 |        8 |       --- |             --- |
-| Signals        |    <0.001 |      299 |       --- |             --- |
-| I/O            |     0.002 |       22 |       106 |           20.75 |
+| Signals        |    <0.001 |      328 |       --- |             --- |
+| I/O            |     0.004 |       23 |       106 |           21.70 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.076 |          |           |                 |
+| Total          |     0.078 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -69,7 +69,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.012 |       0.003 |      0.010 |
+| Vccint    |       1.000 |     0.012 |       0.002 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -138,7 +138,7 @@ Table of Contents
 +-------------+-----------+
 | Name        | Power (W) |
 +-------------+-----------+
-| Snake       |     0.005 |
+| Snake       |     0.006 |
 |   clockDiv  |    <0.001 |
 |   clockDiv1 |    <0.001 |
 |   driver    |    <0.001 |

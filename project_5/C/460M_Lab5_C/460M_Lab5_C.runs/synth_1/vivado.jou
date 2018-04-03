@@ -2,11 +2,11 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Mon Apr 02 23:56:50 2018
-# Process ID: 10072
-# Current directory: C:/Users/Erick/460M_Lab5_C/460M_Lab5_C.runs/synth_1
+# Start of session at: Tue Apr 03 13:20:08 2018
+# Process ID: 10108
+# Current directory: C:/Users/erick/460M_Lab5_C/460M_Lab5_C.runs/synth_1
 # Command line: vivado.exe -log Snake.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Snake.tcl
-# Log file: C:/Users/Erick/460M_Lab5_C/460M_Lab5_C.runs/synth_1/Snake.vds
-# Journal file: C:/Users/Erick/460M_Lab5_C/460M_Lab5_C.runs/synth_1\vivado.jou
+# Log file: C:/Users/erick/460M_Lab5_C/460M_Lab5_C.runs/synth_1/Snake.vds
+# Journal file: C:/Users/erick/460M_Lab5_C/460M_Lab5_C.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Snake.tcl -notrace

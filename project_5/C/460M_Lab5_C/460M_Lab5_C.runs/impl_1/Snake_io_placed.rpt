@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Mon Apr 02 23:58:08 2018
-| Host         : DESKTOP-7N7RCM0 running 64-bit major release  (build 9200)
+| Date         : Tue Apr 03 13:21:10 2018
+| Host         : Ericks-Laptop running 64-bit major release  (build 9200)
 | Command      : report_io -file Snake_io_placed.rpt
 | Design       : Snake
 | Device       : xc7a35t
@@ -23,7 +23,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|            22 |
+|            23 |
 +---------------+
 
 
@@ -264,7 +264,7 @@ Table of Contents
 | W10        |             | Dedicated  | TDI_0                        | Config        |             |       0 |            |      |                     |                      |         |            |           |          |      |                  |
 | W11        |             | Dedicated  | M1_0                         | Config        |             |       0 |            |      |                     |                      |         |            |           |          |      |                  |
 | W12        |             |            | GND                          | GND           |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |
-| W13        |             | High Range | IO_L22P_T3_A05_D21_14        | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |
+| W13        | SW[7]       | High Range | IO_L22P_T3_A05_D21_14        | INPUT         | LVCMOS33    |      14 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |
 | W14        | SW[6]       | High Range | IO_L22N_T3_A04_D20_14        | INPUT         | LVCMOS33    |      14 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |
 | W15        | SW[4]       | High Range | IO_L21N_T3_DQS_A06_D22_14    | INPUT         | LVCMOS33    |      14 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |
 | W16        | SW[2]       | High Range | IO_L20P_T3_A08_D24_14        | INPUT         | LVCMOS33    |      14 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |

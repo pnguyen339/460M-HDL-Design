@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="17" Path="C:/Users/Erick/460M_Lab5_C/460M_Lab5_C.xpr">
+<Project Version="7" Minor="17" Path="C:/Users/erick/460M_Lab5_C/460M_Lab5_C.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="7a6285d4303a4151931961a785e834fd"/>
