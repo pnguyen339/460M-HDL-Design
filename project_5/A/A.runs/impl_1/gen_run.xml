@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1522760380">
+  <File Type="PWROPT-DCP" Name="KeyboardInput_pwropt.dcp"/>
+  <File Type="ROUTE-PWR" Name="KeyboardInput_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="KeyboardInput.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="KeyboardInput_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="KeyboardInput_reports.tcl"/>
+  <File Type="BG-DRC" Name="KeyboardInput.drc"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="KeyboardInput_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="KeyboardInput_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="KeyboardInput.hwdef"/>
+  <File Type="OPT-DCP" Name="KeyboardInput_opt.dcp"/>
+  <File Type="OPT-DRC" Name="KeyboardInput_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="KeyboardInput_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="KeyboardInput_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="KeyboardInput_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="KeyboardInput_placed.dcp"/>
+  <File Type="PLACE-IO" Name="KeyboardInput_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="KeyboardInput_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="KeyboardInput_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="KeyboardInput_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="KeyboardInput_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="KeyboardInput_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="KeyboardInput_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="KeyboardInput_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="KeyboardInput_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="KeyboardInput_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="KeyboardInput_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="KeyboardInput_drc_physopted.rpt"/>
+  <File Type="BG-BIT" Name="KeyboardInput.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="KeyboardInput_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="KeyboardInput_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="KeyboardInput_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="KeyboardInput_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="KeyboardInput_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="KeyboardInput_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="KeyboardInput.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="KeyboardInput_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="KeyboardInput.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="KeyboardInput_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="KeyboardInput.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="KeyboardInput_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="KeyboardInput.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="KeyboardInput_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="KeyboardInput_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="KeyboardInput_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="KeyboardInput_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="KeyboardInput_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="KeyboardInput_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="KeyboardInput_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="KeyboardInput_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="KeyboardInput.vdi"/>
+  <File Type="ROUTE-CLK" Name="KeyboardInput_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="KeyboardInput_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="KeyboardInput_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="KeyboardInput_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="KeyboardInput_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="KeyboardInput_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="KeyboardInput.nky"/>
+  <File Type="BITSTR-BMM" Name="KeyboardInput_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="KeyboardInput.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="KeyboardInput.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="KeyboardInput.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/KeyboardInput.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="KeyboardInput"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/460M-HDL-Design/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1519404604"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
