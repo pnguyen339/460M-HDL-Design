@@ -1,14 +1,14 @@
-module Screen_Driver(pixel_clk, R, G, B, hsync, vsync, X, Y);
+module Screen_Driver(pixel_clk, R, G, B, hsync, vsync, X, Y, orientation);
 input pixel_clk;
 // X,Y is the current coordinates of the snake head
 input [9:0] X, Y;
+input [1:0] orientation;
 output [3:0] R, G, B;
 output hsync, vsync;
 
 reg hsync, vsync;
 reg [9:0] hcount, vcount;
 reg [3:0] R, G, B;
-reg [1:0] orientation; // keeps track of the snake direction
 wire visible;
 
 initial begin
@@ -17,7 +17,6 @@ initial begin
     R <= 0;
     G <= 0;
     B <= 0;
-    orientation <= 0;
 end
 
 always @(posedge pixel_clk) begin
@@ -28,6 +27,7 @@ always @(posedge pixel_clk) begin
         // right
         if(orientation == 0) begin
             // only draw snake when within the 40, 10 of X,Y
+            // X,Y is bottom right corner
             if((hcount > (X - 40)) && (hcount <= X) && (vcount > (Y - 10)) && (vcount <= Y)) begin
                 R <= 0;
                 G <= 0;
@@ -42,6 +42,7 @@ always @(posedge pixel_clk) begin
         // left
         else if(orientation == 1) begin
             
+            // X,Y is bottom left corner
             if((hcount < (X + 40)) && (hcount >= X) && (vcount > (Y - 10)) && (vcount <= Y)) begin
                 R <= 0;
                 G <= 0;
@@ -56,11 +57,32 @@ always @(posedge pixel_clk) begin
         // up
         else if(orientation == 2) begin
             
-            
+            // X,Y is top left corner
+            if((hcount < (X + 10)) && (hcount >= X) && (vcount < (Y + 40)) && (vcount >= Y)) begin
+              R <= 0;
+              G <= 0;
+              B <= 15;
+            end
+            else begin
+              R <= 15;
+              G <= 15;
+              B <= 15;
+            end
         end
         // down
         else begin
             
+            // X,Y is bottom left corner
+            if((hcount < (X + 10)) && (hcount >= X) && (vcount > (Y - 40)) && (vcount <= Y)) begin
+              R <= 0;
+              G <= 0;
+              B <= 15;
+            end
+            else begin
+              R <= 15;
+              G <= 15;
+              B <= 15;
+            end
         end
     end
     else begin
