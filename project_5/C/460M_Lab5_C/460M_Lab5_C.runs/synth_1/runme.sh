@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/erick/460M_Lab5_C/460M_Lab5_C.runs/synth_1'
+HD_PWD='C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_5/C/460M_Lab5_C/460M_Lab5_C.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log Snake.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Snake.tcl
+EAStep vivado -log Top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl

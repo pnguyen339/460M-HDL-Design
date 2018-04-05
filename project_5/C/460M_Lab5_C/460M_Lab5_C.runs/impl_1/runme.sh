@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/erick/460M_Lab5_C/460M_Lab5_C.runs/impl_1'
+HD_PWD='C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_5/C/460M_Lab5_C/460M_Lab5_C.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -42,6 +42,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log Snake.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Snake.tcl -notrace
+EAStep vivado -log Top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Top.tcl -notrace
 
 
