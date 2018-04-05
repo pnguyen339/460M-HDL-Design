@@ -18,12 +18,21 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
+module kb_scan(PS2Clk, PS2Data, keypress);
+  input PS2Clk, PS2Data;
+  output reg [21:0] keypress;
+  
+  always @(negedge PS2Clk)
+  begin
+    keypress <= keypress >> 1;
+    keypress[21] <= PS2Data;
+  end
+endmodule
 
-module KeyboardInput(
-    input PS2Clk,
-    input PS2Data,
-    output reg [7:0] OutData
-    );
+module KeyboardInput(PS2Clk, PS2Data,OutData);
+ input PS2Clk;
+input PS2Data;
+output reg [7:0] OutData; 
  reg [3:0] counter;   
  reg start;
  reg break_code;

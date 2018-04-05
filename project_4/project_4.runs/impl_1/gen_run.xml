@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1520633383">
-  <File Type="ROUTE-PWR-RPX" Name="SwitchDriver_power_routed.rpx"/>
   <File Type="BG-DRC" Name="SwitchDriver.drc"/>
+  <File Type="ROUTE-PWR-RPX" Name="SwitchDriver_power_routed.rpx"/>
   <File Type="ROUTE-PWR" Name="SwitchDriver_power_routed.rpt"/>
   <File Type="PA-TCL" Name="SwitchDriver.tcl"/>
-  <File Type="OPT-DCP" Name="SwitchDriver_opt.dcp"/>
   <File Type="OPT-HWDEF" Name="SwitchDriver.hwdef"/>
-  <File Type="OPT-DRC" Name="SwitchDriver_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="SwitchDriver_opt.dcp"/>
   <File Type="ROUTE-CLK" Name="SwitchDriver_clock_utilization_routed.rpt"/>
   <File Type="RDI-RDI" Name="SwitchDriver.vdi"/>
+  <File Type="OPT-DRC" Name="SwitchDriver_drc_opted.rpt"/>
   <File Type="PWROPT-DCP" Name="SwitchDriver_pwropt.dcp"/>
   <File Type="PLACE-DCP" Name="SwitchDriver_placed.dcp"/>
   <File Type="PLACE-IO" Name="SwitchDriver_io_placed.rpt"/>
@@ -24,14 +24,14 @@
   <File Type="ROUTE-BLACKBOX-DCP" Name="SwitchDriver_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="SwitchDriver_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="SwitchDriver_drc_routed.pb"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="SwitchDriver_methodology_drc_routed.pb"/>
   <File Type="BG-BIN" Name="SwitchDriver.bin"/>
-  <File Type="BITSTR-MSK" Name="SwitchDriver.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="SwitchDriver_methodology_drc_routed.pb"/>
   <File Type="ROUTE-DRC-RPX" Name="SwitchDriver_drc_routed.rpx"/>
-  <File Type="BG-BGN" Name="SwitchDriver.bgn"/>
+  <File Type="BITSTR-MSK" Name="SwitchDriver.msk"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="SwitchDriver_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-RBT" Name="SwitchDriver.rbt"/>
+  <File Type="BG-BGN" Name="SwitchDriver.bgn"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="SwitchDriver_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-RBT" Name="SwitchDriver.rbt"/>
   <File Type="ROUTE-PWR-SUM" Name="SwitchDriver_power_summary_routed.pb"/>
   <File Type="ROUTE-STATUS" Name="SwitchDriver_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="SwitchDriver_route_status.pb"/>

@@ -20,14 +20,13 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module NumberDisplay(count,segment_dis, an, clock1hz);
+module NumberDisplay(count,segment_dis, an, clock2hz);
     input wire [7:0] count;
-    input clock1hz;
+    input clock2hz;
     output reg [6:0] segment_dis;
-    output reg [3:0] an;
+    output wire [3:0] an;
     
-    wire clock1hz_n;
-    reg [3:0] ans, state;
+    reg [3:0] ans;
     reg [6:0] first,second,third, fourth;
     reg [3:0] st,nd,rd,th;
 
@@ -44,11 +43,11 @@ module NumberDisplay(count,segment_dis, an, clock1hz);
         ans <= 4'b0000;
     end
     
-    always @(posedge clock1hz) begin
+    always @(posedge clock2hz) begin
         ans = ans<<1;
             
-        if(ans == 4'b0000) begin
-            ans = 4'b0001;
+        if(ans[1:0] == 2'b00) begin
+            ans = 2'b01;
         end
         
         case(ans)
@@ -59,6 +58,7 @@ module NumberDisplay(count,segment_dis, an, clock1hz);
         endcase;                 
     end
 
+    assign an = ~ans;
      
     always @(count) begin
         st <= count&4'b1111;
@@ -96,12 +96,12 @@ module NumberDisplay(count,segment_dis, an, clock1hz);
             4'b0111: second <= ~7'b0000111;
             4'b1000: second <= ~7'b1111111;
             4'b1001: second <= ~7'b1101111;
-            4'b1010: first <= ~7'b1110111; // A
-            4'b1011: first <= ~7'b1111100; // b
-            4'b1100: first <= ~7'b0111001; // C
-            4'b1101: first <= ~7'b1011110; // d
-            4'b1110: first <= ~7'b1111001; // E
-            4'b1111: first <= ~7'b1110001; // F
+            4'b1010: second <= ~7'b1110111; // A
+            4'b1011: second <= ~7'b1111100; // b
+            4'b1100: second <= ~7'b0111001; // C
+            4'b1101: second <= ~7'b1011110; // d
+            4'b1110: second <= ~7'b1111001; // E
+            4'b1111: second <= ~7'b1110001; // F
             default: second <= ~7'b0000000;
         endcase
         
@@ -116,12 +116,12 @@ module NumberDisplay(count,segment_dis, an, clock1hz);
             4'b0111: third <= ~7'b0000111;
             4'b1000: third <= ~7'b1111111;
             4'b1001: third <= ~7'b1101111;
-            4'b1010: first <= ~7'b1110111; // A
-            4'b1011: first <= ~7'b1111100; // b
-            4'b1100: first <= ~7'b0111001; // C
-            4'b1101: first <= ~7'b1011110; // d
-            4'b1110: first <= ~7'b1111001; // E
-            4'b1111: first <= ~7'b1110001; // F
+            4'b1010: third <= ~7'b1110111; // A
+            4'b1011: third <= ~7'b1111100; // b
+            4'b1100: third <= ~7'b0111001; // C
+            4'b1101: third <= ~7'b1011110; // d
+            4'b1110: third <= ~7'b1111001; // E
+            4'b1111: third <= ~7'b1110001; // F
             default: third <= ~7'b0000000;
         endcase
         
@@ -136,12 +136,12 @@ module NumberDisplay(count,segment_dis, an, clock1hz);
             4'b0111: fourth <= ~7'b0000111;
             4'b1000: fourth <= ~7'b1111111;
             4'b1001: fourth <= ~7'b1101111;
-            4'b1010: first <= ~7'b1110111; // A
-            4'b1011: first <= ~7'b1111100; // b
-            4'b1100: first <= ~7'b0111001; // C
-            4'b1101: first <= ~7'b1011110; // d
-            4'b1110: first <= ~7'b1111001; // E
-            4'b1111: first <= ~7'b1110001; // F
+            4'b1010: fourth <= ~7'b1110111; // A
+            4'b1011: fourth <= ~7'b1111100; // b
+            4'b1100: fourth <= ~7'b0111001; // C
+            4'b1101: fourth <= ~7'b1011110; // d
+            4'b1110: fourth <= ~7'b1111001; // E
+            4'b1111: fourth <= ~7'b1110001; // F
             default: fourth <= ~7'b0000000;
         endcase  
             

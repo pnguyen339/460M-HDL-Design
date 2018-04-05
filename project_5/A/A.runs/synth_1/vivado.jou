@@ -2,11 +2,11 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Tue Apr  3 07:58:17 2018
-# Process ID: 4368
+# Start of session at: Thu Apr  5 10:51:47 2018
+# Process ID: 22108
 # Current directory: E:/Users/Peter Nguyen/Documents/GitHub/460M-HDL-Design/project_5/A/A.runs/synth_1
-# Command line: vivado.exe -log KeyboardInput.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source KeyboardInput.tcl
-# Log file: E:/Users/Peter Nguyen/Documents/GitHub/460M-HDL-Design/project_5/A/A.runs/synth_1/KeyboardInput.vds
+# Command line: vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+# Log file: E:/Users/Peter Nguyen/Documents/GitHub/460M-HDL-Design/project_5/A/A.runs/synth_1/Top.vds
 # Journal file: E:/Users/Peter Nguyen/Documents/GitHub/460M-HDL-Design/project_5/A/A.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source KeyboardInput.tcl -notrace
+source Top.tcl -notrace
