@@ -2,8 +2,9 @@
 `define break_check keypress[8:1]
 `define break_code keypress[19:12]
 
-module Top(PS2Clk, PS2Data,clk, Hsync, Vsync, vgaRed, vgaGreen, vgaBlue);
+module Top(PS2Clk, PS2Data,clk, Hsync, Vsync, vgaRed, vgaGreen, vgaBlue, speed);
     input wire PS2Clk;
+    input speed;
     input wire PS2Data;
     output Hsync, Vsync;
     output [3:0] vgaRed, vgaGreen, vgaBlue;
@@ -23,7 +24,7 @@ module Top(PS2Clk, PS2Data,clk, Hsync, Vsync, vgaRed, vgaGreen, vgaBlue);
     kb_scan k(PS2Clk, PS2Data, keypress);
     clockDivider_2ms c(clk, clock2Hz);
     
-    Snake snake(SW, clk, Hsync, Vsync, vgaRed, vgaGreen, vgaBlue);
+    Snake snake(SW, clk, Hsync, Vsync, vgaRed, vgaGreen, vgaBlue, speed);
     
     // convert the hex character into a switch code for the snake module
     always @(key) begin

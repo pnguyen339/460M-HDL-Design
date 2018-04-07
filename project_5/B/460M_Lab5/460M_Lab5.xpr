@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="17" Path="C:/Users/erick/460M_Lab5/460M_Lab5.xpr">
+<Project Version="7" Minor="17" Path="C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_5/B/460M_Lab5/460M_Lab5.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="6ad37da98d03484e90c0eb327353b3a9"/>
@@ -24,7 +24,7 @@
     <Option Name="IPCachePermission" Val="write"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
     <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
-    <Option Name="IPUserFilesDir" Val="$PPRDIR/460M_Lab5.ip_user_files"/>
+    <Option Name="IPUserFilesDir" Val="$PPRDIR/../../../../../../460M_Lab5/460M_Lab5.ip_user_files"/>
     <Option Name="IPStaticSourceDir" Val="$PPRDIR/460M_Lab5.ip_user_files/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSANumComputeUnits" Val="16"/>

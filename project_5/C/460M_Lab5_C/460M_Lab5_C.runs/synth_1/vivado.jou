@@ -2,8 +2,8 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Thu Apr 05 16:17:40 2018
-# Process ID: 11388
+# Start of session at: Fri Apr 06 15:00:00 2018
+# Process ID: 11984
 # Current directory: C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_5/C/460M_Lab5_C/460M_Lab5_C.runs/synth_1
 # Command line: vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
 # Log file: C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_5/C/460M_Lab5_C/460M_Lab5_C.runs/synth_1/Top.vds

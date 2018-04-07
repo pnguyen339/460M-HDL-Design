@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Thu Mar 29 20:30:54 2018'>
+<webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Fri Apr 06 15:07:10 2018'>
 <section name="__ROOT__" level="0" order="1" description="">
  <section name="software_version_and_target_device" level="1" order="1" description="">
   <keyValuePair key="beta" value="FALSE" description="" />
   <keyValuePair key="build_version" value="1756540" description="" />
-  <keyValuePair key="date_generated" value="Thu Mar 29 20:30:54 2018" description="" />
+  <keyValuePair key="date_generated" value="Fri Apr 06 15:07:10 2018" description="" />
   <keyValuePair key="os_platform" value="WIN64" description="" />
   <keyValuePair key="product_version" value="Vivado v2016.4 (64-bit)" description="" />
   <keyValuePair key="project_id" value="6ad37da98d03484e90c0eb327353b3a9" description="" />
-  <keyValuePair key="project_iteration" value="11" description="" />
+  <keyValuePair key="project_iteration" value="12" description="" />
   <keyValuePair key="random_id" value="71151a9dd1e7534f8798255014e1960e" description="" />
   <keyValuePair key="registration_id" value="211311129_0_0_768" description="" />
   <keyValuePair key="route_design" value="TRUE" description="" />
@@ -119,7 +119,7 @@
    <keyValuePair key="output_load" value="5.000000" description="" />
    <keyValuePair key="output_toggle" value="12.500000" description="" />
    <keyValuePair key="package" value="cpg236" description="" />
-   <keyValuePair key="pct_clock_constrained" value="1.000000" description="" />
+   <keyValuePair key="pct_clock_constrained" value="0.000000" description="" />
    <keyValuePair key="pct_inputs_defined" value="11" description="" />
    <keyValuePair key="platform" value="nt64" description="" />
    <keyValuePair key="process" value="typical" description="" />
@@ -479,8 +479,8 @@
   <section name="usage" level="2" order="2" description="">
    <keyValuePair key="elapsed" value="00:00:24s" description="" />
    <keyValuePair key="hls_ip" value="0" description="" />
-   <keyValuePair key="memory_gain" value="404.938MB" description="" />
-   <keyValuePair key="memory_peak" value="615.527MB" description="" />
+   <keyValuePair key="memory_gain" value="404.871MB" description="" />
+   <keyValuePair key="memory_peak" value="615.250MB" description="" />
   </section>
  </section>
  <section name="unisim_transformation" level="1" order="9" description="">
@@ -518,13 +518,13 @@
  <section name="vivado_usage" level="1" order="10" description="">
   <section name="java_command_handlers" level="2" order="1" description="">
    <keyValuePair key="addsources" value="1" description="" />
-   <keyValuePair key="autoconnecttarget" value="2" description="" />
-   <keyValuePair key="launchprogramfpga" value="7" description="" />
+   <keyValuePair key="autoconnecttarget" value="3" description="" />
+   <keyValuePair key="launchprogramfpga" value="9" description="" />
    <keyValuePair key="newproject" value="1" description="" />
    <keyValuePair key="openfile" value="2" description="" />
-   <keyValuePair key="openhardwaremanager" value="4" description="" />
-   <keyValuePair key="openproject" value="2" description="" />
-   <keyValuePair key="runbitgen" value="13" description="" />
+   <keyValuePair key="openhardwaremanager" value="5" description="" />
+   <keyValuePair key="openproject" value="3" description="" />
+   <keyValuePair key="runbitgen" value="14" description="" />
    <keyValuePair key="runimplementation" value="1" description="" />
    <keyValuePair key="runsynthesis" value="1" description="" />
    <keyValuePair key="savefileproxyhandler" value="2" description="" />
@@ -532,7 +532,7 @@
    <keyValuePair key="viewtaskprojectmanager" value="1" description="" />
   </section>
   <section name="other_data" level="2" order="2" description="">
-   <keyValuePair key="guimode" value="5" description="" />
+   <keyValuePair key="guimode" value="8" description="" />
   </section>
   <section name="project_data" level="2" order="3" description="">
    <keyValuePair key="constraintsetcount" value="1" description="" />

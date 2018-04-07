@@ -1,6 +1,8 @@
 set_property SRC_FILE_INFO {cfile:C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_5/C/460M_Lab5_C/460M_Lab5_C.srcs/constrs_1/imports/Labs/Basys3_Master.xdc rfile:../../../460M_Lab5_C.srcs/constrs_1/imports/Labs/Basys3_Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports clk]
+set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN V17 [get_ports {speed}]
 set_property src_info {type:XDC file:1 line:236 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN G19 [get_ports {vgaRed[0]}]
 set_property src_info {type:XDC file:1 line:238 export:INPUT save:INPUT read:READ} [current_design]

@@ -1,6 +1,7 @@
-module Screen_Driver(pixel_clk, R, G, B, hsync, vsync, X, Y, orientation, stop);
-input pixel_clk, stop;
+module Screen_Driver(pixel_clk, R, G, B, hsync, vsync, X, Y, orientation, stop, length, freeze);
+input pixel_clk, stop, freeze;
 // X,Y is the current coordinates of the snake head
+input [5:0] length;
 input [9:0] X, Y;
 input [1:0] orientation;
 output [3:0] R, G, B;
@@ -28,60 +29,88 @@ always @(posedge pixel_clk) begin
         if(orientation == 0) begin
             // only draw snake when within the 40, 10 of X,Y
             // X,Y is bottom right corner
-            if((hcount >= (X - 39)) && (hcount <= X) && (vcount >= (Y - 9)) && (vcount <= Y)) begin
+            if((hcount >= (X - (length - 1))) && (hcount <= X) && (vcount >= (Y - 9)) && (vcount <= Y)) begin
                 R <= 0;
                 G <= 0;
                 B <= 15;
             end
             else begin
+              if(freeze == 0) begin
                 R <= 15;
                 G <= 15;
                 B <= 15;
+              end
+              else begin
+                R <= 15;
+                G <= 0;
+                B <= 0;
+              end
             end
         end
         // left
         else if(orientation == 1) begin
             
             // X,Y is bottom left corner
-            if((hcount <= (X + 39)) && (hcount >= X) && (vcount >= (Y - 9)) && (vcount <= Y)) begin
+            if((hcount <= (X + (length - 1))) && (hcount >= X) && (vcount >= (Y - 9)) && (vcount <= Y)) begin
                 R <= 0;
                 G <= 0;
                 B <= 15;
             end
             else begin
+              if(freeze == 0) begin
                 R <= 15;
                 G <= 15;
                 B <= 15;
+              end
+              else begin
+                R <= 15;
+                G <= 0;
+                B <= 0;
+              end
             end
         end
         // up
         else if(orientation == 2) begin
             
             // X,Y is top left corner
-            if((hcount <= (X + 9)) && (hcount >= X) && (vcount <= (Y + 39)) && (vcount >= Y)) begin
+            if((hcount <= (X + 9)) && (hcount >= X) && (vcount <= (Y + (length - 1))) && (vcount >= Y)) begin
               R <= 0;
               G <= 0;
               B <= 15;
             end
             else begin
-              R <= 15;
-              G <= 15;
-              B <= 15;
+              if(freeze == 0) begin
+                R <= 15;
+                G <= 15;
+                B <= 15;
+              end
+              else begin
+                R <= 15;
+                G <= 0;
+                B <= 0;
+              end
             end
         end
         // down
         else begin
             
             // X,Y is bottom left corner
-            if((hcount <= (X + 9)) && (hcount >= X) && (vcount >= (Y - 39)) && (vcount <= Y)) begin
+            if((hcount <= (X + 9)) && (hcount >= X) && (vcount >= (Y - (length - 1))) && (vcount <= Y)) begin
               R <= 0;
               G <= 0;
               B <= 15;
             end
             else begin
-              R <= 15;
-              G <= 15;
-              B <= 15;
+              if(freeze == 0) begin
+                R <= 15;
+                G <= 15;
+                B <= 15;
+              end
+              else begin
+                R <= 15;
+                G <= 0;
+                B <= 0;
+              end
             end
         end
     end
