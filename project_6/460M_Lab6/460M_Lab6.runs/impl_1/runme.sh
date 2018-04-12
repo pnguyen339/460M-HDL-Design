@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_5/B/460M_Lab6/460M_Lab6.runs/impl_1'
+HD_PWD='C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

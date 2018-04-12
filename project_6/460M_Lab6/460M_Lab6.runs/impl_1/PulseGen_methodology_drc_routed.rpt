@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Wed Apr 11 16:08:36 2018
+| Date         : Thu Apr 12 13:24:51 2018
 | Host         : Ericks-Laptop running 64-bit major release  (build 9200)
 | Command      : report_methodology -file PulseGen_methodology_drc_routed.rpt -rpx PulseGen_methodology_drc_routed.rpx
 | Design       : PulseGen
@@ -23,12 +23,33 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 0
-+------+----------+-------------+------------+
-| Rule | Severity | Description | Violations |
-+------+----------+-------------+------------+
-+------+----------+-------------+------------+
+             Violations found: 4
++-----------+----------+-----------------------------+------------+
+| Rule      | Severity | Description                 | Violations |
++-----------+----------+-----------------------------+------------+
+| TIMING-17 | Warning  | Non-clocked sequential cell | 4          |
++-----------+----------+-----------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
+TIMING-17#1 Warning
+Non-clocked sequential cell  
+The clock pin FB/nolabel_line89/ans_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Warning
+Non-clocked sequential cell  
+The clock pin FB/nolabel_line89/ans_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Warning
+Non-clocked sequential cell  
+The clock pin FB/nolabel_line89/ans_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Warning
+Non-clocked sequential cell  
+The clock pin FB/nolabel_line89/ans_reg[3]_inv/C is not reached by a timing clock
+Related violations: <none>
+
 

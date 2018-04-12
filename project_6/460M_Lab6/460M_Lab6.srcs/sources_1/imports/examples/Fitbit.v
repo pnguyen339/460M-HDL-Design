@@ -11,6 +11,8 @@ reg [3:0] count; // draw to ss
 reg [3:0] display_mode; // total steps, miles, steps over 32, high activity
 reg [13:0] high_activity_count;
 reg [13:0] high_activity_display; // draw to ss
+reg [3:0] d1, d2, d3, d4;
+reg step_copy;
 wire [13:0] step_ss; // draw to ss
 wire [7:0] miles; // draw to ss
 wire SI, slow_clk, slow_clk2;
@@ -84,18 +86,59 @@ always @(posedge slow_clk, posedge reset) begin
   end
 end
 
+NumberDisplay({d4,d3,d2,d1}, seg, an, slow_clk2);
+
 always @(posedge slow_clk2) begin
+  
+  // display 4 digits of the step count
   if(display_mode == 0) begin
-  
+    step_copy = step_ss;
+    d1 = step_copy % 10;
+    step_copy = step_copy / 10;
+    d2 = step_copy % 10;
+    step_copy = step_copy / 10;
+    d3 = step_copy % 10;
+    step_copy = step_copy / 10;
+    d4 = step_copy % 10;
   end
+  // display miles, _5 for decimal
   else if(display_mode == 1) begin
-  
+    if(miles % 2 == 1) begin
+      d1 <= 5;
+      d2 <= 10;
+      step_copy =  miles / 2;
+      d3 = step_copy % 10;
+      step_copy = step_copy / 10;
+      d4 = step_copy % 10;
+    end
+    else begin
+      step_copy = miles;
+      d1 <= step_copy % 10;
+      step_copy = step_copy / 10;
+      d2 <= step_copy % 10;
+      step_copy = step_copy / 10;
+      d3 <= step_copy % 10;
+      step_copy = step_copy / 10;
+      d4 <= step_copy % 10;
+    end
   end
+  // display the number of active seconds over 32 steps/s
   else if(display_mode == 2) begin
-  
+    d1 <= count;
+    d2 <= 0;
+    d3 <= 0;
+    d4 <= 0;
   end
+  // display high activity counter
   else begin
-  
+    step_copy = high_activity_display;
+    d1 = step_copy % 10;
+    step_copy = step_copy / 10;
+    d2 = step_copy % 10;
+    step_copy = step_copy / 10;
+    d3 = step_copy % 10;
+    step_copy = step_copy / 10;
+    d4 = step_copy % 10;  
   end
   display_mode <= display_mode + 1;
   if(display_mode == 4) begin 
