@@ -21,7 +21,7 @@
 
 
 module NumberDisplay(count,segment_dis, an, clock2hz);
-    input wire [7:0] count;
+    input wire [15:0] count;
     input clock2hz;
     output reg [6:0] segment_dis;
     output wire [3:0] an;
@@ -61,9 +61,10 @@ module NumberDisplay(count,segment_dis, an, clock2hz);
     assign an = ~ans;
      
     always @(count) begin
-        st <= count&5'b01111;
-        nd <= (count&8'b11110000)>>4;
-        rd <= 4'b0;
+        st <= count & 4'b1111;
+        nd <= (count >> 4) & 4'b1111;
+        rd <= (count >> 8) & 4'b1111;
+        th <= (count >> 12) & 4'b1111;
         
         case(st)
             4'b0000: first <= ~7'b0111111;
@@ -76,7 +77,7 @@ module NumberDisplay(count,segment_dis, an, clock2hz);
             4'b0111: first <= ~7'b0000111;
             4'b1000: first <= ~7'b1111111;
             4'b1001: first <= ~7'b1101111;
-            4'b1010: first <= ~7'b1110111; // A
+            4'b1010: first <= ~7'b0001000; // _
             4'b1011: first <= ~7'b1111100; // b
             4'b1100: first <= ~7'b0111001; // C
             4'b1101: first <= ~7'b1011110; // d
@@ -96,7 +97,7 @@ module NumberDisplay(count,segment_dis, an, clock2hz);
             4'b0111: second <= ~7'b0000111;
             4'b1000: second <= ~7'b1111111;
             4'b1001: second <= ~7'b1101111;
-            4'b1010: second <= ~7'b1110111; // A
+            4'b1010: second <= ~7'b0001000; // _
             4'b1011: second <= ~7'b1111100; // b
             4'b1100: second <= ~7'b0111001; // C
             4'b1101: second <= ~7'b1011110; // d
@@ -116,7 +117,7 @@ module NumberDisplay(count,segment_dis, an, clock2hz);
             4'b0111: third <= ~7'b0000111;
             4'b1000: third <= ~7'b1111111;
             4'b1001: third <= ~7'b1101111;
-            4'b1010: third <= ~7'b1110111; // A
+            4'b1010: third <= ~7'b0001000; // _
             4'b1011: third <= ~7'b1111100; // b
             4'b1100: third <= ~7'b0111001; // C
             4'b1101: third <= ~7'b1011110; // d
@@ -136,7 +137,7 @@ module NumberDisplay(count,segment_dis, an, clock2hz);
             4'b0111: fourth <= ~7'b0000111;
             4'b1000: fourth <= ~7'b1111111;
             4'b1001: fourth <= ~7'b1101111;
-            4'b1010: fourth <= ~7'b1110111; // A
+            4'b1010: fourth <= ~7'b0001000; // _
             4'b1011: fourth <= ~7'b1111100; // b
             4'b1100: fourth <= ~7'b0111001; // C
             4'b1101: fourth <= ~7'b1011110; // d
