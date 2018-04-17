@@ -20,9 +20,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module NumberDisplay(count,segment_dis, an, clock2hz);
+module NumberDisplay(count,segment_dis, an, clk);
     input wire [15:0] count;
-    input clock2hz;
+    input clk;
     output reg [6:0] segment_dis;
     output wire [3:0] an;
     
@@ -43,16 +43,16 @@ module NumberDisplay(count,segment_dis, an, clock2hz);
         ans <= 4'b0000;
     end
     
-    always @(posedge clock2hz) begin
+    always @(posedge clk) begin
         ans = ans<<1;
             
-        if(ans[1:0] == 2'b00) begin
-            ans = 2'b01;
+        if(ans[3:0] == 4'b0000) begin
+            ans = 2'b0001;
         end
         
         case(ans)
-            4'b0010: segment_dis <= first;
-            4'b0001: segment_dis <= second;
+            4'b0001: segment_dis <= first;
+            4'b0010: segment_dis <= second;
             4'b0100: segment_dis <= third;
             4'b1000: segment_dis <= fourth;
         endcase;                 

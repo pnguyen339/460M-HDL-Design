@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Thu Apr 12 13:24:28 2018
+| Date         : Tue Apr 17 15:12:53 2018
 | Host         : Ericks-Laptop running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file PulseGen_control_sets_placed.rpt
 | Design       : PulseGen
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     3 |
-| Unused register locations in slices containing registers |    15 |
+| Number of unique control sets                            |    16 |
+| Unused register locations in slices containing registers |    64 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,11 +33,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               6 |            3 |
-| No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              27 |            7 |
-| Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |               0 |            0 |
+| No           | No                    | No                     |              37 |           23 |
+| No           | No                    | Yes                    |              44 |           12 |
+| No           | Yes                   | No                     |             162 |           42 |
+| Yes          | No                    | No                     |               7 |            4 |
+| Yes          | No                    | Yes                    |              22 |            6 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -45,21 +45,38 @@ Table of Contents
 3. Detailed Control Set Information
 -----------------------------------
 
-+-------------------+---------------+-----------------------+------------------+----------------+
-|    Clock Signal   | Enable Signal |    Set/Reset Signal   | Slice Load Count | Bel Load Count |
-+-------------------+---------------+-----------------------+------------------+----------------+
-|  clk_IBUF_BUFG    |               |                       |                2 |              2 |
-|  FB/clockdiv2/CLK |               |                       |                1 |              4 |
-|  clk_IBUF_BUFG    |               | FB/clockdiv2/slowClk2 |                7 |             27 |
-+-------------------+---------------+-----------------------+------------------+----------------+
++------------------------+------------------------------------------+------------------------------------+------------------+----------------+
+|      Clock Signal      |               Enable Signal              |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
++------------------------+------------------------------------------+------------------------------------+------------------+----------------+
+|  step_reg_i_2_n_0      |                                          |                                    |                1 |              1 |
+|  slowClk1              | FB/sel                                   | sw_IBUF[1]                         |                1 |              4 |
+|  slowClk1              | FB/count[3]_i_1_n_0                      | sw_IBUF[1]                         |                1 |              4 |
+|  clockdiv16ms/CLK      |                                          |                                    |                2 |              4 |
+|  clockdiv16ms/CLK      | FB/nolabel_line90/segment_dis[6]_i_1_n_0 |                                    |                4 |              7 |
+|  clk_IBUF_BUFG         |                                          |                                    |                9 |             12 |
+|  slowClk1              | FB/high_activity_display                 | sw_IBUF[1]                         |                4 |             14 |
+|  step                  |                                          | sw_IBUF[1]                         |                4 |             15 |
+|  FB/clockdiv2/slowClk2 |                                          |                                    |               11 |             20 |
+|  clk_IBUF_BUFG         |                                          | FB/clockdiv2/slowClk2_0            |                7 |             27 |
+|  clk_IBUF_BUFG         |                                          | clockdiv16ms/slowClk3              |                7 |             27 |
+|  clk_IBUF_BUFG         |                                          | clockdiv32/counter[27]_i_1__2_n_0  |                7 |             27 |
+|  clk_IBUF_BUFG         |                                          | clockdiv128/counter[27]_i_1__4_n_0 |                7 |             27 |
+|  clk_IBUF_BUFG         |                                          | clockdiv64/counter[27]_i_1__3_n_0  |                7 |             27 |
+|  clk_IBUF_BUFG         |                                          | FB/clockdiv/slowClk1               |                7 |             27 |
+|  slowClk1              |                                          | sw_IBUF[1]                         |                8 |             29 |
++------------------------+------------------------------------------+------------------------------------+------------------+----------------+
 
 
 +--------+-----------------------+
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
-| 2      |                     1 |
-| 4      |                     1 |
-| 16+    |                     1 |
+| 1      |                     1 |
+| 4      |                     3 |
+| 7      |                     1 |
+| 12     |                     1 |
+| 14     |                     1 |
+| 15     |                     1 |
+| 16+    |                     8 |
 +--------+-----------------------+
 
 

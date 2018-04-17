@@ -6,9 +6,42 @@ output led;
 output [6:0] seg;
 output [3:0] an;
 
-reg step, reset;
+reg step;
+wire reset, start;
+wire [1:0] mode;
+wire clk_32, clk_64, clk_128;
 
 // fitbit calculates all the data to display and contains seven segment module
-Fitbit FB(step, clk, reset, seg, an, led);
+Fitbit FB(step, clk, reset, seg, an, led, clk_16ms);
+
+
+assign mode = sw[3:2];
+assign reset = sw[1];
+assign start = sw[0];
+always @(clk) begin
+  // generate a pulse if start is 1
+  if(start == 1) begin
+    if(mode == 0) begin // 32 steps per sec
+      step <= clk_32;
+    end
+    else if(mode == 1) begin // 64 steps per sec
+      step <= clk_64;
+    end
+    else if(mode == 2) begin // 128 steps per sec
+      step <= clk_128;  
+    end
+    else begin // hybrid
+  
+    end
+  end
+  else begin
+    step <= 1'b0;
+  end
+end
+
+clockDivider_32 clockdiv32(clk, clk_32, start);
+clockDivider_64 clockdiv64(clk, clk_64, start);
+clockDivider_128 clockdiv128(clk, clk_128, start);
+clockDivider_16ms clockdiv16ms(clk, clk_16ms);
 
 endmodule

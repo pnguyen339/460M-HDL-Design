@@ -62,7 +62,7 @@ module clockDivider_1Hz(clk100Mhz, slowClk1);
 
   always @ (posedge clk100Mhz)
   begin
-    if(counter == 100000000) begin
+    if(counter == 50000000) begin
       counter <= 1;
       slowClk1 <= ~slowClk1;
     end
@@ -86,7 +86,7 @@ module clockDivider_2Hz(clk100Mhz, slowClk2);
 
   always @ (posedge clk100Mhz)
   begin
-    if(counter == 50000000) begin
+    if(counter == 100000000) begin
       counter <= 1;
       slowClk2 <= ~slowClk2;
     end

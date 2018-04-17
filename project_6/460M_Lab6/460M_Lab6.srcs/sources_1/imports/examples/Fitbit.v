@@ -1,6 +1,6 @@
 
-module Fitbit(step, clk, reset, seg, an, SI);
-input step, clk, reset;
+module Fitbit(step, clk, reset, seg, an, SI, clk_16ms);
+input step, clk, reset, clk_16ms;
 output SI;
 output [6:0] seg;
 output [3:0] an;
@@ -12,7 +12,7 @@ reg [3:0] display_mode; // total steps, miles, steps over 32, high activity
 reg [13:0] high_activity_count;
 reg [13:0] high_activity_display; // draw to ss
 reg [3:0] d1, d2, d3, d4;
-reg step_copy;
+reg [13:0] step_copy;
 wire [13:0] step_ss; // draw to ss
 wire [7:0] miles; // draw to ss
 wire SI, slow_clk, slow_clk2;
@@ -55,8 +55,9 @@ always @(posedge slow_clk, posedge reset) begin
   // check if activity is over 32 steps per second
   if(difference >= 32 && count_9 < 9) begin
     count <= count + 1;
+    if(count > 9) count <= 9;
   end
-  count_9 <= count_9 + 1;
+  if(count_9 < 10) count_9 <= count_9 + 1;
   
   // check if activity is over 64 steps per second, increment count
   if(difference >= 64) begin
@@ -86,7 +87,7 @@ always @(posedge slow_clk, posedge reset) begin
   end
 end
 
-NumberDisplay({d4,d3,d2,d1}, seg, an, slow_clk2);
+NumberDisplay({d4,d3,d2,d1}, seg, an, clk_16ms);
 
 always @(posedge slow_clk2) begin
   
@@ -140,6 +141,7 @@ always @(posedge slow_clk2) begin
     step_copy = step_copy / 10;
     d4 = step_copy % 10;  
   end
+  
   display_mode <= display_mode + 1;
   if(display_mode == 4) begin 
     display_mode <= 0;
