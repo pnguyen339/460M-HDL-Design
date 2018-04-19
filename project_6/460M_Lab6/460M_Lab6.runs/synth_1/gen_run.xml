@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1523995907">
-  <File Type="RDS-PROPCONSTRS" Name="PulseGen_drc_synth.rpt"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1524114049">
   <File Type="PA-TCL" Name="PulseGen.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="PulseGen_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="PulseGen_reports.tcl"/>
   <File Type="RDS-RDS" Name="PulseGen.vds"/>
   <File Type="RDS-UTIL" Name="PulseGen_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="PulseGen_utilization_synth.pb"/>
@@ -10,10 +11,8 @@
   <File Type="VDS-TIMING-PB" Name="PulseGen_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/imports/new/NumberDisplay.v">
+    <File Path="$PSRCDIR/sources_1/new/Dividers.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../460M_Lab5_A/460M_Lab5_A.srcs/sources_1/new/NumberDisplay.v"/>
-        <Attr Name="ImportTime" Val="1523043547"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -28,17 +27,28 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/Dividers.v">
+    <File Path="$PSRCDIR/sources_1/imports/examples/Fitbit.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Modeltech_pe_edu_10.4a/examples/Fitbit.v"/>
+        <Attr Name="ImportTime" Val="1523479511"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/examples/Fitbit.v">
+    <File Path="$PSRCDIR/sources_1/imports/new/NumberDisplay.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Modeltech_pe_edu_10.4a/examples/Fitbit.v"/>
-        <Attr Name="ImportTime" Val="1523479511"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../460M_Lab5_A/460M_Lab5_A.srcs/sources_1/new/NumberDisplay.v"/>
+        <Attr Name="ImportTime" Val="1523043547"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/Pulse.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Pulse.v"/>
+        <Attr Name="ImportTime" Val="1523994798"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

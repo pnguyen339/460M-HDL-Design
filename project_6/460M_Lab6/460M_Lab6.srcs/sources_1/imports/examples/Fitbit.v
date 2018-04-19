@@ -21,7 +21,7 @@ assign SI = (step_count > 9999) ? 1 : 0; // set SI when ss is saturated
 assign step_ss = (step_count > 9999) ? 9999 : step_count; // step_ss saturates at 9999
 assign miles = step_count / 1024; // miles is double the distance covered so .5 can be used
 
-clockDivider_1Hz clockdiv(clk, slow_clk);
+clockDivider_1s clockdiv(clk, slow_clk, start);
 clockDivider_2Hz clockdiv2(clk, slow_clk2);
 
 initial begin
@@ -48,7 +48,15 @@ end
 
 // runs every second
 always @(posedge slow_clk, posedge reset) begin
-  
+if(reset == 1) begin
+  count <= 0;
+  count_9 <= 0;
+  old_count <= 0;
+  high_activity_count <= 0;
+  high_activity_display <= 0;
+  difference <= 0;
+end
+else begin
   // gets the number of steps in the last second
   difference = step_count - old_count;
   
@@ -78,13 +86,7 @@ always @(posedge slow_clk, posedge reset) begin
   
   old_count <= step_count; 
 
-  if(reset == 1) begin
-    count <= 0;
-    count_9 <= 0;
-    old_count <= 0;
-    high_activity_count <= 0;
-    high_activity_display <= 0;
-  end
+end
 end
 
 NumberDisplay({d4,d3,d2,d1}, seg, an, clk_16ms);
@@ -142,8 +144,8 @@ always @(posedge slow_clk2) begin
     d4 = step_copy % 10;  
   end
   
-  display_mode <= display_mode + 1;
-  if(display_mode == 4) begin 
+  display_mode <= 0;
+  if(display_mode == 3) begin 
     display_mode <= 0;
   end 
 end
