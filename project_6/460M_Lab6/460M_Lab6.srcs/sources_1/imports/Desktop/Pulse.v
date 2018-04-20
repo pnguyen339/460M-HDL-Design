@@ -20,17 +20,19 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module PulseMode(clk100Mhz, slowClk, sel, reset, start);
+module PulseMode(clk100Mhz, slowClk, sel, reset, start, secondClk);
     input [1:0] sel;
-    input start, reset;
+    input start, reset, secondClk;
     input clk100Mhz; //fast clock
     output reg slowClk; //slow clock
     wire secondClk;
+    reg noPulse;
     reg[27:0] counter;
-    reg[9:0] count;
+    reg[10:0] count;
     reg[27:0] frequency;
     reg[27:0] variableFrequency;
     initial begin
+        noPulse <= 0;
         counter <= 0;
         slowClk <= 0;
         frequency <= 0;
@@ -38,54 +40,84 @@ module PulseMode(clk100Mhz, slowClk, sel, reset, start);
     end
     
     
-    clockDivider_1s a(clk100Mhz, secondClk, reset, start);
+    //clockDivider_1s a(clk100Mhz, secondClk, reset, start);
     
-    always@(posedge secondClk)
+    always@(posedge secondClk, posedge reset)
     begin
-        if(sel == 2'b11) begin
+        if(reset == 1) begin
+            count<=1;
+        end
+        else if(sel == 2'b11) begin
             if(count == 1)begin
-                variableFrequency <= 5000000/2;
+                variableFrequency <= 2500000;
+                count <= count + 1;
+                noPulse <= 0;
             end
             else if(count == 2) begin
-                variableFrequency <= 3030303/2;
+                variableFrequency <= 1515145;
+                count <= count + 1;
+                noPulse <= 0;
             end
             else if(count == 3) begin
-                variableFrequency <= 1515152/2;
+                variableFrequency <= 757576;
+                count <= count + 1;
+                noPulse <= 0;
             end
             else if(count == 4) begin
-                variableFrequency <= 3703704/2;
+                variableFrequency <= 1851852;
+                count <= count + 1;
+                noPulse <= 0;
             end
             else if(count == 5) begin
-                variableFrequency <= 1428571/2;
+                variableFrequency <= 714286;
+                count <= count + 1;
+                noPulse <= 0;
             end
             else if(count == 6) begin
-                variableFrequency <= 3333333/2;
+                variableFrequency <= 1666667;
+                count <= count + 1;
+                noPulse <= 0;
             end
             else if(count == 7) begin
-                variableFrequency <= 5263158/2;
+                variableFrequency <= 2631579;
+                count <= count + 1;
+                noPulse <= 0;
             end
             else if(count == 8) begin
-                variableFrequency <= 3333333/2;
+                variableFrequency <= 1666667;
+                count <= count + 1;
+                noPulse <= 0;
             end
             else if(count == 9) begin
-                variableFrequency <= 3030303/2;
+                variableFrequency <= 1400000;
+                count <= count + 1;
+                noPulse <= 0;
             end                    
             else if(count <= 73) begin
-                variableFrequency <= 1449275/2;
+                variableFrequency <= 724638;
+                count <= count + 1;
+                noPulse <= 0;
             end
             else if(count <= 79) begin
-                variableFrequency <= 2941176/2;
+                variableFrequency <= 1470588;
+                count <= count + 1;
+                noPulse <= 0;
+            end
+            else if(count <=145)begin
+                variableFrequency <= 402326;
+                count <= count + 1;
+                noPulse <= 0;
             end
             else begin
-                variableFrequency <= 806452/2;
+                noPulse <= 1;
             end
-            
-            count = count + 1;
-            
+                    
         end
         else begin
             count <= 1;
         end
+        
+        
     end
 
     always@(sel) begin
@@ -93,18 +125,15 @@ module PulseMode(clk100Mhz, slowClk, sel, reset, start);
             2'b00: frequency <= 3125000;
             2'b01: frequency <= 1562500;
             2'b10: frequency <= 781250;
-            default: frequency <= 0; 
+            2'b11: frequency <= variableFrequency;
+            default: frequency <= 3125000; 
         endcase
     end
     
     always @ (posedge clk100Mhz)
         begin
-        if(reset == 0 && start == 1) begin
-            if(sel == 2'b11 && counter == variableFrequency)begin
-              counter <= 0;
-              slowClk <= ~slowClk;
-            end
-            else if(counter == frequency) begin
+        if(reset == 0 && start == 1 && noPulse == 0) begin
+           if(counter == frequency) begin
               counter <= 0;
               slowClk <= ~slowClk;
             end

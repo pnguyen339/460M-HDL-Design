@@ -1,4 +1,0 @@
-ERROR: Exception caught trying to open file D:\Users\pnguy\Documents\GitHub\460M-HDL-Design\project_6\460M_Lab6\460M_Lab6.runs\synth_1/runme.log
-	Exception name: Error
-	Exception error code: 70
-	Exception message: Permission denied

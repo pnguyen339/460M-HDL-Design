@@ -1,8 +1,8 @@
-Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Thu Apr 19 20:31:53 2018
-| Host         : Ericks-Laptop running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri Apr 20 16:49:48 2018
+| Host         : DESKTOP-D62POV0 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file PulseGen_control_sets_placed.rpt
 | Design       : PulseGen
 | Device       : xc7a35t
@@ -23,7 +23,7 @@ Table of Contents
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
 | Number of unique control sets                            |    15 |
-| Unused register locations in slices containing registers |    49 |
+| Unused register locations in slices containing registers |    53 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,45 +33,46 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              29 |           16 |
+| No           | No                    | No                     |              27 |           18 |
 | No           | No                    | Yes                    |              44 |           11 |
-| No           | Yes                   | No                     |             138 |           33 |
-| Yes          | No                    | No                     |              28 |            8 |
-| Yes          | No                    | Yes                    |              22 |            6 |
-| Yes          | Yes                   | No                     |              10 |            6 |
+| No           | Yes                   | No                     |             111 |           27 |
+| Yes          | No                    | No                     |              28 |           12 |
+| Yes          | No                    | Yes                    |              33 |           11 |
+| Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+------------------------------------+-----------------------------------+-----------------------+------------------+----------------+
-|            Clock Signal            |           Enable Signal           |    Set/Reset Signal   | Slice Load Count | Bel Load Count |
-+------------------------------------+-----------------------------------+-----------------------+------------------+----------------+
-|  slowClk3                          | FB/count_9[3]_i_1_n_0             | sw_IBUF[1]            |                1 |              4 |
-|  slowClk3                          | FB/count[3]_i_1__0_n_0            | sw_IBUF[1]            |                1 |              4 |
-|  clockdiv16ms/segment_dis_reg[6]   |                                   |                       |                3 |              4 |
-|  clk_IBUF_BUFG                     |                                   |                       |                5 |              7 |
-|  clockdiv16ms/segment_dis_reg[6]   | FB/display/segment_dis[6]_i_1_n_0 |                       |                2 |              7 |
-|  variableFrequency_reg[21]_i_3_n_0 | a/count                           | a/count[9]_i_1_n_0    |                6 |             10 |
-|  slowClk3                          | FB/high_activity_display          | sw_IBUF[1]            |                4 |             14 |
-|  a/step                            |                                   | sw_IBUF[1]            |                4 |             15 |
-|  FB/clockdiv2/CLK                  |                                   |                       |                8 |             18 |
-|  variableFrequency_reg[21]_i_3_n_0 | a/count                           |                       |                6 |             21 |
-|  clk_IBUF_BUFG                     |                                   | clockdiv16ms/slowClk3 |                7 |             27 |
-|  clk_IBUF_BUFG                     |                                   | FB/clockdiv2/slowClk2 |                7 |             27 |
-|  clk_IBUF_BUFG                     |                                   | a/counter[0]_i_1_n_0  |                7 |             28 |
-|  slowClk3                          |                                   | sw_IBUF[1]            |                7 |             29 |
-|  clk_IBUF_BUFG                     |                                   | a/a/SR[0]             |               12 |             56 |
-+------------------------------------+-----------------------------------+-----------------------+------------------+----------------+
++-------------------+-----------------------------------+-------------------------------+------------------+----------------+
+|    Clock Signal   |           Enable Signal           |        Set/Reset Signal       | Slice Load Count | Bel Load Count |
++-------------------+-----------------------------------+-------------------------------+------------------+----------------+
+|  clk_1s_BUFG      |                                   |                               |                1 |              1 |
+|  clockdiv16ms/CLK |                                   |                               |                2 |              4 |
+|  clk_1s_BUFG      | FB/count[3]_i_1_n_0               | sw_IBUF[1]                    |                1 |              4 |
+|  clk_1s_BUFG      | FB/count_9[3]_i_1_n_0             | sw_IBUF[1]                    |                1 |              4 |
+|  clockdiv16ms/CLK | FB/display/segment_dis[6]_i_1_n_0 |                               |                3 |              7 |
+|  clk_1s_BUFG      | a/count[10]_i_1_n_0               | sw_IBUF[1]                    |                5 |             11 |
+|  clk_1s_BUFG      | FB/high_activity_display          | sw_IBUF[1]                    |                4 |             14 |
+|  a/step           |                                   | sw_IBUF[1]                    |                4 |             15 |
+|  clk_1s_BUFG      | a/variableFrequency               |                               |                9 |             21 |
+|  clk_IBUF_BUFG    |                                   |                               |               15 |             22 |
+|  clk_IBUF_BUFG    |                                   | clockdiv16ms/slowClk3         |                7 |             27 |
+|  clk_IBUF_BUFG    |                                   | FB/clear                      |                7 |             28 |
+|  clk_IBUF_BUFG    |                                   | a/counter[0]_i_1_n_0          |                7 |             28 |
+|  clk_IBUF_BUFG    |                                   | clockdiv1/counter[27]_i_1_n_0 |                6 |             28 |
+|  clk_1s_BUFG      |                                   | sw_IBUF[1]                    |                7 |             29 |
++-------------------+-----------------------------------+-------------------------------+------------------+----------------+
 
 
 +--------+-----------------------+
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
+| 1      |                     1 |
 | 4      |                     3 |
-| 7      |                     2 |
-| 10     |                     1 |
+| 7      |                     1 |
+| 11     |                     1 |
 | 14     |                     1 |
 | 15     |                     1 |
 | 16+    |                     7 |

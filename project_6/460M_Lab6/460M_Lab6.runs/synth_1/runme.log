@@ -3,10 +3,10 @@
     with args -log PulseGen.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source PulseGen.tcl
 
 
-****** Vivado v2016.4 (64-bit)
-  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
-  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 
 source PulseGen.tcl -notrace
 Command: synth_design -top PulseGen -part xc7a35tcpg236-1
@@ -14,40 +14,47 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9852 
+INFO: Helper process launched with PID 12964 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 280.609 ; gain = 70.168
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 345.762 ; gain = 101.910
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'PulseGen' [C:/Users/erick/project_6/project_6.srcs/sources_1/new/PulseGen.v:2]
-INFO: [Synth 8-638] synthesizing module 'PulseMode' [C:/Users/erick/project_6/project_6.srcs/sources_1/imports/Desktop/Pulse.v:23]
-INFO: [Synth 8-638] synthesizing module 'clockDivider_1s' [C:/Users/erick/project_6/project_6.srcs/sources_1/imports/examples/EE 460M_Lab2_Starter_File.v:122]
-INFO: [Synth 8-256] done synthesizing module 'clockDivider_1s' (1#1) [C:/Users/erick/project_6/project_6.srcs/sources_1/imports/examples/EE 460M_Lab2_Starter_File.v:122]
-INFO: [Synth 8-256] done synthesizing module 'PulseMode' (2#1) [C:/Users/erick/project_6/project_6.srcs/sources_1/imports/Desktop/Pulse.v:23]
-INFO: [Synth 8-638] synthesizing module 'Fitbit' [C:/Users/erick/project_6/project_6.srcs/sources_1/imports/examples/Fitbit.v:2]
-INFO: [Synth 8-638] synthesizing module 'clockDivider_2Hz' [C:/Users/erick/project_6/project_6.srcs/sources_1/imports/examples/EE 460M_Lab2_Starter_File.v:76]
-INFO: [Synth 8-256] done synthesizing module 'clockDivider_2Hz' (3#1) [C:/Users/erick/project_6/project_6.srcs/sources_1/imports/examples/EE 460M_Lab2_Starter_File.v:76]
-INFO: [Synth 8-638] synthesizing module 'NumberDisplay' [C:/Users/erick/project_6/project_6.srcs/sources_1/imports/new/NumberDisplay.v:23]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/erick/project_6/project_6.srcs/sources_1/imports/new/NumberDisplay.v:53]
-INFO: [Synth 8-226] default block is never used [C:/Users/erick/project_6/project_6.srcs/sources_1/imports/new/NumberDisplay.v:69]
-INFO: [Synth 8-226] default block is never used [C:/Users/erick/project_6/project_6.srcs/sources_1/imports/new/NumberDisplay.v:89]
-INFO: [Synth 8-226] default block is never used [C:/Users/erick/project_6/project_6.srcs/sources_1/imports/new/NumberDisplay.v:109]
-INFO: [Synth 8-226] default block is never used [C:/Users/erick/project_6/project_6.srcs/sources_1/imports/new/NumberDisplay.v:129]
-WARNING: [Synth 8-567] referenced signal 'st' should be on the sensitivity list [C:/Users/erick/project_6/project_6.srcs/sources_1/imports/new/NumberDisplay.v:63]
-WARNING: [Synth 8-567] referenced signal 'nd' should be on the sensitivity list [C:/Users/erick/project_6/project_6.srcs/sources_1/imports/new/NumberDisplay.v:63]
-WARNING: [Synth 8-567] referenced signal 'rd' should be on the sensitivity list [C:/Users/erick/project_6/project_6.srcs/sources_1/imports/new/NumberDisplay.v:63]
-WARNING: [Synth 8-567] referenced signal 'th' should be on the sensitivity list [C:/Users/erick/project_6/project_6.srcs/sources_1/imports/new/NumberDisplay.v:63]
-INFO: [Synth 8-256] done synthesizing module 'NumberDisplay' (4#1) [C:/Users/erick/project_6/project_6.srcs/sources_1/imports/new/NumberDisplay.v:23]
-WARNING: [Synth 8-5788] Register count_reg in module Fitbit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/erick/project_6/project_6.srcs/sources_1/imports/examples/Fitbit.v:52]
-WARNING: [Synth 8-5788] Register count_9_reg in module Fitbit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/erick/project_6/project_6.srcs/sources_1/imports/examples/Fitbit.v:53]
-WARNING: [Synth 8-5788] Register old_count_reg in module Fitbit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/erick/project_6/project_6.srcs/sources_1/imports/examples/Fitbit.v:54]
-WARNING: [Synth 8-5788] Register high_activity_count_reg in module Fitbit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/erick/project_6/project_6.srcs/sources_1/imports/examples/Fitbit.v:55]
-WARNING: [Synth 8-5788] Register high_activity_display_reg in module Fitbit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/erick/project_6/project_6.srcs/sources_1/imports/examples/Fitbit.v:56]
-INFO: [Synth 8-256] done synthesizing module 'Fitbit' (5#1) [C:/Users/erick/project_6/project_6.srcs/sources_1/imports/examples/Fitbit.v:2]
-INFO: [Synth 8-638] synthesizing module 'clockDivider_16ms' [C:/Users/erick/project_6/project_6.srcs/sources_1/imports/new/Dividers.v:80]
-INFO: [Synth 8-256] done synthesizing module 'clockDivider_16ms' (6#1) [C:/Users/erick/project_6/project_6.srcs/sources_1/imports/new/Dividers.v:80]
-INFO: [Synth 8-256] done synthesizing module 'PulseGen' (7#1) [C:/Users/erick/project_6/project_6.srcs/sources_1/new/PulseGen.v:2]
+INFO: [Synth 8-638] synthesizing module 'PulseGen' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/new/PulseGen.v:2]
+INFO: [Synth 8-638] synthesizing module 'PulseMode' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/Desktop/Pulse.v:23]
+INFO: [Synth 8-226] default block is never used [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/Desktop/Pulse.v:124]
+WARNING: [Synth 8-567] referenced signal 'variableFrequency' should be on the sensitivity list [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/Desktop/Pulse.v:123]
+WARNING: [Synth 8-5788] Register variableFrequency_reg in module PulseMode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/Desktop/Pulse.v:52]
+WARNING: [Synth 8-5788] Register noPulse_reg in module PulseMode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/Desktop/Pulse.v:54]
+INFO: [Synth 8-256] done synthesizing module 'PulseMode' (1#1) [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/Desktop/Pulse.v:23]
+INFO: [Synth 8-638] synthesizing module 'Fitbit' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/examples/Fitbit.v:2]
+INFO: [Synth 8-638] synthesizing module 'clockDivider_2Hz' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/examples/EE 460M_Lab2_Starter_File.v:76]
+INFO: [Synth 8-256] done synthesizing module 'clockDivider_2Hz' (2#1) [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/examples/EE 460M_Lab2_Starter_File.v:76]
+INFO: [Synth 8-638] synthesizing module 'NumberDisplay' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/new/NumberDisplay.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/new/NumberDisplay.v:53]
+INFO: [Synth 8-226] default block is never used [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/new/NumberDisplay.v:69]
+INFO: [Synth 8-226] default block is never used [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/new/NumberDisplay.v:89]
+INFO: [Synth 8-226] default block is never used [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/new/NumberDisplay.v:109]
+INFO: [Synth 8-226] default block is never used [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/new/NumberDisplay.v:129]
+WARNING: [Synth 8-567] referenced signal 'st' should be on the sensitivity list [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/new/NumberDisplay.v:63]
+WARNING: [Synth 8-567] referenced signal 'nd' should be on the sensitivity list [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/new/NumberDisplay.v:63]
+WARNING: [Synth 8-567] referenced signal 'rd' should be on the sensitivity list [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/new/NumberDisplay.v:63]
+WARNING: [Synth 8-567] referenced signal 'th' should be on the sensitivity list [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/new/NumberDisplay.v:63]
+INFO: [Synth 8-256] done synthesizing module 'NumberDisplay' (3#1) [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/new/NumberDisplay.v:23]
+WARNING: [Synth 8-6014] Unused sequential element difference_reg was removed.  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/examples/Fitbit.v:61]
+WARNING: [Synth 8-6014] Unused sequential element step_copy_reg was removed.  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/examples/Fitbit.v:117]
+WARNING: [Synth 8-5788] Register count_reg in module Fitbit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/examples/Fitbit.v:56]
+WARNING: [Synth 8-5788] Register count_9_reg in module Fitbit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/examples/Fitbit.v:57]
+WARNING: [Synth 8-5788] Register old_count_reg in module Fitbit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/examples/Fitbit.v:58]
+WARNING: [Synth 8-5788] Register high_activity_count_reg in module Fitbit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/examples/Fitbit.v:59]
+WARNING: [Synth 8-5788] Register high_activity_display_reg in module Fitbit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/examples/Fitbit.v:60]
+INFO: [Synth 8-256] done synthesizing module 'Fitbit' (4#1) [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/examples/Fitbit.v:2]
+INFO: [Synth 8-638] synthesizing module 'clockDivider_1s' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/examples/EE 460M_Lab2_Starter_File.v:122]
+INFO: [Synth 8-256] done synthesizing module 'clockDivider_1s' (5#1) [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/examples/EE 460M_Lab2_Starter_File.v:122]
+INFO: [Synth 8-638] synthesizing module 'clockDivider_16ms' [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/new/Dividers.v:80]
+INFO: [Synth 8-256] done synthesizing module 'clockDivider_16ms' (6#1) [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/new/Dividers.v:80]
+INFO: [Synth 8-256] done synthesizing module 'PulseGen' (7#1) [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/new/PulseGen.v:2]
+WARNING: [Synth 8-3331] design Fitbit has unconnected port start
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 317.934 ; gain = 107.492
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 397.762 ; gain = 153.910
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -57,52 +64,56 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 317.934 ; gain = 107.492
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 397.762 ; gain = 153.910
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/erick/project_6/project_6.srcs/constrs_1/imports/460M-HDL-Design/Basys3_Master.xdc]
-Finished Parsing XDC File [C:/Users/erick/project_6/project_6.srcs/constrs_1/imports/460M-HDL-Design/Basys3_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/erick/project_6/project_6.srcs/constrs_1/imports/460M-HDL-Design/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/PulseGen_propImpl.xdc].
+Parsing XDC File [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/constrs_1/imports/460M-HDL-Design/Basys3_Master.xdc]
+Finished Parsing XDC File [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/constrs_1/imports/460M-HDL-Design/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/constrs_1/imports/460M-HDL-Design/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/PulseGen_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/PulseGen_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 617.504 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 735.953 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 617.504 ; gain = 407.063
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 735.953 ; gain = 492.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 617.504 ; gain = 407.063
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 735.953 ; gain = 492.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 617.504 ; gain = 407.063
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 735.953 ; gain = 492.102
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5545] ROM "slowClk3" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
-INFO: [Synth 8-5544] ROM "variableFrequency" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "noPulse" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/Desktop/Pulse.v:136]
 INFO: [Synth 8-5545] ROM "slowClk2" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
 INFO: [Synth 8-5544] ROM "segment_dis" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "old_count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "high_activity_count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "d1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "d1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "d2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "d3" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element step_count_reg was removed.  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/examples/Fitbit.v:37]
+WARNING: [Synth 8-6014] Unused sequential element counter_2Hz_reg was removed.  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/examples/Fitbit.v:166]
+INFO: [Synth 8-5545] ROM "slowClk3" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "slowClk3" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 617.504 ; gain = 407.063
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 735.953 ; gain = 492.102
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -118,30 +129,34 @@ Detailed RTL Component Info :
 	   2 Input     28 Bit       Adders := 4     
 	   3 Input     15 Bit       Adders := 1     
 	   2 Input     14 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
 	   2 Input      4 Bit       Adders := 2     
 	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
-	               28 Bit    Registers := 5     
+	               28 Bit    Registers := 4     
 	               15 Bit    Registers := 1     
 	               14 Bit    Registers := 2     
-	               10 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
 	                7 Bit    Registers := 1     
 	                4 Bit    Registers := 7     
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 5     
 +---Muxes : 
-	   2 Input     28 Bit        Muxes := 4     
+	   4 Input     28 Bit        Muxes := 1     
+	   2 Input     28 Bit        Muxes := 3     
 	   2 Input     22 Bit        Muxes := 1     
-	   8 Input     22 Bit        Muxes := 1     
-	   4 Input     22 Bit        Muxes := 1     
-	   2 Input     21 Bit        Muxes := 2     
 	   3 Input     21 Bit        Muxes := 1     
 	   2 Input     14 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 2     
 	   2 Input      6 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 17    
-	   2 Input      1 Bit        Muxes := 11    
+	   2 Input      4 Bit        Muxes := 7     
+	   5 Input      4 Bit        Muxes := 2     
+	   6 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 17    
+	  10 Input      1 Bit        Muxes := 3     
 	   5 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -149,31 +164,21 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module clockDivider_1s 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     28 Bit       Adders := 1     
-+---Registers : 
-	               28 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     28 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
 Module PulseMode 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     10 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
 +---Registers : 
 	               28 Bit    Registers := 1     
-	               10 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
 +---Muxes : 
+	   4 Input     28 Bit        Muxes := 1     
 	   2 Input     22 Bit        Muxes := 1     
-	   8 Input     22 Bit        Muxes := 1     
-	   4 Input     22 Bit        Muxes := 1     
-	   2 Input     21 Bit        Muxes := 2     
 	   3 Input     21 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 5     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+	  10 Input      1 Bit        Muxes := 3     
 Module clockDivider_2Hz 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -195,6 +200,7 @@ Detailed RTL Component Info :
 Module Fitbit 
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     28 Bit       Adders := 1     
 	   3 Input     15 Bit       Adders := 1     
 	   2 Input     14 Bit       Adders := 2     
 	   2 Input      4 Bit       Adders := 2     
@@ -207,8 +213,22 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     14 Bit        Muxes := 2     
 	   2 Input      6 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 16    
-	   2 Input      1 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 6     
+	   5 Input      4 Bit        Muxes := 2     
+	   6 Input      4 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 1     
+Module clockDivider_1s 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     28 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
 Module clockDivider_16ms 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -234,13 +254,17 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5545] ROM "clockdiv/slowClk3" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "clockdiv2/slowClk2" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element clockdiv2/counter_reg was removed.  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/examples/EE 460M_Lab2_Starter_File.v:89]
+WARNING: [Synth 8-6014] Unused sequential element clockdiv2/slowClk2_reg was removed.  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/examples/EE 460M_Lab2_Starter_File.v:91]
 INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "d1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "d2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "a/a/slowClk3" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element step_count_reg was removed.  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/examples/Fitbit.v:37]
+WARNING: [Synth 8-6014] Unused sequential element counter_2Hz_reg was removed.  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/examples/Fitbit.v:166]
+INFO: [Synth 8-5545] ROM "clockdiv1/slowClk3" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clockdiv16ms/slowClk3" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element a/counter_reg was removed.  [D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/Desktop/Pulse.v:136]
+WARNING: [Synth 8-3331] design Fitbit has unconnected port start
 INFO: [Synth 8-3886] merging instance 'a/variableFrequency_reg[11]' (FDE) to 'a/variableFrequency_reg[16]'
 INFO: [Synth 8-3886] merging instance 'a/variableFrequency_reg[22]' (FDE) to 'a/variableFrequency_reg[23]'
 INFO: [Synth 8-3886] merging instance 'a/variableFrequency_reg[23]' (FDE) to 'a/variableFrequency_reg[24]'
@@ -250,7 +274,7 @@ INFO: [Synth 8-3886] merging instance 'a/variableFrequency_reg[26]' (FDE) to 'a/
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a/variableFrequency_reg[27] )
 WARNING: [Synth 8-3332] Sequential element (a/variableFrequency_reg[27]) is unused and will be removed from module PulseGen.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 617.504 ; gain = 407.063
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 735.953 ; gain = 492.102
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -259,16 +283,16 @@ Report RTL Partitions:
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
 ---------------------------------------------------------------------------------
-Start Timing Optimization
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 617.504 ; gain = 407.063
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 750.852 ; gain = 507.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 657.313 ; gain = 446.871
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 770.461 ; gain = 526.609
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -280,7 +304,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 665.082 ; gain = 454.641
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 808.480 ; gain = 564.629
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -304,7 +328,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 665.082 ; gain = 454.641
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 808.480 ; gain = 564.629
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -317,7 +341,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 665.082 ; gain = 454.641
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 808.480 ; gain = 564.629
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -329,25 +353,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 665.082 ; gain = 454.641
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 808.480 ; gain = 564.629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 665.082 ; gain = 454.641
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 808.480 ; gain = 564.629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 665.082 ; gain = 454.641
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 808.480 ; gain = 564.629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 665.082 ; gain = 454.641
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 808.480 ; gain = 564.629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -363,43 +387,40 @@ Report Cell Usage:
 +------+-------+------+
 |      |Cell   |Count |
 +------+-------+------+
-|1     |BUFG   |     3|
-|2     |CARRY4 |    57|
-|3     |LUT1   |   187|
-|4     |LUT2   |   114|
-|5     |LUT3   |    35|
-|6     |LUT4   |    45|
-|7     |LUT5   |    71|
-|8     |LUT6   |   189|
-|9     |MUXF7  |     1|
-|10    |FDCE   |    66|
-|11    |FDRE   |   204|
-|12    |FDSE   |     1|
-|13    |IBUF   |     5|
-|14    |OBUF   |    12|
+|1     |BUFG   |     2|
+|2     |CARRY4 |    54|
+|3     |LUT1   |    11|
+|4     |LUT2   |    52|
+|5     |LUT3   |    68|
+|6     |LUT4   |    37|
+|7     |LUT5   |    72|
+|8     |LUT6   |   173|
+|9     |FDCE   |    76|
+|10    |FDPE   |     1|
+|11    |FDRE   |   166|
+|12    |IBUF   |     5|
+|13    |OBUF   |    12|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+---------------+------------------+------+
 |      |Instance       |Module            |Cells |
 +------+---------------+------------------+------+
-|1     |top            |                  |   990|
-|2     |  FB           |Fitbit            |   630|
-|3     |    clockdiv   |clockDivider_1s_0 |    99|
-|4     |    clockdiv2  |clockDivider_2Hz  |    73|
-|5     |    display    |NumberDisplay     |    45|
-|6     |  a            |PulseMode         |   267|
-|7     |    a          |clockDivider_1s   |   106|
-|8     |  clockdiv16ms |clockDivider_16ms |    73|
+|1     |top            |                  |   729|
+|2     |  FB           |Fitbit            |   439|
+|3     |    display    |NumberDisplay     |    45|
+|4     |  a            |PulseMode         |   152|
+|5     |  clockdiv1    |clockDivider_1s   |    73|
+|6     |  clockdiv16ms |clockDivider_16ms |    46|
 +------+---------------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 665.082 ; gain = 454.641
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 808.480 ; gain = 564.629
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 665.082 ; gain = 155.070
-Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 665.082 ; gain = 454.641
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 808.480 ; gain = 226.438
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 808.480 ; gain = 564.629
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 62 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 59 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -407,9 +428,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-62 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+56 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 665.082 ; gain = 454.641
-INFO: [Common 17-1381] The checkpoint 'C:/Users/erick/project_6/project_6.runs/synth_1/PulseGen.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 665.082 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Apr 19 20:31:22 2018...
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 808.480 ; gain = 577.574
+INFO: [Common 17-1381] The checkpoint 'D:/Users/pnguy/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.runs/synth_1/PulseGen.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file PulseGen_utilization_synth.rpt -pb PulseGen_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 808.480 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 20 16:49:02 2018...

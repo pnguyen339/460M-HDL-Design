@@ -11,12 +11,12 @@ wire step;
 //wire [1:0] mode;
 //wire clk_32, clk_64, clk_128;
 
-PulseMode a(clk, step, sw[3:2], sw[1], sw[0]);
+PulseMode a(clk, step, sw[3:2], sw[1], sw[0], clk_1s);
 
 // fitbit calculates all the data to display and contains seven segment module
-Fitbit FB(step, clk, sw[1], seg, an, led, clk_16ms, sw[0]);
+Fitbit FB(step, clk, sw[1], seg, an, led, clk_16ms, sw[0], clk_1s);
 
-
+clockDivider_1s clockdiv1(clk, clk_1s, sw[1], sw[0]);
 //assign mode = sw[3:2];
 //assign reset = sw[1];
 //assign start = sw[0];

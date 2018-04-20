@@ -1,6 +1,6 @@
 
-module Fitbit(step, clk, reset, seg, an, SI, clk_16ms, start);
-input step, clk, reset, clk_16ms, start;
+module Fitbit(step, clk, reset, seg, an, SI, clk_16ms, start, slow_clk);
+input step, clk, reset, clk_16ms, start, slow_clk;
 output SI;
 output [6:0] seg;
 output [3:0] an;
@@ -13,26 +13,30 @@ reg [13:0] high_activity_count;
 reg [13:0] high_activity_display; // draw to ss
 reg [3:0] d1, d2, d3, d4;
 reg [13:0] step_copy;
+reg [27:0] counter_2Hz;
 wire [13:0] step_ss; // draw to ss
 wire [7:0] miles; // draw to ss
 wire SI, slow_clk, slow_clk2;
 
-assign SI = (step_count > 9999) ? 1 : 0; // set SI when ss is saturated
-assign step_ss = (step_count > 9999) ? 9999 : step_count; // step_ss saturates at 9999
-assign miles = step_count / 1024; // miles is double the distance covered so .5 can be used
 
-clockDivider_1s clockdiv(clk, slow_clk, reset, start);
+
+//clockDivider_1s clockdiv(clk, slow_clk, reset, start);
 clockDivider_2Hz clockdiv2(clk, slow_clk2);
 
 initial begin
-  count <= 0;
-  count_9 <= 0;
-  step_count <= 0;
-  old_count <= 0;
-  high_activity_count <= 0;
-  high_activity_display <= 0;
-  display_mode <= 0;
+  count = 0;
+  count_9 = 0;
+  step_count = 0;
+  old_count = 0;
+  high_activity_count = 0;
+  high_activity_display = 0;
+  display_mode = 0;
+  counter_2Hz = 0;
 end
+
+assign SI = (step_count > 9999) ? 1 : 0; // set SI when ss is saturated
+assign step_ss = (step_count > 9999) ? 9999 : step_count; // step_ss saturates at 9999
+assign miles = step_count / 1024; // miles is double the distance covered so .5 can be used
 
 always @(posedge step, posedge reset) begin
   
@@ -61,11 +65,17 @@ else begin
   difference = step_count - old_count;
   
   // check if activity is over 32 steps per second
-  if(difference >= 32 && count_9 < 9) begin
+  if(difference >= 32 && count_9 <= 9) begin
     count <= count + 1;
+    if(count >=9)begin
+        count <= 9;
+    end
   end
   else begin
     count <= count;
+    if(count >=9)begin
+        count <= 9;
+    end
   end
   
   // increments the second counter
@@ -100,7 +110,7 @@ end
 
 NumberDisplay display({d4,d3,d2,d1}, seg, an, clk_16ms);
 
-always @(posedge slow_clk2) begin
+always @(posedge clk) begin
   
   // display 4 digits of the step count
   if(display_mode == 0) begin
@@ -153,7 +163,13 @@ always @(posedge slow_clk2) begin
     d4 = step_copy % 10;  
   end
   
-  display_mode <= display_mode + 1;
+  counter_2Hz = counter_2Hz + 1;
+  if(counter_2Hz == 100000000) begin
+    counter_2Hz <= 0;
+    display_mode <= display_mode + 1;
+  end
+  
+  //display_mode <= 2;
 end
 
 endmodule

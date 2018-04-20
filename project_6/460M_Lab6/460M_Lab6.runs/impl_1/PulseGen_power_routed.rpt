@@ -1,8 +1,8 @@
-Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date             : Thu Apr 19 20:32:18 2018
-| Host             : Ericks-Laptop running 64-bit major release  (build 9200)
+| Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date             : Fri Apr 20 16:50:16 2018
+| Host             : DESKTOP-D62POV0 running 64-bit major release  (build 9200)
 | Command          : report_power -file PulseGen_power_routed.rpt -pb PulseGen_power_summary_routed.pb -rpx PulseGen_power_routed.rpx
 | Design           : PulseGen
 | Device           : xc7a35tcpg236-1
@@ -29,18 +29,21 @@ Table of Contents
 1. Summary
 ----------
 
-+--------------------------+-------+
-| Total On-Chip Power (W)  | 0.081 |
-| Dynamic (W)              | 0.009 |
-| Device Static (W)        | 0.072 |
-| Effective TJA (C/W)      | 5.0   |
-| Max Ambient (C)          | 84.6  |
-| Junction Temperature (C) | 25.4  |
-| Confidence Level         | Low   |
-| Setting File             | ---   |
-| Simulation Activity File | ---   |
-| Design Nets Matched      | NA    |
-+--------------------------+-------+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 0.080        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 0.009        |
+| Device Static (W)        | 0.072        |
+| Effective TJA (C/W)      | 5.0          |
+| Max Ambient (C)          | 84.6         |
+| Junction Temperature (C) | 25.4         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
 
 
 1.1 On-Chip Components
@@ -49,18 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      813 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      377 |     20800 |            1.81 |
-|   CARRY4       |    <0.001 |       57 |      8150 |            0.70 |
-|   Register     |    <0.001 |      271 |     41600 |            0.65 |
-|   F7/F8 Muxes  |    <0.001 |        1 |     32600 |           <0.01 |
-|   Others       |     0.000 |       14 |       --- |             --- |
-|   BUFG         |     0.000 |        2 |        32 |            6.25 |
-| Signals        |    <0.001 |      690 |       --- |             --- |
+| Clocks         |     0.001 |        3 |       --- |             --- |
+| Slice Logic    |    <0.001 |      720 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      336 |     20800 |            1.62 |
+|   CARRY4       |    <0.001 |       54 |      8150 |            0.66 |
+|   Register     |    <0.001 |      243 |     41600 |            0.58 |
+|   Others       |     0.000 |       10 |       --- |             --- |
+|   BUFG         |     0.000 |        1 |        32 |            3.13 |
+| Signals        |    <0.001 |      638 |       --- |             --- |
 | I/O            |     0.006 |       17 |       106 |           16.04 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.081 |          |           |                 |
+| Total          |     0.080 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -70,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.013 |       0.003 |      0.010 |
+| Vccint    |       1.000 |     0.012 |       0.003 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -140,12 +142,10 @@ Table of Contents
 | Name           | Power (W) |
 +----------------+-----------+
 | PulseGen       |     0.009 |
-|   FB           |     0.002 |
-|     clockdiv   |    <0.001 |
-|     clockdiv2  |    <0.001 |
+|   FB           |    <0.001 |
 |     display    |    <0.001 |
-|   a            |     0.001 |
-|     a          |    <0.001 |
+|   a            |    <0.001 |
+|   clockdiv1    |    <0.001 |
 |   clockdiv16ms |    <0.001 |
 +----------------+-----------+
 
