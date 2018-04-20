@@ -1,6 +1,6 @@
 
-module Fitbit(step, clk, reset, seg, an, SI, clk_16ms);
-input step, clk, reset, clk_16ms;
+module Fitbit(step, clk, reset, seg, an, SI, clk_16ms, start);
+input step, clk, reset, clk_16ms, start;
 output SI;
 output [6:0] seg;
 output [3:0] an;
@@ -8,7 +8,7 @@ output [3:0] an;
 reg [14:0] step_count, old_count, difference;
 reg [3:0] count_9; 
 reg [3:0] count; // draw to ss
-reg [3:0] display_mode; // total steps, miles, steps over 32, high activity
+reg [1:0] display_mode; // total steps, miles, steps over 32, high activity
 reg [13:0] high_activity_count;
 reg [13:0] high_activity_display; // draw to ss
 reg [3:0] d1, d2, d3, d4;
@@ -21,7 +21,7 @@ assign SI = (step_count > 9999) ? 1 : 0; // set SI when ss is saturated
 assign step_ss = (step_count > 9999) ? 9999 : step_count; // step_ss saturates at 9999
 assign miles = step_count / 1024; // miles is double the distance covered so .5 can be used
 
-clockDivider_1s clockdiv(clk, slow_clk, start);
+clockDivider_1s clockdiv(clk, slow_clk, reset, start);
 clockDivider_2Hz clockdiv2(clk, slow_clk2);
 
 initial begin
@@ -49,12 +49,12 @@ end
 // runs every second
 always @(posedge slow_clk, posedge reset) begin
 if(reset == 1) begin
-  count <= 0;
-  count_9 <= 0;
-  old_count <= 0;
-  high_activity_count <= 0;
-  high_activity_display <= 0;
-  difference <= 0;
+  count = 0;
+  count_9 = 0;
+  old_count = 0;
+  high_activity_count = 0;
+  high_activity_display = 0;
+  difference = 0;
 end
 else begin
   // gets the number of steps in the last second
@@ -63,9 +63,16 @@ else begin
   // check if activity is over 32 steps per second
   if(difference >= 32 && count_9 < 9) begin
     count <= count + 1;
-    if(count > 9) count <= 9;
   end
-  if(count_9 < 10) count_9 <= count_9 + 1;
+  else begin
+    count <= count;
+  end
+  
+  // increments the second counter
+  if(count_9 < 10) 
+    count_9 <= count_9 + 1;
+  else
+    count_9 <= count_9;
   
   // check if activity is over 64 steps per second, increment count
   if(difference >= 64) begin
@@ -83,13 +90,15 @@ else begin
   else if(high_activity_count > 60) begin
     high_activity_display <= high_activity_display + 1;
   end
-  
+  else begin
+    high_activity_display <= high_activity_display;
+  end
   old_count <= step_count; 
 
 end
 end
 
-NumberDisplay({d4,d3,d2,d1}, seg, an, clk_16ms);
+NumberDisplay display({d4,d3,d2,d1}, seg, an, clk_16ms);
 
 always @(posedge slow_clk2) begin
   
@@ -115,7 +124,7 @@ always @(posedge slow_clk2) begin
       d4 = step_copy % 10;
     end
     else begin
-      step_copy = miles;
+      step_copy = miles / 2;
       d1 <= step_copy % 10;
       step_copy = step_copy / 10;
       d2 <= step_copy % 10;
@@ -144,10 +153,7 @@ always @(posedge slow_clk2) begin
     d4 = step_copy % 10;  
   end
   
-  display_mode <= 0;
-  if(display_mode == 3) begin 
-    display_mode <= 0;
-  end 
+  display_mode <= display_mode + 1;
 end
 
 endmodule

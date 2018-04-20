@@ -2,8 +2,8 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Thu Apr 19 20:31:28 2018
-# Process ID: 2516
+# Start of session at: Thu Apr 19 18:45:03 2018
+# Process ID: 13452
 # Current directory: C:/Users/erick/project_6/project_6.runs/impl_1
 # Command line: vivado.exe -log PulseGen.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source PulseGen.tcl -notrace
 # Log file: C:/Users/erick/project_6/project_6.runs/impl_1/PulseGen.vdi

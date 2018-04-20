@@ -20,9 +20,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module PulseMode(clk100Mhz, slowClk, sel, start);
+module PulseMode(clk100Mhz, slowClk, sel, reset, start);
     input [1:0] sel;
-    input start;
+    input start, reset;
     input clk100Mhz; //fast clock
     output reg slowClk; //slow clock
     wire secondClk;
@@ -31,14 +31,14 @@ module PulseMode(clk100Mhz, slowClk, sel, start);
     reg[27:0] frequency;
     reg[27:0] variableFrequency;
     initial begin
-        counter = 0;
-        slowClk = 0;
-        frequency = 0;
-        count = 1;
+        counter <= 0;
+        slowClk <= 0;
+        frequency <= 0;
+        count <= 1;
     end
     
     
-    clockDivider_1s a(clk100Mhz, secondClk, start);
+    clockDivider_1s a(clk100Mhz, secondClk, reset, start);
     
     always@(posedge secondClk)
     begin
@@ -88,8 +88,6 @@ module PulseMode(clk100Mhz, slowClk, sel, start);
         end
     end
 
-    
-    
     always@(sel) begin
         case(sel) 
             2'b00: frequency <= 3125000;
@@ -101,20 +99,22 @@ module PulseMode(clk100Mhz, slowClk, sel, start);
     
     always @ (posedge clk100Mhz)
         begin
-        if(start == 1) begin
+        if(reset == 0 && start == 1) begin
             if(sel == 2'b11 && counter == variableFrequency)begin
-                      counter <= 1;
-                      slowClk <= ~slowClk;
+              counter <= 0;
+              slowClk <= ~slowClk;
             end
             else if(counter == frequency) begin
-              counter <= 1;
+              counter <= 0;
               slowClk <= ~slowClk;
             end
             else begin
               counter <= counter + 1;
             end
          end
-         else
-            counter<=1;
+         else begin
+            counter <= 0;
+            slowClk <= 0;
+         end
     end
 endmodule
