@@ -1,0 +1,7 @@
+addi $s1, $s1, #5
+addi $s2, $s2, #10
+add $s1, $s2, $s1 // s1 <- 15
+sub $s2, $s1, $s2 // s2 <- 5
+xorl $s3, $s1, $s2 // s3 <- 0
+andl $s4, $s1, $s2 // s4 <- 1
+orl $s3, $s3, $s4 // s3 <- 1
