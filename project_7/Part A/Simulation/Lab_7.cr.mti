@@ -1,0 +1,13 @@
+C:/Modeltech_pe_edu_10.4a/examples/lab7.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/lab7.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module MIPS_Testbench
+-- Compiling module Complete_MIPS
+-- Compiling module Memory
+-- Compiling module REG
+-- Compiling module MIPS
+
+Top level modules:
+	MIPS_Testbench
+	Complete_MIPS
+
+} {} {}}
