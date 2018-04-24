@@ -6,13 +6,18 @@ module MIPS_Testbench ();
   wire WE;
   wire [31:0] Mem_Bus;
   wire [6:0] Address;
+  wire Halt;
+  wire [7:0] S1;
 
   initial
   begin
     CLK = 0;
+    RST <= 1'b1;
   end
+  
+  assign Halt = 0;
 
-  MIPS CPU(CLK, RST, CS, WE, Address, Mem_Bus);
+  MIPS CPU(CLK, RST, CS, WE, Address, Mem_Bus, S1, Halt);
   Memory MEM(CS, WE, CLK, Address, Mem_Bus);
 
   always
@@ -22,7 +27,7 @@ module MIPS_Testbench ();
 
   always
   begin
-    RST <= 1'b1; //reset the processor
+    //RST <= 1'b1; //reset the processor
 
     //Notice that the memory is initialize in the in the memory module not here
 
@@ -34,9 +39,7 @@ module MIPS_Testbench ();
     // you can add in a 'Halt' signal here as well to test Halt operation
     // you will be verifying your program operation using the
     // waveform viewer and/or self-checking operations
-
-    $display("TEST COMPLETE");
-    $stop;
+    
   end
 
 endmodule
@@ -47,17 +50,20 @@ endmodule
 ///////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
 
-module Complete_MIPS(CLK, RST, A_Out, D_Out);
+module Complete_MIPS(CLK, RST, Halt, Led);
   // Will need to be modified to add functionality
+  //output A_Out, D_Out;
+  output [7:0] Led;
   input CLK;
-  input RST;
+  input RST, Halt;
 
-  wire CS, WE;
+  wire CS, WE, slow_clk;
   wire [6:0] ADDR;
   wire [31:0] Mem_Bus;
-
-  MIPS CPU(CLK, RST, CS, WE, ADDR, Mem_Bus);
-  Memory MEM(CS, WE, CLK, ADDR, Mem_Bus);
+  
+  clockDivider_2ms(CLK, slow_clk);
+  MIPS CPU(slow_clk, RST, CS, WE, ADDR, Mem_Bus, Led, Halt);
+  Memory MEM(CS, WE, slow_clk, ADDR, Mem_Bus);
 
 endmodule
 
@@ -73,7 +79,8 @@ module Memory(CS, WE, CLK, ADDR, Mem_Bus);
   input CLK;
   input [6:0] ADDR;
   inout [31:0] Mem_Bus;
-
+  
+  integer file, r;
   reg [31:0] data_out;
   reg [31:0] RAM [0:127];
 
@@ -81,6 +88,7 @@ module Memory(CS, WE, CLK, ADDR, Mem_Bus);
   initial
   begin
     /* Write your Verilog-Text IO code here */
+    $readmemb("program.txt", RAM);
   end
 
   assign Mem_Bus = ((CS == 1'b0) || (WE == 1'b1)) ? 32'bZ : data_out;
@@ -101,7 +109,7 @@ endmodule
 ///////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
 
-module REG(CLK, RegW, DR, SR1, SR2, Reg_In, ReadReg1, ReadReg2);
+module REG(CLK, RegW, DR, SR1, SR2, Reg_In, ReadReg1, ReadReg2, S1);
   input CLK;
   input RegW;
   input [4:0] DR;
@@ -110,8 +118,10 @@ module REG(CLK, RegW, DR, SR1, SR2, Reg_In, ReadReg1, ReadReg2);
   input [31:0] Reg_In;
   output reg [31:0] ReadReg1;
   output reg [31:0] ReadReg2;
+  output [7:0] S1;
 
   reg [31:0] REG [0:31];
+  assign S1 = REG[0][7:0];
   integer i;
 
   initial begin
@@ -143,10 +153,11 @@ endmodule
 `define f_code instr[5:0]
 `define numshift instr[10:6]
 
-module MIPS (CLK, RST, CS, WE, ADDR, Mem_Bus);
-  input CLK, RST;
+module MIPS (CLK, RST, CS, WE, ADDR, Mem_Bus, S1, Halt);
+  input CLK, RST, Halt;
   output reg CS, WE;
   output [6:0] ADDR;
+  output [7:0] S1;
   inout [31:0] Mem_Bus;
 
   //special instructions (opcode == 000000), values of F code (bits 5-0):
@@ -198,7 +209,7 @@ module MIPS (CLK, RST, CS, WE, ADDR, Mem_Bus);
 
   //drive memory bus only during writes
   assign ADDR = (fetchDorI)? pc : alu_result_save[6:0]; //ADDR Mux
-  REG Register(CLK, regw, dr, `sr1, `sr2, reg_in, readreg1, readreg2);
+  REG Register(CLK, regw, dr, `sr1, `sr2, reg_in, readreg1, readreg2, S1);
 
   initial begin
     op = and1; opsave = and1;
@@ -285,24 +296,24 @@ module MIPS (CLK, RST, CS, WE, ADDR, Mem_Bus);
   end //always
 
   always @(posedge CLK) begin
+    if(Halt == 0 || state != 0) begin
+      if (RST) begin
+        state <= 3'd0;
+        pc <= 7'd0;
+      end
+      else begin
+        state <= nstate;
+        pc <= npc;
+      end
 
-    if (RST) begin
-      state <= 3'd0;
-      pc <= 7'd0;
+      if (state == 3'd0) instr <= Mem_Bus;
+      else if (state == 3'd1) begin
+        opsave <= op;
+        reg_or_imm_save <= reg_or_imm;
+        alu_or_mem_save <= alu_or_mem;
+      end
+      else if (state == 3'd2) alu_result_save <= alu_result;
     end
-    else begin
-      state <= nstate;
-      pc <= npc;
-    end
-
-    if (state == 3'd0) instr <= Mem_Bus;
-    else if (state == 3'd1) begin
-      opsave <= op;
-      reg_or_imm_save <= reg_or_imm;
-      alu_or_mem_save <= alu_or_mem;
-    end
-    else if (state == 3'd2) alu_result_save <= alu_result;
-
   end //always
 
 endmodule

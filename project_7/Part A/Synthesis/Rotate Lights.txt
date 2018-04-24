@@ -1,0 +1,13 @@
+andi s1, s1, 0
+andi s2, s2, 0
+addi s2, s2, 3
+addi s1, s1, 1 // s1 <- 1
+sll s1, s1, 1 // s1 <- 2
+sll s1, s1, 1 // s1 <- 4
+sll s1, s1, 1 // s1 <- 8
+sll s1, s1, 1 // s1 <- 16
+sll s1, s1, 1 // s1 <- 32
+sll s1, s1, 1 // s1 <- 64
+sll s1, s1, 1 // s1 <- 128
+addi s1, s1, 129 // s1 <- 257
+bne s1, s2, -9

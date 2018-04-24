@@ -61,7 +61,7 @@ module Complete_MIPS(CLK, RST, Halt, Led);
   wire [6:0] ADDR;
   wire [31:0] Mem_Bus;
   
-  clockDivider_2ms(CLK, slow_clk);
+  clockDivider_20ms(CLK, slow_clk);
   MIPS CPU(slow_clk, RST, CS, WE, ADDR, Mem_Bus, Led, Halt);
   Memory MEM(CS, WE, slow_clk, ADDR, Mem_Bus);
 
