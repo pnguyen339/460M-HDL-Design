@@ -9,22 +9,22 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.cache/wt [current_project]
-set_property parent.project_path C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.xpr [current_project]
+set_property webtalk.parent_dir {C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.cache/ip [current_project]
+set_property ip_output_repo {c:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/new/NumberDisplay.v
-  {C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/examples/EE 460M_Lab2_Starter_File.v}
-  C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/7/lab7.v
+  {C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.srcs/sources_1/imports/new/NumberDisplay.v}
+  {C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.srcs/sources_1/imports/examples/EE 460M_Lab2_Starter_File.v}
+  {C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.srcs/sources_1/imports/7/lab7.v}
 }
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/constrs_1/imports/Labs/Basys3_Master.xdc
-set_property used_in_implementation false [get_files C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/constrs_1/imports/Labs/Basys3_Master.xdc]
+read_xdc {{C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.srcs/constrs_1/imports/Labs/Basys3_Master.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.srcs/constrs_1/imports/Labs/Basys3_Master.xdc}}]
 
 
 synth_design -top Complete_MIPS -part xc7a35tcpg236-1

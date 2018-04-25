@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1524622634">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1524677821">
   <File Type="RDS-PROPCONSTRS" Name="Complete_MIPS_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="Complete_MIPS.tcl"/>
   <File Type="RDS-RDS" Name="Complete_MIPS.vds"/>
@@ -12,7 +12,7 @@
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/new/NumberDisplay.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/new/NumberDisplay.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Erick/Documents/GitHub/460M-HDL-Design/project_6/460M_Lab6/460M_Lab6.srcs/sources_1/imports/new/NumberDisplay.v"/>
         <Attr Name="ImportTime" Val="1524206188"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
