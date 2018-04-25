@@ -7,7 +7,7 @@ module MIPS_Testbench ();
   wire [31:0] Mem_Bus;
   wire [6:0] Address;
   wire Halt;
-  wire [7:0] S1;
+  wire [7:0] S1, S2, S3, S4, S5, S6, S7, S8, S9;
 
   initial
   begin
@@ -17,7 +17,7 @@ module MIPS_Testbench ();
   
   assign Halt = 0;
 
-  MIPS CPU(CLK, RST, CS, WE, Address, Mem_Bus, S1, Halt);
+  MIPS CPU(CLK, RST, CS, WE, Address, Mem_Bus, S1, S2, S3, S4, S5, S6, S7, S8, S9, Halt);
   Memory MEM(CS, WE, CLK, Address, Mem_Bus);
 
   always
@@ -27,19 +27,20 @@ module MIPS_Testbench ();
 
   always
   begin
-    //RST <= 1'b1; //reset the processor
 
-    //Notice that the memory is initialize in the in the memory module not here
-
-    @(posedge CLK);
-    // driving reset low here puts processor in normal operating mode
     RST = 1'b0;
-
-    /* add your testing code here */
-    // you can add in a 'Halt' signal here as well to test Halt operation
-    // you will be verifying your program operation using the
-    // waveform viewer and/or self-checking operations
     
+    @(negedge CLK);
+    
+    if(Mem_Bus === 32'hxxxxxxxx && Address === 7'hxx) begin
+      if(S1 === 8'h07 && S2 === 8'h0a && S3 === 8'h60 && S4 === 8'h0f && S5 === 8'h0d && S6 === 8'h0d && S7 === 8'hxx && S8 === 8'hxx && S9 === 8'hxx) begin
+        $display("Test Successful! \n");
+	$stop;
+      end
+      else begin
+        $display("Test Failed \n");
+      end
+    end
   end
 
 endmodule
@@ -109,7 +110,7 @@ endmodule
 ///////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
 
-module REG(CLK, RegW, DR, SR1, SR2, Reg_In, ReadReg1, ReadReg2, S1);
+module REG(CLK, RegW, DR, SR1, SR2, Reg_In, ReadReg1, ReadReg2, S1, S2, S3, S4, S5, S6, S7, S8, S9);
   input CLK;
   input RegW;
   input [4:0] DR;
@@ -118,10 +119,20 @@ module REG(CLK, RegW, DR, SR1, SR2, Reg_In, ReadReg1, ReadReg2, S1);
   input [31:0] Reg_In;
   output reg [31:0] ReadReg1;
   output reg [31:0] ReadReg2;
-  output [7:0] S1;
+  output [7:0] S1, S2, S3, S4, S5, S6, S7, S8, S9;
 
   reg [31:0] REG [0:31];
+  
   assign S1 = REG[1][7:0];
+  assign S2 = REG[2][7:0];
+  assign S3 = REG[3][7:0];
+  assign S4 = REG[4][7:0];
+  assign S5 = REG[5][7:0];
+  assign S6 = REG[6][7:0];
+  assign S7 = REG[7][7:0];
+  assign S8 = REG[8][7:0];
+  assign S9 = REG[9][7:0];
+  
   integer i;
 
   initial begin
@@ -153,11 +164,11 @@ endmodule
 `define f_code instr[5:0]
 `define numshift instr[10:6]
 
-module MIPS (CLK, RST, CS, WE, ADDR, Mem_Bus, S1, Halt);
+module MIPS (CLK, RST, CS, WE, ADDR, Mem_Bus, S1, S2, S3, S4, S5, S6, S7, S8, S9, Halt);
   input CLK, RST, Halt;
   output reg CS, WE;
   output [6:0] ADDR;
-  output [7:0] S1;
+  output [7:0] S1, S2, S3, S4, S5, S6, S7, S8, S9;
   inout [31:0] Mem_Bus;
 
   //special instructions (opcode == 000000), values of F code (bits 5-0):
@@ -209,7 +220,7 @@ module MIPS (CLK, RST, CS, WE, ADDR, Mem_Bus, S1, Halt);
 
   //drive memory bus only during writes
   assign ADDR = (fetchDorI)? pc : alu_result_save[6:0]; //ADDR Mux
-  REG Register(CLK, regw, dr, `sr1, `sr2, reg_in, readreg1, readreg2, S1);
+  REG Register(CLK, regw, dr, `sr1, `sr2, reg_in, readreg1, readreg2, S1, S2, S3, S4, S5, S6, S7, S8, S9);
 
   initial begin
     op = and1; opsave = and1;
