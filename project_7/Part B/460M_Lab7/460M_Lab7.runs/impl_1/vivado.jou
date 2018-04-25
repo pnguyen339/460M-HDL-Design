@@ -2,11 +2,11 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Tue Apr 24 21:18:02 2018
-# Process ID: 1328
-# Current directory: C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.runs/impl_1
+# Start of session at: Wed Apr 25 12:37:48 2018
+# Process ID: 11772
+# Current directory: C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.runs/impl_1
 # Command line: vivado.exe -log Complete_MIPS.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Complete_MIPS.tcl -notrace
-# Log file: C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.runs/impl_1/Complete_MIPS.vdi
-# Journal file: C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.runs/impl_1\vivado.jou
+# Log file: C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.runs/impl_1/Complete_MIPS.vdi
+# Journal file: C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source Complete_MIPS.tcl -notrace

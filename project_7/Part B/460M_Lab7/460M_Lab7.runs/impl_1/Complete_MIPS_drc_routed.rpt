@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Tue Apr 24 21:18:57 2018
-| Host         : DESKTOP-7N7RCM0 running 64-bit major release  (build 9200)
+| Date         : Wed Apr 25 12:38:44 2018
+| Host         : Ericks-Laptop running 64-bit major release  (build 9200)
 | Command      : report_drc -file Complete_MIPS_drc_routed.rpt -pb Complete_MIPS_drc_routed.pb -rpx Complete_MIPS_drc_routed.rpx
 | Design       : Complete_MIPS
 | Device       : xc7a35tcpg236-1
