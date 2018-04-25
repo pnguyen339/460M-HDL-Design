@@ -1,0 +1,505 @@
+
+*** Running vivado
+    with args -log Complete_MIPS.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Complete_MIPS.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source Complete_MIPS.tcl -notrace
+Command: synth_design -top Complete_MIPS -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12080 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 280.336 ; gain = 70.418
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Complete_MIPS' [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/7/lab7.v:1]
+INFO: [Synth 8-638] synthesizing module 'clockDivider_20ms' [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/examples/EE 460M_Lab2_Starter_File.v:99]
+INFO: [Synth 8-256] done synthesizing module 'clockDivider_20ms' (1#1) [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/examples/EE 460M_Lab2_Starter_File.v:99]
+INFO: [Synth 8-638] synthesizing module 'clockDivider_16ms' [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/examples/EE 460M_Lab2_Starter_File.v:150]
+INFO: [Synth 8-256] done synthesizing module 'clockDivider_16ms' (2#1) [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/examples/EE 460M_Lab2_Starter_File.v:150]
+INFO: [Synth 8-638] synthesizing module 'MIPS' [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/7/lab7.v:162]
+	Parameter add bound to: 6'b100000 
+	Parameter sub bound to: 6'b100010 
+	Parameter xor1 bound to: 6'b100110 
+	Parameter and1 bound to: 6'b100100 
+	Parameter or1 bound to: 6'b100101 
+	Parameter slt bound to: 6'b101010 
+	Parameter srl bound to: 6'b000010 
+	Parameter sll bound to: 6'b000000 
+	Parameter jr bound to: 6'b001000 
+	Parameter addi bound to: 6'b001000 
+	Parameter andi bound to: 6'b001100 
+	Parameter ori bound to: 6'b001101 
+	Parameter lw bound to: 6'b100011 
+	Parameter sw bound to: 6'b101011 
+	Parameter beq bound to: 6'b000100 
+	Parameter bne bound to: 6'b000101 
+	Parameter j bound to: 6'b000010 
+	Parameter R bound to: 2'b00 
+	Parameter I bound to: 2'b01 
+	Parameter J bound to: 2'b10 
+INFO: [Synth 8-638] synthesizing module 'REG' [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/7/lab7.v:113]
+INFO: [Synth 8-256] done synthesizing module 'REG' (3#1) [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/7/lab7.v:113]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/7/lab7.v:236]
+INFO: [Synth 8-256] done synthesizing module 'MIPS' (4#1) [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/7/lab7.v:162]
+WARNING: [Synth 8-689] width (32) of port connection 'S2' does not match port width (8) of module 'MIPS' [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/7/lab7.v:20]
+WARNING: [Synth 8-689] width (32) of port connection 'S3' does not match port width (8) of module 'MIPS' [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/7/lab7.v:20]
+INFO: [Synth 8-638] synthesizing module 'Memory' [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/7/lab7.v:77]
+INFO: [Synth 8-3876] $readmem data file 'program.txt' is read successfully [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/7/lab7.v:92]
+INFO: [Synth 8-256] done synthesizing module 'Memory' (5#1) [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/7/lab7.v:77]
+INFO: [Synth 8-638] synthesizing module 'NumberDisplay' [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/new/NumberDisplay.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/new/NumberDisplay.v:53]
+INFO: [Synth 8-226] default block is never used [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/new/NumberDisplay.v:69]
+INFO: [Synth 8-226] default block is never used [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/new/NumberDisplay.v:89]
+INFO: [Synth 8-226] default block is never used [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/new/NumberDisplay.v:109]
+INFO: [Synth 8-226] default block is never used [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/new/NumberDisplay.v:129]
+WARNING: [Synth 8-567] referenced signal 'st' should be on the sensitivity list [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/new/NumberDisplay.v:63]
+WARNING: [Synth 8-567] referenced signal 'nd' should be on the sensitivity list [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/new/NumberDisplay.v:63]
+WARNING: [Synth 8-567] referenced signal 'rd' should be on the sensitivity list [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/new/NumberDisplay.v:63]
+WARNING: [Synth 8-567] referenced signal 'th' should be on the sensitivity list [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/new/NumberDisplay.v:63]
+INFO: [Synth 8-256] done synthesizing module 'NumberDisplay' (6#1) [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/new/NumberDisplay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Complete_MIPS' (7#1) [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/7/lab7.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 317.758 ; gain = 107.840
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 317.758 ; gain = 107.840
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/constrs_1/imports/Labs/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/constrs_1/imports/Labs/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/constrs_1/imports/Labs/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Complete_MIPS_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Complete_MIPS_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 619.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 619.117 ; gain = 409.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 619.117 ; gain = 409.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 619.117 ; gain = 409.199
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "slowClk3" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "slowClk3" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "REG_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'MIPS'
+INFO: [Synth 8-5546] ROM "alu_or_mem" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "WE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "npc" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "npc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "opsave" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "instr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fetchDorI" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "nstate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "segment_dis" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+                 iSTATE0 |                              001 |                              001
+                 iSTATE1 |                              010 |                              010
+                 iSTATE2 |                              011 |                              011
+                 iSTATE3 |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'MIPS'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 619.117 ; gain = 409.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     28 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 37    
+	               28 Bit    Registers := 2     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                1 Bit    Registers := 4     
++---RAMs : 
+	               4K Bit         RAMs := 1     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 5     
+	   9 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     28 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 2     
+	   5 Input      7 Bit        Muxes := 1     
+	   5 Input      6 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 11    
+	  13 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 47    
+	   4 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Complete_MIPS 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 10    
+Module clockDivider_20ms 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     28 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clockDivider_16ms 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     28 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module REG 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 34    
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 31    
+Module MIPS 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   9 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   5 Input      7 Bit        Muxes := 1     
+	   5 Input      6 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	  13 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 14    
+	   5 Input      1 Bit        Muxes := 7     
+Module Memory 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	               4K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module NumberDisplay 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'd4_reg[3:0]' into 'd3_reg[3:0]' [C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.srcs/sources_1/imports/7/lab7.v:23]
+INFO: [Synth 8-5545] ROM "div1/slowClk3" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "div2/slowClk3" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-3886] merging instance 'd3_reg[0]' (FD) to 'd3_reg[1]'
+INFO: [Synth 8-3886] merging instance 'd3_reg[1]' (FD) to 'd3_reg[2]'
+INFO: [Synth 8-3886] merging instance 'd3_reg[2]' (FD) to 'd3_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d3_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (d3_reg[3]) is unused and will be removed from module Complete_MIPS.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 619.117 ; gain = 409.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Memory      | RAM_reg    | 128 x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 619.117 ; gain = 409.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 623.328 ; gain = 413.410
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance MEM/RAM_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance MEM/RAM_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 644.652 ; gain = 434.734
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 644.652 ; gain = 434.734
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 644.652 ; gain = 434.734
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 644.652 ; gain = 434.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 644.652 ; gain = 434.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 644.652 ; gain = 434.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 644.652 ; gain = 434.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |    42|
+|3     |LUT1     |    61|
+|4     |LUT2     |    72|
+|5     |LUT3     |    80|
+|6     |LUT4     |   153|
+|7     |LUT5     |    79|
+|8     |LUT6     |   940|
+|9     |MUXF7    |   289|
+|10    |RAMB18E1 |     1|
+|11    |FDRE     |  1250|
+|12    |IBUF     |     7|
+|13    |OBUF     |    11|
++------+---------+------+
+
+Report Instance Areas: 
++------+-------------+------------------+------+
+|      |Instance     |Module            |Cells |
++------+-------------+------------------+------+
+|1     |top          |                  |  2987|
+|2     |  CPU        |MIPS              |  2775|
+|3     |    Register |REG               |  2616|
+|4     |  MEM        |Memory            |     1|
+|5     |  display    |NumberDisplay     |    32|
+|6     |  div1       |clockDivider_20ms |    75|
+|7     |  div2       |clockDivider_16ms |    75|
++------+-------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 644.652 ; gain = 434.734
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 644.652 ; gain = 133.375
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 644.652 ; gain = 434.734
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 50 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'Complete_MIPS' is not ideal for floorplanning, since the cellview 'REG' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+91 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 644.652 ; gain = 434.734
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.runs/synth_1/Complete_MIPS.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 644.652 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 24 21:17:55 2018...
