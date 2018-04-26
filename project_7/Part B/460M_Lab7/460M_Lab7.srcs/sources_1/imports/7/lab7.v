@@ -237,7 +237,7 @@ module MIPS (CLK, RST, CS, WE, ADDR, Mem_Bus, S2, S3, SW);
 
   //combinational
   assign imm_ext = (instr[15] == 1)? {16'hFFFF, instr[15:0]} : {16'h0000, instr[15:0]};//Sign extend immediate field
-  assign dr = (format == J)? 6'd31 : ((`opcode == rbit || `opcode == rev)? instr[25:21] : ((format == R)? instr[15:11] : instr[20:16])); //Destination Register MUX (MUX1)
+  assign dr = (format == J)? 6'd31 : (((instr[5:0] == rbit || instr[5:0] == rev) && format == R)? instr[25:21] : ((format == R)? instr[15:11] : instr[20:16])); //Destination Register MUX (MUX1)
   assign alu_in_A = readreg1;
   assign alu_in_B = (reg_or_imm_save)? imm_ext : readreg2; //ALU MUX (MUX2)
   assign reg_in = (state == 1)? (pc) : ((alu_or_mem_save)? Mem_Bus : alu_result_save); //Data MUX
@@ -334,8 +334,8 @@ module MIPS (CLK, RST, CS, WE, ADDR, Mem_Bus, S2, S3, SW);
         end
         else if (opsave == sadd) begin
           temp_add = alu_in_A + alu_in_B;
-          if (temp_add > 2^32-1) begin
-            alu_result = 2^32-1;
+          if (temp_add > 32'hffffffff) begin
+            alu_result = 32'hffffffff;
           end
           else alu_result = alu_in_A + alu_in_B;
          end

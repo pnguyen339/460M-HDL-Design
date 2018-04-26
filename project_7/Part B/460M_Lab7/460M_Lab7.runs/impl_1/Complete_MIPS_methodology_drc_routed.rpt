@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Thu Apr 26 02:24:01 2018
-| Host         : DESKTOP-7N7RCM0 running 64-bit major release  (build 9200)
+| Date         : Thu Apr 26 14:58:13 2018
+| Host         : Ericks-Laptop running 64-bit major release  (build 9200)
 | Command      : report_methodology -file Complete_MIPS_methodology_drc_routed.rpt -rpx Complete_MIPS_methodology_drc_routed.rpx
 | Design       : Complete_MIPS
 | Device       : xc7a35tcpg236-1
@@ -23,36 +23,36 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 148
+             Violations found: 84
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
 | SYNTH-10  | Warning  | Wide multiplier               | 4          |
 | TIMING-17 | Warning  | Non-clocked sequential cell   | 11         |
 | TIMING-18 | Warning  | Missing input or output delay | 5          |
-| TIMING-20 | Warning  | Non-clocked latch             | 128        |
+| TIMING-20 | Warning  | Non-clocked latch             | 64         |
 +-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
 SYNTH-10#1 Warning
 Wide multiplier  
-Detected multiplier at CPU/mult_result0 of size 16x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Detected multiplier at CPU/HI0 of size 16x18, it is decomposed from a wide multipler into 4 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#2 Warning
 Wide multiplier  
-Detected multiplier at CPU/mult_result0__0 of size 16x16, it is decomposed from a wide multipler into 4 DSP blocks.
+Detected multiplier at CPU/HI0__0 of size 16x16, it is decomposed from a wide multipler into 4 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#3 Warning
 Wide multiplier  
-Detected multiplier at CPU/mult_result0__1 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Detected multiplier at CPU/HI0__1 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#4 Warning
 Wide multiplier  
-Detected multiplier at CPU/mult_result0__2 of size 18x16, it is decomposed from a wide multipler into 4 DSP blocks.
+Detected multiplier at CPU/HI0__2 of size 18x16, it is decomposed from a wide multipler into 4 DSP blocks.
 Related violations: <none>
 
 TIMING-17#1 Warning
@@ -453,326 +453,6 @@ Related violations: <none>
 TIMING-20#64 Warning
 Non-clocked latch  
 The latch CPU/LO_reg[9] cannot be properly analyzed as its control pin CPU/LO_reg[9]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#65 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[0] cannot be properly analyzed as its control pin CPU/mult_result_reg[0]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#66 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[10] cannot be properly analyzed as its control pin CPU/mult_result_reg[10]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#67 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[11] cannot be properly analyzed as its control pin CPU/mult_result_reg[11]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#68 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[12] cannot be properly analyzed as its control pin CPU/mult_result_reg[12]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#69 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[13] cannot be properly analyzed as its control pin CPU/mult_result_reg[13]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#70 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[14] cannot be properly analyzed as its control pin CPU/mult_result_reg[14]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#71 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[15] cannot be properly analyzed as its control pin CPU/mult_result_reg[15]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#72 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[16] cannot be properly analyzed as its control pin CPU/mult_result_reg[16]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#73 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[17] cannot be properly analyzed as its control pin CPU/mult_result_reg[17]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#74 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[18] cannot be properly analyzed as its control pin CPU/mult_result_reg[18]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#75 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[19] cannot be properly analyzed as its control pin CPU/mult_result_reg[19]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#76 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[1] cannot be properly analyzed as its control pin CPU/mult_result_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#77 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[20] cannot be properly analyzed as its control pin CPU/mult_result_reg[20]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#78 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[21] cannot be properly analyzed as its control pin CPU/mult_result_reg[21]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#79 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[22] cannot be properly analyzed as its control pin CPU/mult_result_reg[22]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#80 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[23] cannot be properly analyzed as its control pin CPU/mult_result_reg[23]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#81 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[24] cannot be properly analyzed as its control pin CPU/mult_result_reg[24]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#82 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[25] cannot be properly analyzed as its control pin CPU/mult_result_reg[25]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#83 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[26] cannot be properly analyzed as its control pin CPU/mult_result_reg[26]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#84 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[27] cannot be properly analyzed as its control pin CPU/mult_result_reg[27]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#85 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[28] cannot be properly analyzed as its control pin CPU/mult_result_reg[28]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#86 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[29] cannot be properly analyzed as its control pin CPU/mult_result_reg[29]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#87 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[2] cannot be properly analyzed as its control pin CPU/mult_result_reg[2]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#88 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[30] cannot be properly analyzed as its control pin CPU/mult_result_reg[30]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#89 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[31] cannot be properly analyzed as its control pin CPU/mult_result_reg[31]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#90 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[32] cannot be properly analyzed as its control pin CPU/mult_result_reg[32]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#91 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[33] cannot be properly analyzed as its control pin CPU/mult_result_reg[33]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#92 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[34] cannot be properly analyzed as its control pin CPU/mult_result_reg[34]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#93 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[35] cannot be properly analyzed as its control pin CPU/mult_result_reg[35]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#94 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[36] cannot be properly analyzed as its control pin CPU/mult_result_reg[36]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#95 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[37] cannot be properly analyzed as its control pin CPU/mult_result_reg[37]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#96 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[38] cannot be properly analyzed as its control pin CPU/mult_result_reg[38]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#97 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[39] cannot be properly analyzed as its control pin CPU/mult_result_reg[39]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#98 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[3] cannot be properly analyzed as its control pin CPU/mult_result_reg[3]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#99 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[40] cannot be properly analyzed as its control pin CPU/mult_result_reg[40]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#100 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[41] cannot be properly analyzed as its control pin CPU/mult_result_reg[41]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#101 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[42] cannot be properly analyzed as its control pin CPU/mult_result_reg[42]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#102 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[43] cannot be properly analyzed as its control pin CPU/mult_result_reg[43]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#103 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[44] cannot be properly analyzed as its control pin CPU/mult_result_reg[44]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#104 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[45] cannot be properly analyzed as its control pin CPU/mult_result_reg[45]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#105 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[46] cannot be properly analyzed as its control pin CPU/mult_result_reg[46]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#106 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[47] cannot be properly analyzed as its control pin CPU/mult_result_reg[47]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#107 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[48] cannot be properly analyzed as its control pin CPU/mult_result_reg[48]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#108 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[49] cannot be properly analyzed as its control pin CPU/mult_result_reg[49]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#109 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[4] cannot be properly analyzed as its control pin CPU/mult_result_reg[4]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#110 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[50] cannot be properly analyzed as its control pin CPU/mult_result_reg[50]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#111 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[51] cannot be properly analyzed as its control pin CPU/mult_result_reg[51]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#112 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[52] cannot be properly analyzed as its control pin CPU/mult_result_reg[52]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#113 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[53] cannot be properly analyzed as its control pin CPU/mult_result_reg[53]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#114 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[54] cannot be properly analyzed as its control pin CPU/mult_result_reg[54]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#115 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[55] cannot be properly analyzed as its control pin CPU/mult_result_reg[55]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#116 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[56] cannot be properly analyzed as its control pin CPU/mult_result_reg[56]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#117 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[57] cannot be properly analyzed as its control pin CPU/mult_result_reg[57]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#118 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[58] cannot be properly analyzed as its control pin CPU/mult_result_reg[58]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#119 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[59] cannot be properly analyzed as its control pin CPU/mult_result_reg[59]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#120 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[5] cannot be properly analyzed as its control pin CPU/mult_result_reg[5]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#121 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[60] cannot be properly analyzed as its control pin CPU/mult_result_reg[60]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#122 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[61] cannot be properly analyzed as its control pin CPU/mult_result_reg[61]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#123 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[62] cannot be properly analyzed as its control pin CPU/mult_result_reg[62]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#124 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[63] cannot be properly analyzed as its control pin CPU/mult_result_reg[63]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#125 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[6] cannot be properly analyzed as its control pin CPU/mult_result_reg[6]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#126 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[7] cannot be properly analyzed as its control pin CPU/mult_result_reg[7]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#127 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[8] cannot be properly analyzed as its control pin CPU/mult_result_reg[8]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#128 Warning
-Non-clocked latch  
-The latch CPU/mult_result_reg[9] cannot be properly analyzed as its control pin CPU/mult_result_reg[9]/G is not reached by a timing clock
 Related violations: <none>
 
 

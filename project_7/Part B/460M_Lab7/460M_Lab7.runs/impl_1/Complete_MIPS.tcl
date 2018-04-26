@@ -51,12 +51,12 @@ set rc [catch {
   create_msg_db init_design.pb
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {C:/Users/Erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.cache/wt} [current_project]
-  set_property parent.project_path {C:/Users/Erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.xpr} [current_project]
-  set_property ip_output_repo {{C:/Users/Erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.cache/ip}} [current_project]
+  set_property webtalk.parent_dir {C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.xpr} [current_project]
+  set_property ip_output_repo {{C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet {{C:/Users/Erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.runs/synth_1/Complete_MIPS.dcp}}
-  read_xdc {{C:/Users/Erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.srcs/constrs_1/imports/Labs/Basys3_Master.xdc}}
+  add_files -quiet {{C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.runs/synth_1/Complete_MIPS.dcp}}
+  read_xdc {{C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.srcs/constrs_1/imports/Labs/Basys3_Master.xdc}}
   link_design -top Complete_MIPS -part xc7a35tcpg236-1
   write_hwdef -file Complete_MIPS.hwdef
   close_msg_db -file init_design.pb

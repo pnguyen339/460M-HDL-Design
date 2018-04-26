@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date             : Thu Apr 26 02:24:02 2018
-| Host             : DESKTOP-7N7RCM0 running 64-bit major release  (build 9200)
+| Date             : Thu Apr 26 14:58:14 2018
+| Host             : Ericks-Laptop running 64-bit major release  (build 9200)
 | Command          : report_power -file Complete_MIPS_power_routed.rpt -pb Complete_MIPS_power_summary_routed.pb -rpx Complete_MIPS_power_routed.rpx
 | Design           : Complete_MIPS
 | Device           : xc7a35tcpg236-1
@@ -50,15 +50,15 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.005 |        3 |       --- |             --- |
-| Slice Logic              |     0.002 |     3463 |       --- |             --- |
-|   LUT as Logic           |     0.002 |     1533 |     20800 |            7.37 |
-|   CARRY4                 |    <0.001 |       55 |      8150 |            0.67 |
-|   Register               |    <0.001 |     1453 |     41600 |            3.49 |
-|   F7/F8 Muxes            |    <0.001 |      288 |     32600 |            0.88 |
+| Slice Logic              |     0.002 |     3598 |       --- |             --- |
+|   LUT as Logic           |     0.002 |     1703 |     20800 |            8.19 |
+|   CARRY4                 |    <0.001 |       63 |      8150 |            0.77 |
+|   Register               |    <0.001 |     1328 |     41600 |            3.19 |
+|   F7/F8 Muxes            |    <0.001 |      353 |     32600 |            1.08 |
 |   LUT as Distributed RAM |    <0.001 |       64 |      9600 |            0.67 |
-|   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
+|   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
 |   Others                 |     0.000 |       14 |       --- |             --- |
-| Signals                  |     0.003 |     2878 |       --- |             --- |
+| Signals                  |     0.003 |     2823 |       --- |             --- |
 | DSPs                     |    <0.001 |        4 |        90 |            4.44 |
 | I/O                      |     0.006 |       17 |       106 |           16.04 |
 | Static Power             |     0.072 |          |           |                 |
@@ -143,7 +143,7 @@ Table of Contents
 +-------------------------+-----------+
 | Complete_MIPS           |     0.015 |
 |   CPU                   |     0.008 |
-|     Register            |     0.006 |
+|     Register            |     0.007 |
 |   MEM                   |    <0.001 |
 |     RAM_reg_0_127_0_0   |    <0.001 |
 |     RAM_reg_0_127_10_10 |    <0.001 |
