@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date             : Wed Apr 25 23:34:15 2018
-| Host             : Ericks-Laptop running 64-bit major release  (build 9200)
+| Date             : Thu Apr 26 02:16:26 2018
+| Host             : DESKTOP-7N7RCM0 running 64-bit major release  (build 9200)
 | Command          : report_power -file Complete_MIPS_power_routed.rpt -pb Complete_MIPS_power_summary_routed.pb -rpx Complete_MIPS_power_routed.rpx
 | Design           : Complete_MIPS
 | Device           : xc7a35tcpg236-1
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.082 |
-| Dynamic (W)              | 0.010 |
+| Total On-Chip Power (W)  | 0.087 |
+| Dynamic (W)              | 0.015 |
 | Device Static (W)        | 0.072 |
 | Effective TJA (C/W)      | 5.0   |
 | Max Ambient (C)          | 84.6  |
@@ -46,24 +46,24 @@ Table of Contents
 1.1 On-Chip Components
 ----------------------
 
-+----------------+-----------+----------+-----------+-----------------+
-| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
-+----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.001 |        3 |       --- |             --- |
-| Slice Logic    |     0.002 |     3389 |       --- |             --- |
-|   LUT as Logic |     0.002 |     1520 |     20800 |            7.31 |
-|   CARRY4       |    <0.001 |       62 |      8150 |            0.76 |
-|   Register     |    <0.001 |     1441 |     41600 |            3.46 |
-|   Others       |     0.000 |       16 |       --- |             --- |
-|   F7/F8 Muxes  |     0.000 |      289 |     32600 |            0.89 |
-|   BUFG         |     0.000 |        3 |        32 |            9.38 |
-| Signals        |     0.002 |     2837 |       --- |             --- |
-| Block RAM      |     0.000 |      0.5 |        50 |            1.00 |
-| DSPs           |     0.000 |        4 |        90 |            4.44 |
-| I/O            |     0.006 |       18 |       106 |           16.98 |
-| Static Power   |     0.072 |          |           |                 |
-| Total          |     0.082 |          |           |                 |
-+----------------+-----------+----------+-----------+-----------------+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.005 |        3 |       --- |             --- |
+| Slice Logic              |     0.002 |     3463 |       --- |             --- |
+|   LUT as Logic           |     0.002 |     1532 |     20800 |            7.37 |
+|   CARRY4                 |    <0.001 |       55 |      8150 |            0.67 |
+|   Register               |    <0.001 |     1453 |     41600 |            3.49 |
+|   F7/F8 Muxes            |    <0.001 |      288 |     32600 |            0.88 |
+|   LUT as Distributed RAM |    <0.001 |       64 |      9600 |            0.67 |
+|   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
+|   Others                 |     0.000 |       14 |       --- |             --- |
+| Signals                  |     0.003 |     2878 |       --- |             --- |
+| DSPs                     |    <0.001 |        4 |        90 |            4.44 |
+| I/O                      |     0.006 |       17 |       106 |           16.04 |
+| Static Power             |     0.072 |          |           |                 |
+| Total                    |     0.087 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
 
 
 1.2 Power Supply Summary
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.014 |       0.005 |      0.010 |
+| Vccint    |       1.000 |     0.019 |       0.010 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -95,7 +95,7 @@ Table of Contents
 | User Input Data             | Confidence | Details                                                | Action                                                                                                             |
 +-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 | Design implementation state | High       | Design is routed                                       |                                                                                                                    |
-| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| Clock nodes activity        | Medium     | More than 5% of clocks are missing user specification  | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
 | I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
 | Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
 | Device models               | High       | Device models are Production                           |                                                                                                                    |
@@ -138,16 +138,47 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+---------------+-----------+
-| Name          | Power (W) |
-+---------------+-----------+
-| Complete_MIPS |     0.010 |
-|   CPU         |     0.003 |
-|     Register  |     0.002 |
-|   MEM         |     0.000 |
-|   display     |    <0.001 |
-|   div1        |    <0.001 |
-|   div2        |    <0.001 |
-+---------------+-----------+
++-------------------------+-----------+
+| Name                    | Power (W) |
++-------------------------+-----------+
+| Complete_MIPS           |     0.015 |
+|   CPU                   |     0.008 |
+|     Register            |     0.006 |
+|   MEM                   |    <0.001 |
+|     RAM_reg_0_127_0_0   |    <0.001 |
+|     RAM_reg_0_127_10_10 |    <0.001 |
+|     RAM_reg_0_127_11_11 |    <0.001 |
+|     RAM_reg_0_127_12_12 |    <0.001 |
+|     RAM_reg_0_127_13_13 |    <0.001 |
+|     RAM_reg_0_127_14_14 |    <0.001 |
+|     RAM_reg_0_127_15_15 |    <0.001 |
+|     RAM_reg_0_127_16_16 |    <0.001 |
+|     RAM_reg_0_127_17_17 |    <0.001 |
+|     RAM_reg_0_127_18_18 |    <0.001 |
+|     RAM_reg_0_127_19_19 |    <0.001 |
+|     RAM_reg_0_127_1_1   |    <0.001 |
+|     RAM_reg_0_127_20_20 |    <0.001 |
+|     RAM_reg_0_127_21_21 |    <0.001 |
+|     RAM_reg_0_127_22_22 |    <0.001 |
+|     RAM_reg_0_127_23_23 |    <0.001 |
+|     RAM_reg_0_127_24_24 |    <0.001 |
+|     RAM_reg_0_127_25_25 |    <0.001 |
+|     RAM_reg_0_127_26_26 |    <0.001 |
+|     RAM_reg_0_127_27_27 |    <0.001 |
+|     RAM_reg_0_127_28_28 |    <0.001 |
+|     RAM_reg_0_127_29_29 |    <0.001 |
+|     RAM_reg_0_127_2_2   |    <0.001 |
+|     RAM_reg_0_127_30_30 |    <0.001 |
+|     RAM_reg_0_127_31_31 |    <0.001 |
+|     RAM_reg_0_127_3_3   |    <0.001 |
+|     RAM_reg_0_127_4_4   |    <0.001 |
+|     RAM_reg_0_127_5_5   |    <0.001 |
+|     RAM_reg_0_127_6_6   |    <0.001 |
+|     RAM_reg_0_127_7_7   |    <0.001 |
+|     RAM_reg_0_127_8_8   |    <0.001 |
+|     RAM_reg_0_127_9_9   |    <0.001 |
+|   display               |    <0.001 |
+|   div2                  |    <0.001 |
++-------------------------+-----------+
 
 

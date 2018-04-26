@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Wed Apr 25 23:33:45 2018
-| Host         : Ericks-Laptop running 64-bit major release  (build 9200)
+| Date         : Thu Apr 26 02:15:51 2018
+| Host         : DESKTOP-7N7RCM0 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Complete_MIPS_control_sets_placed.rpt
 | Design       : Complete_MIPS
 | Device       : xc7a35t
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    76 |
-| Unused register locations in slices containing registers |    31 |
+| Number of unique control sets                            |    44 |
+| Unused register locations in slices containing registers |    19 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,109 +33,75 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             219 |           80 |
+| No           | No                    | No                     |             258 |          103 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              54 |           14 |
-| Yes          | No                    | No                     |             388 |          190 |
+| No           | Yes                   | No                     |              56 |           16 |
+| Yes          | No                    | No                     |            1127 |          464 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             780 |          311 |
+| Yes          | Yes                   | No                     |              12 |            8 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+----------------+---------------------------------+----------------------------------+------------------+----------------+
-|  Clock Signal  |          Enable Signal          |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
-+----------------+---------------------------------+----------------------------------+------------------+----------------+
-|  div2/CLK      |                                 |                                  |                1 |              4 |
-|  slow_clk_BUFG | CPU/Register/REG[1][7]_i_1_n_2  |                                  |                3 |              5 |
-|  slow_clk_BUFG | CPU/alu_or_mem_save             | CPU/opsave[5]_i_1_n_2            |                3 |              5 |
-|  div2/CLK      | display/segment_dis[6]_i_1_n_2  |                                  |                3 |              7 |
-|  slow_clk_BUFG | CPU/Register/E[0]               | RST_IBUF                         |                4 |              7 |
-|  slow_clk_BUFG | CPU/Register/REG[21][7]_i_1_n_2 |                                  |                4 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[9][7]_i_1_n_2  |                                  |                4 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[26][7]_i_1_n_2 |                                  |                5 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[22][7]_i_1_n_2 |                                  |                2 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[23][7]_i_1_n_2 |                                  |                4 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[24][7]_i_1_n_2 |                                  |                7 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[0][7]_i_1_n_2  |                                  |                6 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[25][7]_i_1_n_2 |                                  |                5 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[11][7]_i_1_n_2 |                                  |                3 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[27][7]_i_1_n_2 |                                  |                7 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[10][7]_i_1_n_2 |                                  |                4 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[28][7]_i_1_n_2 |                                  |                3 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[12][7]_i_1_n_2 |                                  |                3 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[29][7]_i_1_n_2 |                                  |                5 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[13][7]_i_1_n_2 |                                  |                2 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[2][7]_i_1_n_2  |                                  |                2 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[14][7]_i_1_n_2 |                                  |                2 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[30][7]_i_1_n_2 |                                  |                2 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[15][7]_i_1_n_2 |                                  |                4 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[31][7]_i_1_n_2 |                                  |                5 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[16][7]_i_1_n_2 |                                  |                6 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[3][7]_i_1_n_2  |                                  |                4 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[17][7]_i_1_n_2 |                                  |                3 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[4][7]_i_1_n_2  |                                  |                3 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[18][7]_i_1_n_2 |                                  |                4 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[5][7]_i_1_n_2  |                                  |                3 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[19][7]_i_1_n_2 |                                  |                4 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[6][7]_i_1_n_2  |                                  |                4 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[7][7]_i_1_n_2  |                                  |                5 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[20][7]_i_1_n_2 |                                  |                2 |              8 |
-|  slow_clk_BUFG | CPU/Register/REG[8][7]_i_1_n_2  |                                  |                3 |              8 |
-|  CLK_IBUF_BUFG |                                 |                                  |                7 |             12 |
-|  slow_clk_BUFG | CPU/Register/REG[23][7]_i_1_n_2 | CPU/Register/REG[23][31]_i_1_n_2 |               12 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[7][7]_i_1_n_2  | CPU/Register/REG[7][31]_i_1_n_2  |               14 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[29][7]_i_1_n_2 | CPU/Register/REG[29][31]_i_1_n_2 |                8 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[8][7]_i_1_n_2  | CPU/Register/REG[8][31]_i_1_n_2  |               11 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[21][7]_i_1_n_2 | CPU/Register/REG[21][31]_i_1_n_2 |                6 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[0][7]_i_1_n_2  | CPU/Register/REG[0][31]_i_1_n_2  |               15 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[11][7]_i_1_n_2 | CPU/Register/REG[11][31]_i_1_n_2 |                8 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[10][7]_i_1_n_2 | CPU/Register/REG[10][31]_i_1_n_2 |               13 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[12][7]_i_1_n_2 | CPU/Register/REG[12][31]_i_1_n_2 |                9 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[13][7]_i_1_n_2 | CPU/Register/REG[13][31]_i_1_n_2 |                9 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[14][7]_i_1_n_2 | CPU/Register/REG[14][31]_i_1_n_2 |                4 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[15][7]_i_1_n_2 | CPU/Register/REG[15][31]_i_1_n_2 |                5 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[16][7]_i_1_n_2 | CPU/Register/REG[16][31]_i_1_n_2 |               14 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[17][7]_i_1_n_2 | CPU/Register/REG[17][31]_i_1_n_2 |               10 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[18][7]_i_1_n_2 | CPU/Register/REG[18][31]_i_1_n_2 |                9 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[19][7]_i_1_n_2 | CPU/Register/REG[19][31]_i_1_n_2 |                7 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[1][7]_i_1_n_2  | CPU/Register/REG[1][31]_i_1_n_2  |                9 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[20][7]_i_1_n_2 | CPU/Register/REG[20][31]_i_1_n_2 |                7 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[25][7]_i_1_n_2 | CPU/Register/REG[25][31]_i_1_n_2 |                9 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[2][7]_i_1_n_2  | CPU/Register/REG[2][31]_i_1_n_2  |                9 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[9][7]_i_1_n_2  | CPU/Register/REG[9][31]_i_1_n_2  |               16 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[30][7]_i_1_n_2 | CPU/Register/REG[30][31]_i_1_n_2 |                8 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[26][7]_i_1_n_2 | CPU/Register/REG[26][31]_i_1_n_2 |               13 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[31][7]_i_1_n_2 | CPU/Register/REG[31][31]_i_1_n_2 |               15 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[22][7]_i_1_n_2 | CPU/Register/REG[22][31]_i_1_n_2 |                5 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[3][7]_i_1_n_2  | CPU/Register/REG[3][31]_i_1_n_2  |                5 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[27][7]_i_1_n_2 | CPU/Register/REG[27][31]_i_1_n_2 |               11 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[4][7]_i_1_n_2  | CPU/Register/REG[4][31]_i_1_n_2  |                7 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[24][7]_i_1_n_2 | CPU/Register/REG[24][31]_i_1_n_2 |               15 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[5][7]_i_1_n_2  | CPU/Register/REG[5][31]_i_1_n_2  |                7 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[28][7]_i_1_n_2 | CPU/Register/REG[28][31]_i_1_n_2 |                5 |             24 |
-|  slow_clk_BUFG | CPU/Register/REG[6][7]_i_1_n_2  | CPU/Register/REG[6][31]_i_1_n_2  |                9 |             24 |
-|  CLK_IBUF_BUFG |                                 | div2/slowClk3                    |                7 |             27 |
-|  CLK_IBUF_BUFG |                                 | div1/slowClk3                    |                7 |             27 |
-|  slow_clk_BUFG | CPU/instr[31]_i_1_n_2           |                                  |               15 |             32 |
-|  n_0_1472_BUFG |                                 |                                  |               24 |             64 |
-|  n_1_1474_BUFG |                                 |                                  |               16 |             64 |
-|  slow_clk_BUFG |                                 |                                  |               32 |             75 |
-|  slow_clk_BUFG | CPU/alu_result_save[31]_i_1_n_2 |                                  |               49 |             96 |
-+----------------+---------------------------------+----------------------------------+------------------+----------------+
++----------------+----------------------------------+---------------------------------+------------------+----------------+
+|  Clock Signal  |           Enable Signal          |         Set/Reset Signal        | Slice Load Count | Bel Load Count |
++----------------+----------------------------------+---------------------------------+------------------+----------------+
+|  div2/CLK      |                                  |                                 |                2 |              4 |
+|  CLK_IBUF_BUFG | CPU/Register/opsave_reg[5]       | CPU/opsave[5]_i_1_n_2           |                3 |              5 |
+|  div2/CLK      | display/segment_dis[6]_i_1_n_2   |                                 |                4 |              7 |
+|  CLK_IBUF_BUFG | CPU/Register/E[0]                | RST                             |                5 |              7 |
+|  CLK_IBUF_BUFG |                                  | div2/slowClk3                   |                7 |             27 |
+|  CLK_IBUF_BUFG |                                  | CPU/Register/REG[1][31]_i_1_n_2 |                9 |             29 |
+| ~CLK_IBUF_BUFG |                                  |                                 |               13 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[0][31]_i_1_n_2  |                                 |               16 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[10][31]_i_1_n_2 |                                 |               21 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[11][31]_i_1_n_2 |                                 |               11 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[12][31]_i_1_n_2 |                                 |               10 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[15][31]_i_1_n_2 |                                 |               14 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[13][31]_i_1_n_2 |                                 |               14 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[14][31]_i_1_n_2 |                                 |               13 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[16][31]_i_1_n_2 |                                 |               20 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[17][31]_i_1_n_2 |                                 |               16 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[18][31]_i_1_n_2 |                                 |               12 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[19][31]_i_1_n_2 |                                 |               10 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[20][31]_i_1_n_2 |                                 |                7 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[21][31]_i_1_n_2 |                                 |               14 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[22][31]_i_1_n_2 |                                 |                8 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[23][31]_i_1_n_2 |                                 |               15 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[24][31]_i_1_n_2 |                                 |               22 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[25][31]_i_1_n_2 |                                 |               11 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[26][31]_i_1_n_2 |                                 |               12 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[27][31]_i_1_n_2 |                                 |               13 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[28][31]_i_1_n_2 |                                 |                8 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[29][31]_i_1_n_2 |                                 |               12 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[2][31]_i_1_n_2  |                                 |                8 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[30][31]_i_1_n_2 |                                 |               12 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[31][31]_i_1_n_2 |                                 |               18 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[3][31]_i_1_n_2  |                                 |                8 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[4][31]_i_1_n_2  |                                 |                8 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[5][31]_i_1_n_2  |                                 |                8 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[6][31]_i_1_n_2  |                                 |                8 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[7][31]_i_1_n_2  |                                 |               17 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[8][31]_i_1_n_2  |                                 |               14 |             32 |
+|  CLK_IBUF_BUFG | CPU/Register/REG[9][31]_i_1_n_2  |                                 |               18 |             32 |
+|  CLK_IBUF_BUFG | CPU/instr[31]_i_1_n_2            |                                 |               11 |             32 |
+|  n_1_1451_BUFG |                                  |                                 |               16 |             64 |
+| ~CLK_IBUF_BUFG | CPU/data_out_reg[0]              |                                 |               16 |             64 |
+|  n_0_204_BUFG  |                                  |                                 |               26 |             64 |
+|  CLK_IBUF_BUFG |                                  |                                 |               46 |             94 |
+|  CLK_IBUF_BUFG | CPU/alu_result_save[16]_i_1_n_2  |                                 |               51 |             96 |
++----------------+----------------------------------+---------------------------------+------------------+----------------+
 
 
 +--------+-----------------------+
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
 | 4      |                     1 |
-| 5      |                     2 |
+| 5      |                     1 |
 | 7      |                     2 |
-| 8      |                    31 |
-| 12     |                     1 |
-| 16+    |                    39 |
+| 16+    |                    40 |
 +--------+-----------------------+
 
 

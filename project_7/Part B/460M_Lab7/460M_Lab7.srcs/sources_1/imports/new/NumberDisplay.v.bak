@@ -55,7 +55,7 @@ module NumberDisplay(count,segment_dis, an, clk);
             4'b0010: segment_dis <= second;
             4'b0100: segment_dis <= third;
             4'b1000: segment_dis <= fourth;
-        endcase                 
+        endcase;                 
     end
 
     assign an = ~ans;
