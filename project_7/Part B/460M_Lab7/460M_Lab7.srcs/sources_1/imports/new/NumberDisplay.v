@@ -77,7 +77,7 @@ module NumberDisplay(count,segment_dis, an, clk);
             4'b0111: first <= ~7'b0000111;
             4'b1000: first <= ~7'b1111111;
             4'b1001: first <= ~7'b1101111;
-            4'b1010: first <= ~7'b0001000; // _
+            4'b1010: first <= ~7'b1110111; // A
             4'b1011: first <= ~7'b1111100; // b
             4'b1100: first <= ~7'b0111001; // C
             4'b1101: first <= ~7'b1011110; // d
@@ -97,7 +97,7 @@ module NumberDisplay(count,segment_dis, an, clk);
             4'b0111: second <= ~7'b0000111;
             4'b1000: second <= ~7'b1111111;
             4'b1001: second <= ~7'b1101111;
-            4'b1010: second <= ~7'b0001000; // _
+            4'b1010: second <= ~7'b1110111; // A
             4'b1011: second <= ~7'b1111100; // b
             4'b1100: second <= ~7'b0111001; // C
             4'b1101: second <= ~7'b1011110; // d
@@ -117,7 +117,7 @@ module NumberDisplay(count,segment_dis, an, clk);
             4'b0111: third <= ~7'b0000111;
             4'b1000: third <= ~7'b1111111;
             4'b1001: third <= ~7'b1101111;
-            4'b1010: third <= ~7'b0001000; // _
+            4'b1010: third <= ~7'b1110111; // A
             4'b1011: third <= ~7'b1111100; // b
             4'b1100: third <= ~7'b0111001; // C
             4'b1101: third <= ~7'b1011110; // d
@@ -137,7 +137,7 @@ module NumberDisplay(count,segment_dis, an, clk);
             4'b0111: fourth <= ~7'b0000111;
             4'b1000: fourth <= ~7'b1111111;
             4'b1001: fourth <= ~7'b1101111;
-            4'b1010: fourth <= ~7'b0001000; // _
+            4'b1010: fourth <= ~7'b1110111; // A
             4'b1011: fourth <= ~7'b1111100; // b
             4'b1100: fourth <= ~7'b0111001; // C
             4'b1101: fourth <= ~7'b1011110; // d

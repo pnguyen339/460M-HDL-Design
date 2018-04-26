@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date             : Thu Apr 26 02:16:26 2018
+| Date             : Thu Apr 26 02:24:02 2018
 | Host             : DESKTOP-7N7RCM0 running 64-bit major release  (build 9200)
 | Command          : report_power -file Complete_MIPS_power_routed.rpt -pb Complete_MIPS_power_summary_routed.pb -rpx Complete_MIPS_power_routed.rpx
 | Design           : Complete_MIPS
@@ -51,7 +51,7 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.005 |        3 |       --- |             --- |
 | Slice Logic              |     0.002 |     3463 |       --- |             --- |
-|   LUT as Logic           |     0.002 |     1532 |     20800 |            7.37 |
+|   LUT as Logic           |     0.002 |     1533 |     20800 |            7.37 |
 |   CARRY4                 |    <0.001 |       55 |      8150 |            0.67 |
 |   Register               |    <0.001 |     1453 |     41600 |            3.49 |
 |   F7/F8 Muxes            |    <0.001 |      288 |     32600 |            0.88 |
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.019 |       0.010 |      0.010 |
+| Vccint    |       1.000 |     0.019 |       0.009 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
