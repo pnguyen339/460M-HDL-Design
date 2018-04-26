@@ -216,10 +216,15 @@ module MIPS (CLK, RST, CS, WE, ADDR, Mem_Bus, S2, S3, SW);
   reg fetchDorI;
   wire [4:0] dr;
   reg [2:0] state, nstate;
+  reg [31:0] HI, LO;
+  reg [63:0] mult_result, mult_result_save;
+  reg [7:0] addb1, addb2, addb3, addb4;
+  reg [7:0] i;
+  reg [32:0] temp_add;
 
   //combinational
   assign imm_ext = (instr[15] == 1)? {16'hFFFF, instr[15:0]} : {16'h0000, instr[15:0]};//Sign extend immediate field
-  assign dr = (format == J)? 6'd31 : ((format == R)? instr[15:11] : instr[20:16]); //Destination Register MUX (MUX1)
+  assign dr = (format == J)? 6'd31 : ((`opcode == rbit || `opcode == rev)? instr[25:21] : ((format == R)? instr[15:11] : instr[20:16])); //Destination Register MUX (MUX1)
   assign alu_in_A = readreg1;
   assign alu_in_B = (reg_or_imm_save)? imm_ext : readreg2; //ALU MUX (MUX2)
   assign reg_in = (state == 1)? (pc + 4) : ((alu_or_mem_save)? Mem_Bus : alu_result_save); //Data MUX
@@ -285,7 +290,41 @@ module MIPS (CLK, RST, CS, WE, ADDR, Mem_Bus, S2, S3, SW);
         else if (opsave == sll) alu_result = alu_in_B << `numshift;
         else if (opsave == slt) alu_result = (alu_in_A < alu_in_B)? 32'd1 : 32'd0;
         else if (opsave == xor1) alu_result = alu_in_A ^ alu_in_B;
+        else if (opsave == lui) alu_result = alu_in_B << 16;
+        else if (opsave == mult) mult_result = alu_in_A * alu_in_B;
+        else if (opsave == mfhi) alu_result = HI;
+        else if (opsave == mflo) alu_result = LO;
+        else if (opsave == add8) begin
+          addb1 = alu_in_A[7:0] + alu_in_B[7:0];
+          addb2 = alu_in_A[15:8] + alu_in_B[15:8];
+          addb3 = alu_in_A[23:16] + alu_in_B[23:16];
+          addb4 = alu_in_A[31:24] + alu_in_B[31:24];
+          alu_result = {addb1, addb2, addb3, addb4};
         
+        end
+        else if (opsave == rbit) begin
+          for(i = 0; i < 32 ; i = i + 1)
+            alu_result[i] = alu_in_B[31 - i];
+        end
+        else if (opsave == rev) begin
+          alu_result[31:24] = alu_in_B[7:0];
+          alu_result[23:16] = alu_in_B[15:8];
+          alu_result[15:8] = alu_in_B[23:16];
+          alu_result[7:0] = alu_in_B[31:24];
+        end
+        else if (opsave == sadd) begin
+          temp_add = alu_in_A + alu_in_B;
+          if (temp_add > 2^32-1) begin
+            alu_result = 2^32-1;
+          end
+          else alu_result = alu_in_A + alu_in_B;
+         end
+         else if (opsave == ssub) begin
+           if (alu_in_A < alu_in_B) begin
+             alu_result = 0;
+           end
+           else alu_result = alu_in_A - alu_in_B;
+          end
         // branch
         if (((alu_in_A == alu_in_B)&&(`opcode == beq)) || ((alu_in_A != alu_in_B)&&(`opcode == bne))) begin
           npc = pc + imm_ext[6:0];
@@ -301,7 +340,12 @@ module MIPS (CLK, RST, CS, WE, ADDR, Mem_Bus, S2, S3, SW);
       end
       3: begin //prepare to write to mem
         nstate = 3'd0;
-        if ((format == R)||(`opcode == addi)||(`opcode == andi)||(`opcode == ori)) regw = 1;
+        if (`opcode == mult) begin
+          HI = mult_result_save[63:32];
+          LO = mult_result_save[31:0];
+        end
+        else if ((format == R)||(`opcode == addi)||(`opcode == andi)||(`opcode == ori) ||(`opcode == lui)) 
+          regw = 1;
         else if (`opcode == sw) begin
           CS = 1;
           WE = 1;
@@ -336,7 +380,10 @@ module MIPS (CLK, RST, CS, WE, ADDR, Mem_Bus, S2, S3, SW);
         reg_or_imm_save <= reg_or_imm;
         alu_or_mem_save <= alu_or_mem;
       end
-      else if (state == 3'd2) alu_result_save <= alu_result;
+      else if (state == 3'd2) begin
+        alu_result_save <= alu_result;
+        mult_result_save <= mult_result;
+      end
   end //always
 
 endmodule

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Apr 25 23:24:44 2018
+# Process ID: 14760
+# Current directory: C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part A/Synthesis/460M_Lab7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5764 C:\Users\erick\Documents\GitHub\460M-HDL-Design\project_7\Part A\Synthesis\460M_Lab7\460M_Lab7.xpr
+# Log file: C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part A/Synthesis/460M_Lab7/vivado.log
+# Journal file: C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part A/Synthesis/460M_Lab7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part A/Synthesis/460M_Lab7/460M_Lab7.xpr}

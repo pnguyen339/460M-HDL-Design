@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Apr 25 23:24:44 2018
+# Process ID: 14760
+# Current directory: C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part A/Synthesis/460M_Lab7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5764 C:\Users\erick\Documents\GitHub\460M-HDL-Design\project_7\Part A\Synthesis\460M_Lab7\460M_Lab7.xpr
+# Log file: C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part A/Synthesis/460M_Lab7/vivado.log
+# Journal file: C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part A/Synthesis/460M_Lab7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part A/Synthesis/460M_Lab7/460M_Lab7.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part A/Synthesis/460M_Lab7'
+INFO: [Project 1-313] Project file moved from 'C:/Users/Erick/Desktop/460M_Lab7' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part A/Synthesis/460M_Lab7/460M_Lab7.ip_user_files', nor could it be found using path 'C:/Users/Erick/Desktop/460M_Lab7/460M_Lab7.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 25 23:26:23 2018...

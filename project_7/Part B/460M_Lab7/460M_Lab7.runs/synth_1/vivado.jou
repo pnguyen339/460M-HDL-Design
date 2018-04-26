@@ -2,8 +2,8 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Wed Apr 25 12:37:03 2018
-# Process ID: 13808
+# Start of session at: Wed Apr 25 23:32:19 2018
+# Process ID: 9824
 # Current directory: C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.runs/synth_1
 # Command line: vivado.exe -log Complete_MIPS.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Complete_MIPS.tcl
 # Log file: C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.runs/synth_1/Complete_MIPS.vds

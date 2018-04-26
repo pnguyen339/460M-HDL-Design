@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date             : Wed Apr 25 12:38:46 2018
+| Date             : Wed Apr 25 23:34:15 2018
 | Host             : Ericks-Laptop running 64-bit major release  (build 9200)
 | Command          : report_power -file Complete_MIPS_power_routed.rpt -pb Complete_MIPS_power_summary_routed.pb -rpx Complete_MIPS_power_routed.rpx
 | Design           : Complete_MIPS
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.079 |
-| Dynamic (W)              | 0.008 |
+| Total On-Chip Power (W)  | 0.082 |
+| Dynamic (W)              | 0.010 |
 | Device Static (W)        | 0.072 |
 | Effective TJA (C/W)      | 5.0   |
 | Max Ambient (C)          | 84.6  |
@@ -50,18 +50,19 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |     2963 |       --- |             --- |
-|   LUT as Logic |    <0.001 |     1285 |     20800 |            6.18 |
-|   CARRY4       |    <0.001 |       42 |      8150 |            0.52 |
-|   Register     |    <0.001 |     1250 |     41600 |            3.00 |
-|   Others       |     0.000 |       14 |       --- |             --- |
+| Slice Logic    |     0.002 |     3389 |       --- |             --- |
+|   LUT as Logic |     0.002 |     1520 |     20800 |            7.31 |
+|   CARRY4       |    <0.001 |       62 |      8150 |            0.76 |
+|   Register     |    <0.001 |     1441 |     41600 |            3.46 |
+|   Others       |     0.000 |       16 |       --- |             --- |
 |   F7/F8 Muxes  |     0.000 |      289 |     32600 |            0.89 |
-|   BUFG         |     0.000 |        1 |        32 |            3.13 |
-| Signals        |    <0.001 |     2228 |       --- |             --- |
+|   BUFG         |     0.000 |        3 |        32 |            9.38 |
+| Signals        |     0.002 |     2837 |       --- |             --- |
 | Block RAM      |     0.000 |      0.5 |        50 |            1.00 |
+| DSPs           |     0.000 |        4 |        90 |            4.44 |
 | I/O            |     0.006 |       18 |       106 |           16.98 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.079 |          |           |                 |
+| Total          |     0.082 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.011 |       0.002 |      0.010 |
+| Vccint    |       1.000 |     0.014 |       0.005 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -140,9 +141,9 @@ Table of Contents
 +---------------+-----------+
 | Name          | Power (W) |
 +---------------+-----------+
-| Complete_MIPS |     0.008 |
-|   CPU         |    <0.001 |
-|     Register  |    <0.001 |
+| Complete_MIPS |     0.010 |
+|   CPU         |     0.003 |
+|     Register  |     0.002 |
 |   MEM         |     0.000 |
 |   display     |    <0.001 |
 |   div1        |    <0.001 |

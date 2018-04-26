@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6556 
+INFO: Helper process launched with PID 14816 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 280.988 ; gain = 71.117
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 280.656 ; gain = 70.094
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'Complete_MIPS' [C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.srcs/sources_1/imports/7/lab7.v:1]
 INFO: [Synth 8-638] synthesizing module 'clockDivider_20ms' [C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.srcs/sources_1/imports/examples/EE 460M_Lab2_Starter_File.v:99]
@@ -56,7 +56,7 @@ INFO: [Synth 8-638] synthesizing module 'MIPS' [C:/Users/erick/Documents/GitHub/
 	Parameter J bound to: 2'b10 
 INFO: [Synth 8-638] synthesizing module 'REG' [C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.srcs/sources_1/imports/7/lab7.v:113]
 INFO: [Synth 8-256] done synthesizing module 'REG' (3#1) [C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.srcs/sources_1/imports/7/lab7.v:113]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.srcs/sources_1/imports/7/lab7.v:248]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.srcs/sources_1/imports/7/lab7.v:253]
 INFO: [Synth 8-256] done synthesizing module 'MIPS' (4#1) [C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.srcs/sources_1/imports/7/lab7.v:162]
 WARNING: [Synth 8-689] width (32) of port connection 'S2' does not match port width (8) of module 'MIPS' [C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.srcs/sources_1/imports/7/lab7.v:20]
 WARNING: [Synth 8-689] width (32) of port connection 'S3' does not match port width (8) of module 'MIPS' [C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.srcs/sources_1/imports/7/lab7.v:20]
@@ -76,7 +76,7 @@ WARNING: [Synth 8-567] referenced signal 'th' should be on the sensitivity list 
 INFO: [Synth 8-256] done synthesizing module 'NumberDisplay' (6#1) [C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.srcs/sources_1/imports/new/NumberDisplay.v:23]
 INFO: [Synth 8-256] done synthesizing module 'Complete_MIPS' (7#1) [C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.srcs/sources_1/imports/7/lab7.v:1]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 318.410 ; gain = 108.539
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 318.965 ; gain = 108.402
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -86,7 +86,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 318.410 ; gain = 108.539
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 318.965 ; gain = 108.402
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -102,22 +102,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 621.078 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 622.508 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 621.078 ; gain = 411.207
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 622.508 ; gain = 411.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 621.078 ; gain = 411.207
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 622.508 ; gain = 411.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 621.078 ; gain = 411.207
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 622.508 ; gain = 411.945
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "slowClk3" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "slowClk3" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
@@ -153,30 +153,22 @@ INFO: [Synth 8-5546] ROM "REG_reg[28]" won't be mapped to RAM because it is too 
 INFO: [Synth 8-5546] ROM "REG_reg[29]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "REG_reg[30]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "REG_reg[31]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'MIPS'
 INFO: [Synth 8-5546] ROM "alu_or_mem" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "WE" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "regw" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "HI" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "nstate" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "npc" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "npc" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "instr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "opsave" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "fetchDorI" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5546] ROM "nstate" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "segment_dis" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                  iSTATE |                              000 |                              000
-                 iSTATE0 |                              001 |                              001
-                 iSTATE1 |                              010 |                              010
-                 iSTATE2 |                              011 |                              011
-                 iSTATE3 |                              100 |                              100
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'MIPS'
+WARNING: [Synth 8-327] inferring latch for variable 'HI_reg' [C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.srcs/sources_1/imports/7/lab7.v:295]
+WARNING: [Synth 8-327] inferring latch for variable 'LO_reg' [C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.srcs/sources_1/imports/7/lab7.v:296]
+WARNING: [Synth 8-327] inferring latch for variable 'mult_result_reg' [C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.srcs/sources_1/imports/7/lab7.v:294]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 621.078 ; gain = 411.207
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 622.508 ; gain = 411.945
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -189,42 +181,53 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     33 Bit       Adders := 1     
 	   2 Input     32 Bit       Adders := 1     
 	   3 Input     32 Bit       Adders := 1     
 	   2 Input     28 Bit       Adders := 2     
-	   2 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 5     
 	   2 Input      7 Bit       Adders := 2     
 +---XORs : 
-	   2 Input     32 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 2     
 +---Registers : 
+	               64 Bit    Registers := 1     
 	               32 Bit    Registers := 37    
 	               28 Bit    Registers := 2     
 	                7 Bit    Registers := 2     
 	                6 Bit    Registers := 1     
 	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
 	                1 Bit    Registers := 4     
++---Multipliers : 
+	                32x32  Multipliers := 1     
 +---RAMs : 
 	               4K Bit         RAMs := 1     
 +---Muxes : 
 	   3 Input     32 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 6     
-	   9 Input     32 Bit        Muxes := 1     
-	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 8     
+	  13 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 1     
 	   2 Input     28 Bit        Muxes := 2     
+	   6 Input      7 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 2     
-	   5 Input      7 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 5     
+	   6 Input      6 Bit        Muxes := 1     
 	   4 Input      6 Bit        Muxes := 1     
-	   5 Input      6 Bit        Muxes := 1     
-	   3 Input      5 Bit        Muxes := 1     
-	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	  13 Input      4 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 11    
-	  13 Input      3 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 46    
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 49    
+	   6 Input      1 Bit        Muxes := 5     
 	   4 Input      1 Bit        Muxes := 3     
-	   3 Input      1 Bit        Muxes := 1     
-	   5 Input      1 Bit        Muxes := 8     
+	   7 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -269,34 +272,44 @@ Detailed RTL Component Info :
 Module MIPS 
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     33 Bit       Adders := 1     
 	   2 Input     32 Bit       Adders := 1     
 	   3 Input     32 Bit       Adders := 1     
-	   2 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 5     
 	   2 Input      7 Bit       Adders := 2     
 +---XORs : 
-	   2 Input     32 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 2     
 +---Registers : 
+	               64 Bit    Registers := 1     
 	               32 Bit    Registers := 2     
 	                7 Bit    Registers := 1     
 	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
 	                1 Bit    Registers := 2     
++---Multipliers : 
+	                32x32  Multipliers := 1     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 3     
-	   9 Input     32 Bit        Muxes := 1     
-	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 5     
+	  13 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 1     
+	   6 Input      7 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 2     
-	   5 Input      7 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 5     
+	   6 Input      6 Bit        Muxes := 1     
 	   4 Input      6 Bit        Muxes := 1     
-	   5 Input      6 Bit        Muxes := 1     
-	   3 Input      5 Bit        Muxes := 1     
-	   9 Input      4 Bit        Muxes := 1     
-	  13 Input      3 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 13    
+	   2 Input      5 Bit        Muxes := 3     
+	  13 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 16    
+	   6 Input      1 Bit        Muxes := 5     
 	   4 Input      1 Bit        Muxes := 3     
-	   3 Input      1 Bit        Muxes := 1     
-	   5 Input      1 Bit        Muxes := 7     
+	   7 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 1     
 Module Memory 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -328,6 +341,19 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.srcs/sources_1/imports/7/lab7.v:294]
+DSP Report: Generating DSP mult_result0, operation Mode is: A*B.
+DSP Report: operator mult_result0 is absorbed into DSP mult_result0.
+DSP Report: operator mult_result0 is absorbed into DSP mult_result0.
+DSP Report: Generating DSP mult_result0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_result0 is absorbed into DSP mult_result0.
+DSP Report: operator mult_result0 is absorbed into DSP mult_result0.
+DSP Report: Generating DSP mult_result0, operation Mode is: A*B.
+DSP Report: operator mult_result0 is absorbed into DSP mult_result0.
+DSP Report: operator mult_result0 is absorbed into DSP mult_result0.
+DSP Report: Generating DSP mult_result0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_result0 is absorbed into DSP mult_result0.
+DSP Report: operator mult_result0 is absorbed into DSP mult_result0.
 INFO: [Synth 8-4471] merging register 'd4_reg[3:0]' into 'd3_reg[3:0]' [C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.srcs/sources_1/imports/7/lab7.v:23]
 INFO: [Synth 8-5545] ROM "div1/slowClk3" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "div2/slowClk3" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
@@ -337,7 +363,7 @@ INFO: [Synth 8-3886] merging instance 'd3_reg[2]' (FD) to 'd3_reg[3]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d3_reg[3] )
 WARNING: [Synth 8-3332] Sequential element (d3_reg[3]) is unused and will be removed from module Complete_MIPS.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 621.078 ; gain = 411.207
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 622.508 ; gain = 411.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -351,6 +377,18 @@ Block RAM: Preliminary Mapping  Report (see note below)
 +------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 
 Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|MIPS        | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MIPS        | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MIPS        | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MIPS        | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
@@ -367,10 +405,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 621.078 ; gain = 411.207
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 668.898 ; gain = 458.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 623.254 ; gain = 413.383
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 680.504 ; gain = 469.941
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -384,7 +422,7 @@ Start Technology Mapping
 INFO: [Synth 8-4480] The timing for the instance MEM/RAM_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-4480] The timing for the instance MEM/RAM_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 645.813 ; gain = 435.941
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 711.785 ; gain = 501.223
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -408,7 +446,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 645.813 ; gain = 435.941
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 711.785 ; gain = 501.223
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -421,7 +459,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 645.813 ; gain = 435.941
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 711.785 ; gain = 501.223
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -433,25 +471,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 645.813 ; gain = 435.941
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 711.785 ; gain = 501.223
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 645.813 ; gain = 435.941
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 711.785 ; gain = 501.223
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 645.813 ; gain = 435.941
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 711.785 ; gain = 501.223
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 645.813 ; gain = 435.941
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 711.785 ; gain = 501.223
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -464,55 +502,59 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+---------+------+
-|      |Cell     |Count |
-+------+---------+------+
-|1     |BUFG     |     2|
-|2     |CARRY4   |    42|
-|3     |LUT1     |    61|
-|4     |LUT2     |    74|
-|5     |LUT3     |    74|
-|6     |LUT4     |   188|
-|7     |LUT5     |    77|
-|8     |LUT6     |   948|
-|9     |MUXF7    |   289|
-|10    |RAMB18E1 |     1|
-|11    |FDRE     |  1250|
-|12    |IBUF     |     7|
-|13    |OBUF     |    11|
-+------+---------+------+
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     4|
+|2     |CARRY4    |    62|
+|3     |DSP48E1_1 |     3|
+|4     |DSP48E1_2 |     1|
+|5     |LUT1      |    64|
+|6     |LUT2      |   126|
+|7     |LUT3      |    80|
+|8     |LUT4      |   224|
+|9     |LUT5      |    58|
+|10    |LUT6      |  1084|
+|11    |MUXF7     |   289|
+|12    |RAMB18E1  |     1|
+|13    |FDRE      |  1313|
+|14    |LD        |   128|
+|15    |IBUF      |     7|
+|16    |OBUF      |    11|
++------+----------+------+
 
 Report Instance Areas: 
 +------+-------------+------------------+------+
 |      |Instance     |Module            |Cells |
 +------+-------------+------------------+------+
-|1     |top          |                  |  3024|
-|2     |  CPU        |MIPS              |  2812|
-|3     |    Register |REG               |  2654|
-|4     |  MEM        |Memory            |     1|
+|1     |top          |                  |  3455|
+|2     |  MEM        |Memory            |     1|
+|3     |  CPU        |MIPS              |  3245|
+|4     |    Register |REG               |  2815|
 |5     |  display    |NumberDisplay     |    32|
-|6     |  div1       |clockDivider_20ms |    75|
-|7     |  div2       |clockDivider_16ms |    75|
+|6     |  div1       |clockDivider_20ms |    73|
+|7     |  div2       |clockDivider_16ms |    73|
 +------+-------------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 645.813 ; gain = 435.941
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 711.785 ; gain = 501.223
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 645.813 ; gain = 133.273
-Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 645.813 ; gain = 435.941
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 711.785 ; gain = 197.680
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 711.785 ; gain = 501.223
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 50 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 202 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'Complete_MIPS' is not ideal for floorplanning, since the cellview 'REG' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 128 instances were transformed.
+  LD => LDCE: 128 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-92 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+91 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 645.813 ; gain = 435.941
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 711.785 ; gain = 501.223
 INFO: [Common 17-1381] The checkpoint 'C:/Users/erick/Documents/GitHub/460M-HDL-Design/project_7/Part B/460M_Lab7/460M_Lab7.runs/synth_1/Complete_MIPS.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 645.813 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Apr 25 12:37:41 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 711.785 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 25 23:33:07 2018...
