@@ -25,6 +25,10 @@ module Complete_MIPS(CLK, SW, seg, an, btnL, btnR);
  
  initial begin
    RST = 1'b1; // reset the cpu initially
+   d4 <= 0;
+   d3 <= 0;
+   d2 <= 0;
+   d1 <= 0;
  end
 
  // decide what to show on the seven segment
@@ -303,7 +307,11 @@ module MIPS (CLK, RST, CS, WE, ADDR, Mem_Bus, S2, S3, SW);
         else if (opsave == slt) alu_result = (alu_in_A < alu_in_B)? 32'd1 : 32'd0;
         else if (opsave == xor1) alu_result = alu_in_A ^ alu_in_B;
         else if (opsave == lui) alu_result = alu_in_B << 16;
-        else if (opsave == mult) mult_result = alu_in_A * alu_in_B;
+        else if (opsave == mult) begin
+          mult_result_save = alu_in_A * alu_in_B;
+          HI = mult_result_save[63:32];
+          LO = mult_result_save[31:0];
+        end
         else if (opsave == mfhi) alu_result = HI;
         else if (opsave == mflo) alu_result = LO;
         else if (opsave == add8) begin
@@ -352,11 +360,7 @@ module MIPS (CLK, RST, CS, WE, ADDR, Mem_Bus, S2, S3, SW);
       end
       3: begin //prepare to write to mem
         nstate = 3'd0;
-        if (`opcode == mult) begin
-          HI = mult_result_save[63:32];
-          LO = mult_result_save[31:0];
-        end
-        else if ((format == R)||(`opcode == addi)||(`opcode == andi)||(`opcode == ori) ||(`opcode == lui)) 
+        if ((format == R)||(`opcode == addi)||(`opcode == andi)||(`opcode == ori) ||(`opcode == lui)) 
           regw = 1;
         else if (`opcode == sw) begin
           CS = 1;
@@ -394,7 +398,6 @@ module MIPS (CLK, RST, CS, WE, ADDR, Mem_Bus, S2, S3, SW);
       end
       else if (state == 3'd2) begin
         alu_result_save <= alu_result;
-        mult_result_save <= mult_result;
       end
   end //always
 
